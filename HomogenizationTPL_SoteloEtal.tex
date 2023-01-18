@@ -1,4 +1,3 @@
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % AGUJournalTemplate.tex: this template file is for articles formatted with LaTeX
 %
@@ -235,44 +234,54 @@ shows the applicability of the poroelastic-to-viscoelastic homogenization approa
 the variation of amplitudes for different incident angles. Similarly,
 \citeA{He2020} use viscoelastic substitutes of thin fractures layers to investigate their effect on P-wave amplitude variation with respect to incident angles. Moreover, \citeA{Jin2017} use an effective viscoelastic representation to replace a partially gas-saturated thin layer. This model is later used to estimate gas saturation and layer thickness from seismic amplitude variation with the incident angle.
 
-The pioneering work of \citeA{White1975a} and \citeA{White1975} is one of the first to show the effective viscoelastic behavior of simple poroelastic composites saturated with gas and water. Specially, the model of periodically alternating poroelastic beds \cite{White1975} has been applied to represent thin layers of interest and to study their reflectivity response at normal incidence. In this modeling approach the thin layer consists of a stack of alternating poroelastic beds that are homogeneous and isotropic. This thin layer representation is specifically convenient for
-testing the sensitivity of various poroelastic parameters as it allows the computation of its effective moduli by analytical means \cite<e.g.,>{Carcione2006, Krzikalla2011}. For instance,  \citeA{Quintal2009} and \citeA{Quintal2011a} use this thin layer representation to compare the reflection coefficients at normal incidence of viscoelastic substitutes of various thin layer models characterized by alternating beds with different rock and fluid properties. Whereas, \citeA{He2020} utilize a particular version of this model to represent a thin layer containing fractures. To achieve this, they consider that 
-the bed representing the fracture is much softer and thinner than the other one. \cite{Brajanovski2005,Kong2013}. In their study, they use viscoelastic substitutes of fractured thin layers to examine the effect of various fluids and fracture physical properties on the variation of seismic amplitude with respect to the angle of incidence. A general assumption in the homogenization of a layered TPL is that the TPL should consist of a periodic heterogeneous structure, e.g., a pair of beds, that repeats a sufficient number of times so that its effective behavior is, for practical purposes, unaffected by the boundary conditions (BC) induced by the background embedding the TPL. However, a more realistic and flexible model to depict layered TPL for reflectivity analyses is to consider a TPL with a finite number of beds that present distinct rock and fluid properties. In such a case, BC induced by the embedding background are likely to affect the estimation of the effective moduli.
+The pioneering work of \citeA{White1975a} and \citeA{White1975} is one of the first to show the effective viscoelastic behavior of simple poroelastic composites saturated with gas and water. Specially, the periodic model of alternating  beds \cite{White1975} has been applied to represent thin layers of interest and to study their reflectivity response. 
+In this modeling approach, the thin layer consists of a stack of these alternating beds that are deemed homogeneous and isotropic.
+This thin layer representation is convenient for
+testing the sensitivity of various poroelastic parameters as it allows the computation of its effective moduli by analytical means \cite<e.g.,>{Carcione2006, Krzikalla2011}. For instance,  \citeA{Quintal2009} and \citeA{Quintal2011a} compare the reflection coefficients at normal incidence of viscoelastic substitutes of thin layer models presenting a periodic structure consisting of  
+alternating beds with different rock and fluid properties. Whereas, \citeA{He2020} utilize a particular version of this model to represent a thin layer containing fractures. In this case, they consider that 
+the bed representing the fracture is much softer and thinner than the other one. \cite{Brajanovski2005,Kong2013}. In their study, they use viscoelastic substitutes of these fractured thin layers to examine the effect of various  saturating fluids and fracture properties on the variation of seismic amplitude with respect to the angle of incidence. Nonetheless, a general assumption in the homogenization of porous medium containing a deterministic heterogeneous structure, e.g., alternating beds, is  the periodicity of such heterogeneity. In this regard, the periodic structure should repeat a sufficient number of times so that its
+effective behavior is, for practical purposes, unaffected by the boundary conditions (BC) induced by the surrounding rock. However, a more realistic and flexible model to depict a thin layer with an internal bedding structure is to consider a few number of beds in the stack with distinct rock and fluid properties. However, in such case, BC induced by the embedding background are likely to affect the estimation of the effective moduli.
 % as the entire thickness of 
 %the TPL should be considered for homogenization purposes. 
 %Boundary effects on the estimation of effective moduli has been widely investigated, for instance, in purely elastic materials. Studies show that applying suitable boundary conditions is an effective technique to estimate effective moduli  in the vecinity of the boundaries.  \cite<e.g.,>{Dumontet1986,Koley2019}.
-However, classical homogenization procedures are not readily applicable to this type of TPL models. At the same time, the development of suitable procedures has been largely unexplored.
+While, classical homogenization procedures are not readily applicable to this type of thin layer models, the development of suitable procedures has been largely unexplored.
 %the homogenization of the proposed TPL representation with a finite number of beds and distinct properties has been largely unexplored. 
 %Consequently, the implementation of appropriate BC in a homogenization procedure to find  
 %the corresponding effective viscoelastic representation capable of reproducing the reflectivity response of such TPL model has not been widely investigated. 
 
-In this work, we aim to homogenize a layered TPL that does not present a periodic bedding structure with the overall goal of reproducing its reflectivity response. Under this scenario, the BC induced by the surrounding rock is likely to affect the estimation of the corresponding effective moduli. We
-propose to incorporate the pertinent BC in a numerical homogenization procedure.
-Classical homogenization procedures of poroelastic media with periodic heterogeneities consider a sample of the repetitive structure to apply oscillatory relaxation tests. This is followed by the averaging of stress and strain components over the sample to finally estimate the homogenized moduli. We adapt the aforementioned procedure to incorporate the BC induced by the embedding background that is assumed impermeable for the frequencies of interest so that it allows the entrapment of fluids e.g., natural gas or carbon, within the TPL (Figure \ref{fig.1}a). The proposed method proceed as follows,
-we consider a sample that includes part of the background as well as a portion of the TPL of interest (Figure \ref{fig.1}c) to apply the oscillatory relaxation tests. However, to obtain the homogenized moduli, the averaging of strain and strain components is performed only over the TPL portion. To test the proposed method, we consider a TPL model consisting of two sand beds where the top sand is gas-saturated  and the bottom one is water-saturated.
-After estimating its  homogenized moduli, we use them to calculate the corresponding P-wave reflectivities. Then, we compare these results against the ones obtained using the TPL model. We also calculate reflectivities using the homogenized media applying a classical homogenization procedure over a TPL sample as shown in Figure \ref{fig.1}b.
-
-
+In this work, we seek to alleviate this problem by proposing a method to homogenized poroelastic thin layers consisting of a non-periodic bedding structure with the overall goal of adequately predicting its reflectivity. Under this scenario, the BC induced by the embedding background is likely to affect the estimation of the corresponding effective moduli. In this study, we assume that this embedding background behaves as an impermeable rock for the frequencies of interest, allowing the entrapment of fluids e.g., natural gas or carbon, within the thin layer. Considering an impermeable background is relevant to represent, for instance, thin permeable sandstone layers intercalated by imprevious shales \cite<e.g.,>{Torres-verdin2012,AbuEl-Ata2019}, as well as to depict an open fracture surrounded by a permeable damage zone, which are embedded in an impermeable background rock \cite<e.g.,>{Caine1996, Mitchell2012}. Then, to find the viscoelastic equivalent of thin layers with a non-periodic bedding structure,
+we propose to incorporate the pertinent BC induced by such impermeable embedding background in a numerical homogenization procedure. 
+Classical homogenization procedures of poroelastic media with periodic heterogeneities  apply oscillatory relaxation tests to a sample of the repetitive structure. This is followed by the averaging of the stress and the strain components over the sample to estimate the homogenized moduli. We adapt this procedure to incorporate the BC induced by the embedding background. The proposed method proceed as follows,
+we  apply the oscillatory relaxation tests to a sample that includes part of the embedding background as well as the entire thickness of the thin layer. However, to obtain the homogenized moduli, the averaging of stress and strain components is performed only over the thin layer thickness. To test the proposed method, we consider a thin layer model consisting of two sand beds where the upper one is gas-saturated  and the bottom one is water-saturated.
+After estimating its  homogenized moduli, we use them to calculate the corresponding P-wave reflectivities, which we compare against the exact reflectivities obtained using the poroelastic thin layer model. 
+%We also calculate reflectivities using the homogenized media applying a classical homogenization procedure over a TPL sample as shown in Figure \ref{fig.1}b.
 %we assume a infinite horizontal TPL model that consists of a finite number of of beds that present distinct rock and fluid properties. As stated, we also assume that the rock surrounding the TPL is impermeable for the frequencies of interest so that it allows the entrapment of fluids e.g., natural gas or carbon, within the TPL (Figure \ref{fig.1}a). Then, we propose to incorporate the no-flow constraint in the homogenization procedure using twp approaches. In the first approach, we take a sample of the TPL and prescribe mathematically the no-flow condition at the pertinent TPL boundaries (Figure \ref{fig.1}b).  considered periodic. Evidently, this latter approach disregards the no-flow condition that the impermeable background prescribes on the TPL. In the methodology section we detail the different approaches to incorporate the no-flow condition in the homogenization of the considered TPL model. Specifically, we present these approaches as modified procedures of the homogenization methodology proposed by \cite{Favino2020}. After this, in the results section, 
 
 
 \section{Theory and methods}
-In this section we detail the proposed homogenization procedure to estimate the effective moduli of an infinite horizontal TPL embedded in background that is deemed impermeable for the frequencies of interest. We assume that this TPL-background system is defined in $\mathbb R^2$. In more detail, we consider that the TPL presents a bedding structure that consists of a few number of distinct beds that are poroelastic, homogeneous and isotropic (Figure \ref{fig.1}a). The proposed method can be deemed as an extension of the one introduced by \citeA{Favino2020}, albeit important differences regarding the extent of the sample considered as well as the volume over which strain and stress components are averaged. In the following, we first describe the aforementioned traditional homogenization method, then we present the pertinent modifications related to the proposed procedure. On the other hand, reflectivity computations using the obtained effective moduli are described in the Appendices. Before presenting the homogenization procedures,
+In this section we detail the proposed homogenization procedure to estimate the effective moduli of an infinite horizontal thin layer embedded in background that is deemed impermeable for the frequencies of interest.  
+%We assume that this thin layer-background system is defined in $\mathbb R^2$. 
+In more detail, we consider that the thin layer consists of a stack of few distinct beds which are poroelastic, homogeneous and isotropic (Figure \ref{fig.1}a). 
+The proposed homogenization procedure is based on the to the classical treatment described in \citeA{Favino2020} but incorporates substantial modifications with regards to
+the extent of the sample considered as well as the volume over which strain and stress components are averaged. For the proposed method, the sample includes part of the embedding background and the corresponding section of the thin layer. Then, after applying the oscillatory test, the averaging of stress and strains is performed only over the domain pertaining to the thin layer.
+ These novel adaptations allows
+incorporating the effect of the BC induced by the embedding background in the estimation of the effective moduli of the thin layer model considered. 
+On the other hand, reflectivity computations using the proposed poroelastic thin layer model  and its corresponding effective viscoelastic equivalent are detailed in Appendices A and B, respectively. Before presenting the proposed homogenization procedure,
 we detail theoretical aspects regarding the validity of the poroelastic-to-viscoelastic equivalence.
 
 \begin{figure}[!ht]
 \centering
-        \includegraphics[ width= 100mm, height=120mm]{TPL_combined.eps}
+        \includegraphics[ width= 120mm, height=70mm]{TPL_combined_sampleE.eps}
 \caption{ (a) Example of a layered TPL model consisting of four different poroelastic beds B1, B2, B3 and B4 that is embedded in impermeable background $\Lambda_1$ and $\Lambda_2$. The light blue boxes represent the samples $\Omega$ and $\Omega_e$ used for the traditional and proposed homogenization procedures, respectively. (b) Enlarged view of sample $\Omega$  used for the traditional homgenenization procedure. (c) Enlarged view of sample $\Omega_e$  used for the proposed homogenization procedure which incorporates part of the background $\Omega_{b1}$ and $\Omega_{b2}$ in the sample, where $\Omega_{b1} \subset \Lambda_1$ and $\Omega_{b1} \subset \Lambda_2$, respectively. $\Gamma$ denotes the boundaries of the respective samples, with  $\Gamma = \Gamma_1^+ \cup \Gamma_1^- \cup \Gamma_3^+ \cup \Gamma_3^-$.
 }
 \label{fig.1}
 \end{figure}
 
 \subsection{Mesoscale fluid pressure diffusion}
-WIFF occurs when a seismic wave propagating through a heterogeneous PM creates
+WIFF occurs when a seismic wave propagating through a heterogeneous poroelastic medium creates
 pressure gradients that equilibrate by fluid flow \cite{Muller2010}.
-We focus on WIFF that occurs between mesoscale heterogeneities since this is particularly relevant for seismic applications. Mesoscale heterogeneities refer to those with a characteristic size $L_m$ that are larger than the pore size $L_p$ but smaller than the wavelength $\lambda_w$. Specifically, for TPL with bedding structures, the size of mesoscale heterogeneity is related to the thickness of the TPL beds. Consequently the thickness of its beds must be much smaller than the wavelength.
-In particular, for sufficiently low frequencies $f$, WIFF is viscous-dominated and, therefore, controlled by fluid pressure diffusion (FPD). The reference frequency that indicates the transition from viscous-dominated towards inertial-dominated WIFF is Biot's characteristic frequency $f_B$ \cite{Biot1956, Dutta1979}:
+We focus on WIFF that occurs between mesoscale heterogeneities since this is particularly relevant for seismic applications. Mesoscale heterogeneities refer to those with a characteristic size $L_m$ that are larger than the pore size $L_p$ but smaller than the wavelength $\lambda_w$. Specifically, for thin layers consisting of a stack of beds, the size of the mesoscale heterogeneity is dictated by the thickness of such beds, which must be much smaller than the wavelength.
+For sufficiently low frequencies $f$, WIFF is viscosity-dominated and, therefore, controlled by fluid pressure diffusion (FPD). The reference frequency that indicates the transition from viscous-dominated towards inertial-dominated WIFF is Biot's characteristic frequency $f_B$ \cite{Biot1956, Dutta1979}
 \begin{linenomath*}
 \begin{equation}\label{Eq.1}
 f_B= \frac{1}{2 \pi} \frac{\eta \phi}{ \rho_f \kappa S },
@@ -287,7 +296,7 @@ f & \ll f_B.
 \end{split}
 \end{equation}
 \end{linenomath*}
-Under the established assumptions, it can be shown that the fluid pressure diffusion equation governing FPD stems from \citeauthor{Biot1941}'s \citeyear{Biot1941} quasi-static equations \cite{Dutta1979, Chandler1981, Norris1993}. The corresponding diffusion coefficient $D$  together with its characteristic diffusion length $L_d$ can be expressed as \cite{Norris1993}
+It can be shown that the fluid pressure diffusion equation governing FPD stems from \citeauthor{Biot1941}'s \citeyear{Biot1941} quasi-static equations \cite{Dutta1979, Chandler1981, Norris1993}. The corresponding diffusion coefficient $D$  together with its characteristic diffusion length $L_d$ can be expressed as \cite{Norris1993}
 \begin{linenomath*}
 \begin{equation}\label{Eq.3}
 \begin{split}
@@ -297,7 +306,7 @@ Under the established assumptions, it can be shown that the fluid pressure diffu
 \end{equation}
 \end{linenomath*}
 where $M$ is Biot’s fluid storage modulus, $H_d$ and $H$ are the drained and undrained plane-wave moduli, respectively, and $\omega$ is the angular frequency $\omega = 2 \pi f$.
-The required rock physical properties are calculated as
+The required rock physical properties are
 \begin{linenomath*}
 \begin{equation}\label{Eq.4}
 \begin{split}
@@ -311,23 +320,23 @@ The required rock physical properties are calculated as
 \end{linenomath*}
 where $\lambda_d$ is the the drained Lamé modulus, $\mu$ is the shear modulus, $\alpha$ is the Biot-Willis effective stress coefficient, $K_m$, $K_s$, and $K_f$ are the bulk moduli of the drained solid frame, the solid grains, and the pore fluid, respectively.
 
-The characteristic diffusion length $L_d$ together with the size of the heterogeneity $L_m$, e.g., thickness of the TPL beds, determine the relaxed and unrelaxed FPD regimes. The relaxed state occurs at sufficiently low frequencies, for which  $L_d \gg L_m$. In this regime, there is enough time for the pressure between the TPL beds to equilibrate. Conversely, the unrelaxed state occurs at sufficiently high frequencies, for which $L_d \ll L_m$ and, consequently, there is insufficient time for pressure equilibration to take place and, hence, the different beds of the TPL behave as are hydraulically isolated. A transition zone exists at intermediate frequencies for which $L_d \approx L_m$.
-This zone is associated with attenuation and dispersion of body waves due to viscous dissipation. The maximum dissipation energy is related to a characteristic transition frequency $f_c= \omega_c/2\pi$. Here, $\omega_c$ depends on the diffusion coefficient $D$ and the characteristic size of the heterogeneity $L_m$ \cite{Muller2006}
+The characteristic diffusion length $L_d$ together with the size of the heterogeneity $L_m$, e.g., thickness of the beds in the thin layer, determine the relaxed and unrelaxed FPD regimes. The relaxed state occurs at sufficiently low frequencies, for which  $L_d \gg L_m$. In this regime, there is enough time for the pressure between the beds to equilibrate. Conversely, the unrelaxed state occurs at sufficiently high frequencies, for which $L_d \ll L_m$ and, consequently, there is insufficient time for pressure equilibration to take place and, hence, the different beds behave as are hydraulically isolated. A transition zone exists at intermediate frequencies, for which $L_d \approx L_m$.
+This zone is associated with attenuation and dispersion of body waves due to viscous dissipation. The maximum dissipation energy is related to a characteristic transition frequency $f_c= \omega_c/2\pi$, which depends on the diffusion coefficient $D$ and the characteristic size of the heterogeneity $L_m$ \cite{Muller2006}
 \begin{linenomath*}
 \begin{equation}\label{Eq.5}
 \omega_c \propto \frac{D}{(L_m)^2}.
 \end{equation}
 \end{linenomath*}
 
-The described mesoscopic FPD process produces an effective viscoelastic behavior of the TPL under consideration. In more detail, the respective frequency-dependent  moduli that describe such a viscoelastic material can be estimated by solving \citeauthor{Biot1941}'s \citeyear{Biot1941} quasi-static equations over a sample of the TPL and then applying volume averaging of the inferred strains and stresses.
+The described mesoscopic FPD process produces an effective viscoelastic behavior of the thin layer under consideration. In more detail, the respective frequency-dependent  moduli that describe such a viscoelastic material can be estimated by solving \citeauthor{Biot1941}'s \citeyear{Biot1941} quasi-static equations over a representative sample of the thin layer and then applying volume averaging of the inferred strains and stresses.
 
-\subsection{Traditional homogenization procedure}
-As stated, traditional homogenization methods are not readily applicable to the case of a TPL with a few non-periodic beds. Nonetheless, for the sake of comparison, we first present the traditional procedure suggested by \citeA{Favino2020} 
-to homogenize a sample $\Omega \subset \mathbb R^2$ of the TPL of interest (Figures \ref{fig.1}a and and \ref{fig.1}b). Under this framework, the sample $\Omega$ is assumed to be periodic. 
+\subsection{Proposed homogenization procedure}
+We consider a thin layer that consists of a stack of few poroelastic beds, e.g. B1, B2, B3 and B4, that is embedded in the half spaces $\Lambda_1$ and $\Lambda_2$ which represent impermeable background (Figure \ref{fig.1}a). To find the homogenized viscoelastic moduli of the thin layer, we apply the homogenization procedure described below over a sample $\Omega_e = \Omega_p \,\cup \, \Omega_b$ (Figure\ref{fig.1}b), where $\Omega_p$ denotes a representative section of the thin  layer and where  $\Omega_b =\Omega_{b1}\, \cup \, \Omega_{b2}$ is a portion of the background, with $\Omega_{b1} \subset \Lambda_1$ and $\Omega_{b2} \subset \Lambda_2$, respectively. As already stated, this sampling strategy allows incorporating the boundary effects induced by the presence of the embedding background on the homogenized viscoelastic moduli.
+
 
 \subsubsection{Governing equations}
-We solve Biot's consolidation equations \cite{Biot1941, Biot1962} over a sample  $\Omega$ of the TPL of interest (Figures \ref{fig.1}a and \ref{fig.1}b) for each of the oscillatory relaxation tests specified in equations
-\eqref{Eq.8} to \eqref{Eq.11}. We express these equations in the solid displacement - pressure ($\bm{u}-p$) formulation in the frequency domain \cite{Quintal2011,Favino2020},  with $\bm{u} = \bm{u}(\bm{x}, \omega)$ and $p = p(\bm{x},\omega)$, where $\bm{x} \in \Omega$ is the position  and $\omega \in F$ is the angular frequency with $F =(0,W]$. 
+We solve Biot's consolidation equations \cite{Biot1941, Biot1962} over a sample  $\Omega_e$ of the thin layer of interest (Figures \ref{fig.1}a and \ref{fig.1}b) for each of the oscillatory relaxation tests specified in equations
+\eqref{Eq.8} to \eqref{Eq.11}. We express these equations in the solid displacement - pressure ($\bm{u}-p$) formulation in the frequency domain \cite{Quintal2011,Favino2020},  with $\bm{u} = \bm{u}(\bm{x}, \omega)$ and $p = p(\bm{x},\omega)$, where $\bm{x} \in \Omega$ is the position  and $\omega_e \in F$ is the angular frequency with $F =(0,W]$. 
 \begin{linenomath*}
 \begin{equation}\label{Eq.6}
 \begin{split}
@@ -354,7 +363,7 @@ and $\bm{I}$ the identity tensor.
 \subsubsection{Oscillatory relaxation tests}
 In this subsection we detail the BC for the oscillatory relaxation tests. 
 Hereinafter, we assume a Cartesian coordinate system in $\mathbb R^2$ with the associated basis vectors $\bm{\hat x_1}$ and $\bm{\hat x_3}$ parallel to the horizontal and vertical Cartesian axes, respectively. We also
-let the sample $\Omega$ be a quadrilateral with boundary $\Gamma = \Gamma_1^+ \cup \Gamma_1^- \cup \Gamma_3^+ \cup \Gamma_3^- $, where $\Gamma_1^+ $ and $\Gamma_1^- $ are opposite boundaries with outer normal vectors $\bm{\hat x_1}$ and $ -\bm{\hat x_1}$, respectively. Similarly, $\Gamma_3^+ $ and $\Gamma_3^- $ are opposite boundaries with outer normal vectors $\bm{\hat x_3}$ and $ -\bm{\hat x_3}$ (Figure \ref{fig.1}b). To simplify the notation, we let $ \bm{\hat n}$ be the outer normal vector
+let the sample $\Omega_e$ be a quadrilateral with boundary $\Gamma = \Gamma_1^+ \cup \Gamma_1^- \cup \Gamma_3^+ \cup \Gamma_3^- $, where $\Gamma_1^+ $ and $\Gamma_1^- $ are opposite boundaries with outer normal vectors $\bm{\hat x_1}$ and $ -\bm{\hat x_1}$, respectively. Similarly, $\Gamma_3^+ $ and $\Gamma_3^- $ are opposite boundaries with outer normal vectors $\bm{\hat x_3}$ and $ -\bm{\hat x_3}$ (Figure \ref{fig.1}b). To simplify the notation, we let $ \bm{\hat n}$ be the outer normal vector
 of $\Gamma$.
 
 In the following, we define periodic BC for displacements ($\bm{u}$), pressure ($p$), tractions ($\bm{\sigma}\cdot \bm{\hat n} $) and fluid flux relative to the solid ($\frac{\kappa}{\eta} \nabla p \cdot \bm{\hat n}$). We apply three different sets of displacement BC corresponding to the vertical and horizontal compression as well as the shear oscillatory relaxation tests. Here, we let $\Delta u$ be a real displacement difference in the frequency domain.
@@ -405,14 +414,12 @@ For all relaxation tests, the respective BC for pressure, tractions and fluid fl
 where the subscript $k$ in $\Gamma_k^-$ and $\Gamma_k^+$ takes the value of 1 or 3 at a time to denote opposite boundaries.
 
 \subsubsection{Homogenized viscoelastic moduli}
-In this subsection, we detail the steps to obtain the homogenized viscoelastic moduli from the three oscillatory relaxation tests. The first step consists in computing the average of the  stress and strain components over the sample $\Omega$. This is followed by an estimation of the equivalent viscoelastic moduli that best fit these values. In the following, we outline this procedure.
+In this subsection, we detail the steps to obtain the homogenized viscoelastic moduli from the three oscillatory relaxation tests. The first step consists in computing the average of the  stress and strain components. However, this computation is only performed over the sub-domain of interest $\Omega_p \subset \Omega_e$. This is followed by an estimation of the equivalent viscoelastic moduli that best fit these values. In the following, we outline this procedure.
 
-For every oscillatory test $t$ with $t = \{1,2,3\}$, we calculate, over the sample $\Omega$, the average  of the stress components $\langle \sigma_{ij}^t \rangle_{\Omega}$ and of the respective strain components $\langle \varepsilon_{ij}^t \rangle_{\Omega}$, with $i=\{1,3\}$ and $j=\{1,3\}$. The corresponding average quantities $\langle \Box \rangle_{\Omega}$ are computed as
+For every oscillatory test $t$ with $t = \{1,2,3\}$, we calculate, over the sub-domain $\Omega_p$, the average  of the stress components $\langle \sigma_{ij}^t \rangle_{\Omega_p}$ and of the respective strain components $\langle \varepsilon_{ij}^t \rangle_{\Omega_p}$, with $i=\{1,3\}$ and $j=\{1,3\}$. The corresponding average quantities $\langle \Box \rangle_{\Omega_p}$ are computed as
 \begin{linenomath*}
 \begin{equation}\label{Eq.12}
-\begin{split}
- &\langle \Box \rangle_{\Omega} = \frac{1}{\vert \Omega \vert} \int_{\Omega} \Box \, d\Omega, \qquad \text{with} \quad  \vert \Omega \vert = \int_{\Omega}  d\Omega.
-\end{split}
+  \langle \Box \rangle_{\Omega_p} = \frac{1}{\vert \Omega_p \vert} \int_{\Omega_p} \Box \, d\Omega_p, \qquad \text{with} \quad  \vert \Omega_p \vert = \int_{\Omega_p}  d \Omega_p.
 \end{equation}
 \end{linenomath*}
 
@@ -441,27 +448,27 @@ In Voigt's notation, the average strain and stress is related by the homogenized
 \end{linenomath*}
 Using this constitutive equation, a least squares minimization procedure is performed to find the best-fitting values of the viscoelastic moduli \cite{Rubino2016}. The obtained homogenized moduli are used for reflectivity calculations as further explained in Appendix B.
 
-\subsection{Proposed homogenization procedure}
-For this procedure, we take a sample $\Omega_e = \Omega_b \,\cup\, \Omega$ (Figures \ref{fig.1}a and \ref{fig.1}c) that includes part of the background rock $\Omega_b = \Omega_{b1}\, \cup \, \Omega_{b2} $ and the same TPL subdomain $\Omega$ used for the traditional procedure. After this, we apply the relaxation oscillatory tests on the sample $\Omega_e$. However, to find the effective moduli, we perform the average of stress and strain components only over the domain of interest  $\Omega$. We detail in the following the modifications with respect to the classical homogenization method.
-
-\begin{enumerate}
-\setlength\itemsep{1em}
-\item Governing Equations
-
-We use the same governing equations as expressed by Equations \eqref{Eq.6} and \eqref{Eq.7}. However, now we apply them over the domain $\Omega_e$. Thus, these governing equations are now valid $ \forall \, \bm{x} \in \Omega_e$.
-\\
-
-\item Oscillatory relaxation tests
-
-For this case, we let $\Gamma$ be the boundary of $\Omega_e$ with  $\Gamma = \Gamma_1^+ \,\cup \,\Gamma_1^- \,\cup \,\Gamma_3^+ \, \cup \, \Gamma_3^- $ (Figure \ref{fig.1}c).
-For the oscillatory relaxation tests, we consider the same set of BC: Equations \eqref{Eq.8} to \eqref{Eq.11}. 
-\\
-
-\item Homogenized viscoelastic moduli
-
-For each oscillatory relaxation test, we perform the averaging of stress and strain components as specified by Equation \eqref{Eq.12} over the subdomain of interest $\Omega \,\subset \, \Omega_e$. Finally, we find the viscoelastic moduli of $\Omega$, using the same procedure described in the traditional method. This is, we use the constitutive equation \eqref{Eq.14} and a minimization procedure that best fit the average strain and stress components \cite{Rubino2016}. 
-
-\end{enumerate}
+%\subsection{Proposed homogenization procedure}
+%For this procedure, we take a sample $\Omega_e = \Omega_b \,\cup\, \Omega$ (Figures \ref{fig.1}a and \ref{fig.1}c) that includes part of the background rock $\Omega_b = \Omega_{b1}\, \cup \, \Omega_{b2} $ and the same TPL subdomain $\Omega$ used for the traditional procedure. After this, we apply the relaxation oscillatory tests on the sample $\Omega_e$. However, to find the effective moduli, we perform the average of stress and strain components only over the domain of interest  $\Omega$. We detail in the following the modifications with respect to the classical homogenization method.
+%
+%\begin{enumerate}
+%\setlength\itemsep{1em}
+%\item Governing Equations
+%
+%We use the same governing equations as expressed by Equations \eqref{Eq.6} and \eqref{Eq.7}. However, now we apply them over the domain $\Omega_e$. Thus, these governing equations are now valid $ \forall \, \bm{x} \in \Omega_e$.
+%\\
+%
+%\item Oscillatory relaxation tests
+%
+%For this case, we let $\Gamma$ be the boundary of $\Omega_e$ with  $\Gamma = \Gamma_1^+ \,\cup \,\Gamma_1^- \,\cup \,\Gamma_3^+ \, \cup \, \Gamma_3^- $ (Figure \ref{fig.1}c).
+%For the oscillatory relaxation tests, we consider the same set of BC: Equations \eqref{Eq.8} to \eqref{Eq.11}. 
+%\\
+%
+%\item Homogenized viscoelastic moduli
+%
+%For each oscillatory relaxation test, we perform the averaging of stress and strain components as specified by Equation \eqref{Eq.12} over the subdomain of interest $\Omega \,\subset \, \Omega_e$. Finally, we find the viscoelastic moduli of $\Omega$, using the same procedure described in the traditional method. This is, we use the constitutive equation \eqref{Eq.14} and a minimization procedure that best fit the average strain and stress components \cite{Rubino2016}. 
+%
+%\end{enumerate}
 
 
 %*****************
@@ -627,7 +634,7 @@ Next, we test whether strain concentrations at the TPL boundaries are likely to 
         \includegraphics[width= 140mm, height=120mm]{strain_stress_sandfracw.eps}
 \caption{Maps of the real part of the vertical  stress component   obtained for TPL2 samples a) $\Omega_e$  and b) $\Omega$ (Figure \ref{fig.7}). Maps of the real part of the vertical strain  obtained for the same TPL2 samples c) $\Omega_e$  and d) $\Omega$. 
 The sample $\Omega_e$ incorporates background with a thickness that is half of the TPL2's.
-The maps are obtained after applying the vertical compressional oscillatory test for a frequency of 39.8 HZ.
+The maps are obtained after applying the vertical compressional oscillatory test for a frequency of 39.8 HZ.}
 \label{fig.9}
 \end{figure}
 
