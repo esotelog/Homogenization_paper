@@ -94,7 +94,7 @@
 %
 %% ------------------------------------------------------------------------ %%
 
-\title{On the homogenization of thin poroelastic layers for seismic reflectivity applications}
+\title{On the homogenization of poroelastic thin layers for seismic reflectivity applications}
 
 %% ------------------------------------------------------------------------ %%
 %
@@ -180,9 +180,10 @@
 
 
 \begin{abstract}
-Thin layers (TL) of interest can present an important mechanical contrast with the embedding background which is suitable for seismic reflectivity experiments. In many cases, such TL consist of heterogeneous structures with more than one saturating fluid, bestowing them a poroelastic character.  
-A simple, yet realistic thin poroelastic layer (TPL) model is the one consisting of a few number of  beds with distinct fluid and rock properties. Moreover, an efficient way to study the reflectivity response of such TPL is to employ its homogenized viscoelastic equivalent.
-Classical poroelastic-to-viscoelastic homogenization procedures rely on the existence of a periodic heterogeneous structure e.g., an ensemble of beds, that repeats sufficiently to ensure that its effective response is unaffected by external boundary conditions (BC). However the proposed TPL model does not present such periodic structure and, therefore, it is likely that the  BC induced by the embedding background affect the estimation of its effective viscoelastic moduli. Thus, we propose to account for the appropriate BC in the homogenization procedure.  Classical homogenization methodologies perform oscillatory relaxation tests over a sample of the repetitive structure, followed by the averaging of stress and strain components that are then used to estimate the effective moduli. We adapt such procedure to incorporate the BC induced by the embedding background that is considered impermeable. To this end, we apply the oscillatory relaxation tests on a sample that includes part of the background together with a portion of the TPL. Nonetheless, the averaging of stress and strain components is performed only over the TPL portion. To test the proposed method, we consider a TPL model consisting of two sand beds where the top sand is gas-saturated  and the bottom one is water-saturated. After estimating its  homogenized moduli, we use them to calculate the corresponding P-wave reflectivities. Then, we compare these results against the ones obtained using the TPL model. We also calculate reflectivities using the homogenized moduli obtained after applying a classical homogenization procedure.
+Thin layers  of interest often present prominent mechanical and/or hydraulic contrasts with the embedding background and, hence, are important targets for seismic reflection studies. We consider a simple, yet realistic thin layer  model that consists of a stack of few porous and permeable beds with distinct fluid and rock properties that is embedded in impermeable background.
+Such model allows representing thin layers of interest that are relevant for subsurface applications.  
+Moreover, an efficient way to study the reflectivity response of a porous thin layer is to employ its homogenized viscoelastic equivalent.
+Classical poroelastic-to-viscoelastic homogenization procedures rely on the existence of a periodic heterogeneous structure, for example, an ensemble of beds that repeats sufficiently to ensure that its effective response is unaffected by external boundary conditions (BC). However the considered thin layer model does not present such periodicity and, therefore, the estimation of its effective viscoelastic moduli is inherently affected by BC associated with the embedding background. Thus, we propose to account for the appropriate BC in the homogenization procedure.  Classical homogenization methodologies perform oscillatory relaxation tests over a representative sample of the repetitive structure, followed by the averaging of stress and strain components, which are then used to estimate the effective moduli. We adapt this procedure for our non-periodic thin layer model to incorporate the BC induced by the embedding background. To this end, we apply the oscillatory relaxation tests on a sample that includes part of the background while the averaging of stress and strain components is performed only over the thin layer section. To test the proposed method, we consider a TPL model consisting of two sand beds where the top sand is gas-saturated  and the bottom one is water-saturated. After estimating its  homogenized moduli, we use them to calculate the corresponding P-wave reflectivities. Then, we compare these results against the ones obtained using the TPL model. We also calculate reflectivities using the homogenized moduli obtained after applying a classical homogenization procedure.
 Results show that the moduli obtained using the proposed methodology reproduces closely the reflectivities of the TPL with errors below 4 \%. However, The reflectivity results using  the moduli obtained after applying the traditional procedure shows deviations as large as 60 \%. The proposed implementation of BC allows the homogenization of more realistic TPL models. This methodology can be readily extended to TPL presenting more complex structures. 
 \end{abstract}
 
@@ -659,8 +660,8 @@ The maps are obtained after applying the vertical compressional oscillatory test
 
 \begin{figure}[!ht]
 \centering
-        \includegraphics[width= 120mm, height=75mm]{rpp_2sandfracw.eps}
-\caption{ Absolute value of the PP reflection coefficients as a function of frequency for several angles of incidence calculated for the models using the homogenized medium obtained after applying the proposed homogenization procedure on a a sample $\Omega_e $ (curves that include the acronym HM2) and the one that uses a sample $Omega_p$ and imposes no-flow BC on the relevant boundaries (curves that include the acronym HM2-nf).}
+        \includegraphics[width= 120mm, height=60mm]{rpp_2sandfracw.eps}
+\caption{ Absolute value of the PP reflection coefficients as a function of frequency for several angles of incidence calculated for the models using the homogenized medium obtained after applying the proposed homogenization procedure on a a sample $\Omega_e $ (curves that include the acronym HM2) and the one that uses a sample $\Omega_p$ and imposes no-flow BC on the relevant boundaries (curves that include the acronym HM2-nf).}
 \label{fig.10}
 \end{figure}
 
@@ -674,24 +675,45 @@ To compare the effect that the estimated moduli have on  reflectivity, we presen
 %Although, computations of the TPL2 reflectivities can be performed applying numerical methods, we consider that th
 In this section, we have shown that for the homogenization of poroelastic thin layer models consisting of a stack of few homogeneous beds and that are embedding in impermeable background, it is sufficient to impose the no-flow BC on the relevant boundaries of a sample that takes only a representative section of the thin layer to find a good estimation of the corresponding effective viscoelastic moduli. Nevertheless, this is no longer the case for poroelastic thin layer models that consider more complex geometries which can create stress-strain concentrations at the thin layer boundaries. For these latter cases, evidence suggests that the proposed homogenization methodology reproduces more reasonably the expected regions of  stress-strain concentrations and therefore it is likely to yield better estimates of the corresponding effective moduli.poroelastic thin layer models
 
-\subsection{Impermeability of the background}
+\subsection{Effect of the background permeability}
 
 \begin{figure}[!ht]
 \centering
         \includegraphics[width= 120mm, height=80mm]{cijkbg_2sandshale.eps}
-\caption{ Absolute value of the PP reflection coefficients as a function of frequency for several angles of incidence calculated for the models using the homogenized medium obtained after applying the proposed homogenization procedure on a a sample $\Omega_e $ (curves that include the acronym HM2) and the one that uses a sample $Omega_p$ and imposes no-flow BC on the relevant boundaries (curves that include the acronym HM2-nf).}
-\label{fig.10}
+\caption{ Effective moduli as a function of frequency obtained after applying the proposed homogenization method to samples $\Omega_e$ of the poroelastic thin layer considered in the Results section. The samples include background with different permeabilities $\kappa$.}
+\label{fig.11}
 \end{figure}
-
-\section{Conclusions}
-We have proposed an homogenization approach that incorporates the appropriate BC to estimate the effective moduli of a layered TPL model that do not present a periodic bedding structure and that is embedded in impermeable background.  The results show that the proposed implementations yields effective moduli capable to closely reproduce the exact reflectivity of layered TPL with errors below 4 \%. In contrast, the effective moduli obtained under the traditional consideration of periodicity renders reflectivity results with larger deviations that rise up to 60 \%. We  have also shown  that, for the studied case of layered TPL with homogenous beds, a no-flow condition is the main constraint imposed  by the impermeable background. However, this is no longer the case for TPL models that include heterogeneities that induce strain concentrations close to the TPL boundaries. For such cases, our study suggests that the proposed homogenization procedure yields better estimates of the moduli. Overall, this implies that the proposed homogenization methodology can be applied to models of TPL presenting more complex arrangements of heterogeneities.
 
 \begin{figure}[!ht]
 \centering
-        \includegraphics[width= 120mm, height=120mm]{rppkbg_2sandshale.eps}
-\caption{ (a) Absolute value of the PP reflection coefficients as a function of frequency for several angles of incidence calculated   (b) Percentage errors of the absolute values of the PP reflection coefficients as a function of frequency calculated y}
-\label{fig.3}
+        \includegraphics[width= 120mm, height=140mm]{pressure_kbg.eps}
+\caption{Maps of the real part of the pressure obtained after applying the vertical compressional oscillatory test at 10 Hz to samples $\Omega_e$ of the thin layer model used in the Results section. This samples include background with a thickness that is half of the thickness of the thin layer and with permeabilities $\kappa$ equal to a)$10^{-12}$ D, b)$10^{-6}$ D, c)$10^{-3}$ D and d)$10^{-2}$ D. }
+\label{fig.12}
 \end{figure}
+
+For this study we have assumed that the background embedding the poroelastic thin layer is impermeable for the frequencies of interest. This assumption ensures that FPD effects and the induced effective dispersive behavior of P-and S-waves are confined within the thin layer. This feature is particular amenable for finding the corresponding effective viscoelastic equivalent capable of reproducing the reflectivity response of the poroelastic thin layer, as it has been shown in the current study. On the other hand, considering an impermeable background renders the modeling computational efficient since it allows using the elastic framework. Nonetheless, the pending questions is regarding an appropriate permeability threshold of the embedding background that can still warrant that the aforementioned assumptions are met for the seismic frequencies of interest. Thus, in the following, we investigate up to which extent the permeability of the background can be decreased in such a way that it can be still considered impermeable.
+% Meaning that, for such permeabilities, FPD effects induced at the background-thin layer interfaces are not relevant for the frequency range considered.
+ To this end, we consider the same thin layer model as used in the Results section. However, for this case we assume that the permeability of the embedding background takes lower values of $10^{-6}$ D, $10^{-3}$ D and $10^{-2}$ D than the previously assigned ($10^{-12}$ D, Table \ref{table.1}). Then we apply the proposed homogenization procedure to samples that consider a background thickness that is half of the thin layer thickness. 
+
+Figure \ref{fig.11} shows effective moduli as a function of frequency obtained after applying the proposed homogenization method to samples that consider background with different permeabilities $\kappa$. For comparison, we also present the moduli obtained with the same background permeability of $10^{-12}$ D considered in the Results section.
+Results show that the moduli obtained with the two lowest background permeabilities of $10^{-12}$ D and $10^{-6}$ D overlay for practical purposes, indicating that the assumption of an impermeable background holds for these permeabilities. In contrast, there are increasingly visible differences, with respect to the reference moduli, ($\kappa = 10^{-12}$ D for those moduli obtained using background permeabilities that take the lower values of  $10^{-3}$ D  and $10^{-2}$ D, respectively, revealing that FPD effects between the background and poroelastic thin layer interfaces become progressively stronger. This is specially evident for frequencies below 100 Hz, in which the relaxed and the transition FPD regimes prevail. To further investigate the effect of the background permeability on FPD effects with the adjacent poroelastic thin layer, we analyze the maps of the real part of the pressure (Figure \ref{fig.12}) obtained after applying the vertical compression test at 10 Hz to samples that include background with the permeabilities shown in Figure \ref{fig.11}.
+Notice that the maps corresponding to the background permeabilities of $10^{-12}$ D (Figure \ref{fig.11}a) and $10^{-6}$ D (Figure \ref{fig.11}b) show an abrupt jump of pressure at the background-thin layer interfaces. This is the outcome of the impermeable character of the background that isolates the hydraulic communication with the thin layer. 
+However, as the background permeability takes the lower values of $10^{-3}$ D (Figure \ref{fig.11}d) and $10^{-3}$ D (Figure \ref{fig.11}e), respectively, the pressure change at the interfaces becomes less sharp. Indeed, the maps show an increasingly larger pressure transition zone that takes place at the background side of the corresponding interfaces as the background permeability increases. 
+This pressure transition zone is a consequence of FPD occurring between the background and the thin layer as a result of the hydraulic communication between them. In this case, the fluid flows from the more pressurized background towards the less pressurized thin layer producing the decrease of pressure observed at the background side of the corresponding interfaces. On the other hand, this background-thin layer FPD effect implies that the proposed homogenization procedure is not directly applicable because we can no longer assume that a viscoelastic behavior is confined within the thin layer region since, in reality, this viscoelastic character extends beyond the thin layer boundaries due to such FPD effect. However, background rocks of interest are for instance shale and crystalline rocks in their intact state. These rocks can exhibit permeabilities in the range of nano ( $10^{-6}$) to micro ( $10^{-9}$) Darcies  \cite<e.g.,>{Mitchell2012, Fisher2017, Wenning2018, Zhao2018} which, as suggested by the current analysis, can be considered as impermeable backgrounds for the seismic frequencies of interest.
+
+
+%\begin{figure}[!ht]
+%\centering
+%        \includegraphics[width= 120mm, height=120mm]{rppkbg_2sandshale.eps}
+%\caption{ (a) Absolute value of the PP reflection coefficients as a function of frequency for several angles of incidence calculated   (b) Percentage errors of the absolute values of the PP reflection coefficients as a function of frequency calculated y}
+%\label{fig.13}
+%\end{figure}
+
+
+\section{Conclusions}
+We have proposed a homogenization approach that incorporates the appropriate BC to estimate the effective moduli of thin layers embedded in impermeable background and that are composed of a stack of few poroelastic beds with distinct fluid and rock properties. This is accomplished by first, taking a sample that incorporates a portion of the background and a representative section of the thin layer and second, by performing the averaging of stress and strain components only over the thin layer section of interest.
+The results show that the proposed methodology yields effective moduli capable to closely reproduce the reflectivity of such thin layers. In contrast, the effective moduli obtained under the traditional consideration of periodicity renders reflectivity results with larger errors. We  have also shown that for thin layers presenting beds with homogeneous properties, it is possible to disregard the background in the sample and replace its influence by a no-flow BC. However, this is no longer the case for thin layers that present heterogeneities with sharp edges close to their boundaries since they induce stress-strain concentrations that cannot be accounted by just imposing a no-flow BC. For such cases, our study suggests that the proposed homogenization procedure yields more reasonable estimates of the effective moduli, which implies that this methodology can be applied to strongly heterogenous poroelastic thin layers. On the other hand, our study also suggests that to ensure the validity of the proposed homogenization method, the background must behave as impermeable for the frequencies of interest; otherwise additional background-thin layer FPD effects can enlarge the viscoelastic region beyond the thin layer boundaries. However, it is very likely that common background rocks with permeabilities in the $\mu$D order and lower comply with this requirement.
+
 
 
 % Appendix
@@ -735,7 +757,7 @@ where $\rho_s$ is the density of the solid grain and $\kappa_d(\omega)$ is the d
     \kappa_d(\omega)=\kappa \left(\sqrt{1 + \frac{4 i \omega}{n_j \omega_B} }+ \frac{i \omega}{\omega_B}   \right) ^{-1}.
 \end{equation}
 \end{linenomath*}
-Here, $\omega_B$ is  Biot's angular characteristic frequency $\omega_B = 2 \pi f_B$, with $f_B$ as defined in equation \ref{Eq.1} and $n_j$ is a pore geometry parameter. According to numerical and experimental studies \cite<e.g.,>{Charlaix1988, Sheng1988, Smeulders1992}, $n_j$ = 8 is a reasonable approximation for most porous media.
+Here, $\omega_B$ is  Biot's angular characteristic frequency $\omega_B = 2 \pi f_B$, with $f_B$ defined in equation \ref{Eq.1}, and $n_j$ is a pore geometry parameter. According to numerical and experimental studies \cite<e.g.,>{Charlaix1988, Sheng1988, Smeulders1992}, $n_j$ = 8 is a reasonable approximation for most porous media.
 
 To formulate the elastic wave equation, we let $\bm{u}^e=\bm{u}^e (\bm{x},\omega)$ be the displacement vector for any position $\bm{x} \in n$ with $n = \{\Lambda_1,\Lambda_2\}$  and angular frequency $\omega \in I$, with $I =(0,W]$. We also let $\bm{\sigma}^e$ be the stress tensor field acting upon the medium. Then, we express the corresponding equation of motion as
 \begin{linenomath*}
@@ -751,9 +773,9 @@ The associated constitutive equation is given by
 \end{linenomath*}
  
 \subsection{Solution for displacements}
-We assume that a P-wave propagates downwards, with wavevector components in $\bm{\hat x_1}$ and  $\bm{\hat x_3}$, and strikes the interface $\Pi_1$.  Then,  in the elastic half spaces $n$ with $n =\{\Lambda_1,\Lambda_2\}$, the propagating modes  are P- and S-waves. In the poroelastic layers $z$, with $z=\{\Omega_{p1},\dots,\Omega_{pm}\}$, fast P-, slow P- and S-waves are present.
+We assume that a P-wave propagates downwards, with wavevector components in $\bm{\hat x_1}$ and  $\bm{\hat x_3}$, and strikes the interface $\Pi_1$.  Then, in the elastic half spaces $n$, with $n =\{\Lambda_1,\Lambda_2\}$, the propagating modes  are P- and S-waves. In the poroelastic layers $z$, with $z=\{\Omega_{p1},\dots,\Omega_{pm}\}$, fast P-, slow P- and S-waves are present.
 
-For a given poroelastic layer $z$, we express the total solid displacement $\bm{u}_z^p$  and relative fluid displacement $\bm{w}_z$ as
+For a given poroelastic layer $z$, we write the total solid displacement $\bm{u}_z^p$  and relative fluid displacement $\bm{w}_z$ as
 \begin{linenomath*}
 \begin{equation}\label{Eq.a7}
 \begin{split}
@@ -793,7 +815,7 @@ For $n =\Lambda_1 $,  $j_1 = \{U_P,\,D_P\}$,  while for $n =\Lambda_2 $, $j_1 = 
 \end{split}
 \end{equation}
 \end{linenomath*}
-where $E_{n\,j_1}$ and $E_{n\,j_2}$ are the amplitudes for the escalar and vector potentials, respectively and $\bm{k}_{n \,j_1}$ and $\bm{k}_{n\, j_2}$ are the wavenumber vectors for the P- and S-waves, respectively. The wavenumber vectors can be expressed as $\bm{k}_{n j} = k_{nj} \, \bm{\hat {k}_{nj}}$, where $\bm{\hat {k}_{n\, j}}$ is the unit wavenumber vector and $k_{n\,j}$ is the scalar wavenumber for the corresponding wave $j$. This latter depends only on the properties of the medium and on the wave type, that is P or S. The scalar wavenumber can be expressed as
+where $E_{n\,j_1}$ and $E_{n\,j_2}$ are the amplitudes for the escalar and vector potentials, respectively and $\bm{k}_{n \,j_1}$, and $\bm{k}_{n\, j_2}$ are the wavenumber vectors for the P- and S-waves, respectively. The wavenumber vectors can be expressed as $\bm{k}_{n j} = k_{nj} \, \bm{\hat {k}_{nj}}$, where $\bm{\hat {k}_{n\, j}}$ is the unit wavenumber vector and $k_{n\,j}$ is the scalar wavenumber for the corresponding wave $j$. This latter depends only on the properties of the medium and on the wave type, that is, P or S. The scalar wavenumber can be written as
 \begin{linenomath*}
 \begin{equation}\label{Eq.a11}
 \begin{split}
@@ -852,7 +874,7 @@ where $B_{z\,r1}$ and $W_{z\,r1}$ are the amplitudes of the scalar potentials co
 \bm{k}_{zr}= \bm{\varkappa}_{zr} - i\, \bm{\alpha}_{zr},
 \end{equation}
 \end{linenomath*}
-where $\bm{\alpha}_{zr}$ is the attenuation vector which has only a component in $\bm{\hat{x}_3}$ and $\bm{\varkappa}_{zr}$ is the real wavenumber vector. This latter can be expressed as $\bm{\varkappa}_{zr} = \varkappa_{zr} \bm{\hat{\varkappa}}_{zr}$, where $\varkappa_{zr}$ and $\bm{\hat{\varkappa}}_{zr}$  are the  real wavenumber and unit vector, respectively. For a given incidence angle at the upper half-space - poroelastic interface, we have by Snell's law that the horizontal component of the real wavevectors of the subsequent media is equal to that of the incident wave $p_i$. This is $p_i = \bm{k}_{nj} \cdot \bm{\hat{x}_1} =\bm{\varkappa}_{zr} \cdot \bm{\hat{x}_1} = \varkappa_{zr} \sin(\theta_{zr})$, where $\theta_{zr}$ is the angle of the real wave vector with respect to the vertical. 
+where $\bm{\alpha}_{zr}$ is the attenuation vector which has only a component in $\bm{\hat{x}_3}$ and $\bm{\varkappa}_{zr}$ is the real wavenumber vector. This latter can be expressed as $\bm{\varkappa}_{zr} = \varkappa_{zr} \bm{\hat{\varkappa}}_{zr}$, where $\varkappa_{zr}$ and $\bm{\hat{\varkappa}}_{zr}$  are the  real wavenumber and unit vector, respectively. For a given incidence angle striking at the interface between the upper half-space and the top most poroelastic layer, Snell's law states that the horizontal component of the real wavevector of the traveling waves are equal to that of the incident wave $p_i$. This is $p_i = \bm{k}_{nj} \cdot \bm{\hat{x}_1} =\bm{\varkappa}_{zr} \cdot \bm{\hat{x}_1} = \varkappa_{zr} \sin(\theta_{zr})$, where $\theta_{zr}$ is the angle of the real wave vector with respect to the vertical. 
 We express the missing vertical component of the complex wavenumber vector as follows: $\bm{k}_{zr} \cdot \bm{\hat{x}_3}= \varkappa_{zr}\cos (\theta_{zr}) - i\, \alpha_{zr}$, where $\alpha_{zr}$
 is the attenuation factor. Following \citeA{Borcherdt1982} we find
 \begin{linenomath*}
@@ -866,7 +888,7 @@ is the attenuation factor. Following \citeA{Borcherdt1982} we find
 where $k_{zr}$ is the complex wavenumber of the wave $r$, which depends on the wave type, that is P1, P2 or S, and the associated rock physical properties \cite{Borcherdt1973, Borcherdt1982}. To calculate the corresponding values, we follow the procedure employed by \citeA{Barbosa2016}.
 
 \subsection{PP reflection coefficients}
-If we assume that the amplitude of the incident P-wave is one, then the reflection coefficient $R_{PP}$ at the upper half-space is equal to $E_{\Lambda_1\, UP}$ (equation \eqref{Eq.a10}). To solve for the unknown amplitudes, we assemble a set of equations by imposing suitable continuity conditions at the media interfaces.
+If we assume that the amplitude of the incident P-wave is one, then the reflection coefficient $R_{PP}$ at the upper half-space is equal to $E_{\Lambda_1\, UP}$ (equation \eqref{Eq.a10}). To solve for the unknown amplitudes, we assemble a set of equations by imposing suitable continuity conditions at the interfaces.
 In this regard, we distinguish two types of interfaces: elastic-poroelastic and purely poroelastic ones. At the elastic-poroelastic interfaces $\Pi_q$, with  $q=1$ and $q=m+1$, where $m$ is the number of poroelastic layers,
 we impose continuity of solid displacements and tractions and we set to zero the relative fluid displacements \cite{Deresiewicz1963}
 \begin{linenomath*}
@@ -900,7 +922,7 @@ To complete the system of equations, we express the amplitudes of the relative f
 \section{PP reflectivity at an elastic-viscoelastic interface}
 \subsection{Governing equations}
 We assume a  domain in $\mathbb R^2$ consisting of an anisotropic viscoelastic layer $\Omega_v$  
-embedded in the same elastic half-spaces $\Lambda_1$ and $\Lambda_2$ as presented in Appendix A. We denote as $\Pi_1$ to the interface between the viscoelastic layer $\Omega_v$ and the upper half-space $\Lambda_1$ and as $\Pi_2$ to the interface between the viscoelastic layer $\Omega_v$ and the lower half-space $\Lambda_2$.
+embedded in the same elastic half-spaces $\Lambda_1$ and $\Lambda_2$ as in Appendix A. We denote as $\Pi_1$ to the interface between the viscoelastic layer $\Omega_v$ and the upper half-space $\Lambda_1$ and as $\Pi_2$ to the interface between the viscoelastic layer $\Omega_v$ and the lower half-space $\Lambda_2$.
  
 To compute the reflection coefficients, we formulate the corresponding viscoelastic and elastic wave equations in the space-frequency domain. To specify the viscoelastic wave equation,  we let $\bm{u}^v =\bm{u}^v( \bm{x}, \omega)$  be the solid displacement vector for any position $\bm{x} \in \Omega_v$  and angular frequency $\omega \in I$, with $I =(0,W]$. Moreover, we let $\bm {\sigma}^v$, be the stress which acts upon the viscoelastic medium. Then, we express the corresponding equation of motion as
 \begin{linenomath*}
@@ -909,7 +931,7 @@ To compute the reflection coefficients, we formulate the corresponding viscoelas
 \end{equation}
 \end{linenomath*}
 where $\rho_b^v$ is the bulk density of the viscoelastic medium.
-Assuming Voigt's notation, the associated constitutive equation can be expressed as
+Assuming Voigt's notation, the associated constitutive equation can be written as
 \begin{linenomath*}
 \begin{equation}\label{Eq.b2}
 \setlength{\jot}{10pt}
@@ -939,7 +961,7 @@ Assuming Voigt's notation, the associated constitutive equation can be expressed
 The equations for the elastic wave and its constitutive relation are those presented in equations \eqref{Eq.a5} and \eqref{Eq.a6}.
 
 \subsection{Solution for displacements}
-We assume that an incident P-wave propagates downwards, with wavevector components in $\bm{\hat x_1}$ and  $\bm{\hat x_3}$, and strikes the interface $\Pi_1$. Then, the propagating modes present in the elastic media $\Lambda_1$ and $\Lambda_2$ are P- and S-waves. In the viscoelastic medium $\Omega_v$ quasi-P- (qP)  and quasi-S- (qS) body waves are present. 
+We assume that an incident P-wave propagates downwards, with wavevector components in $\bm{\hat x_1}$ and  $\bm{\hat x_3}$, and strikes the interface $\Pi_1$. Then, the propagating modes present in the elastic media $\Lambda_1$ and $\Lambda_2$ are P- and S-waves. In the viscoelastic medium $\Omega_v$ quasi-P (qP)  and quasi-S (qS) body waves are present. 
 Then, to find the total displacements in each medium, we sum the displacements produced by the corresponding propagating waves.
 
 For the viscoelastic medium $\Omega_v$, the total displacement $\bm{u}^v$ is
@@ -948,7 +970,7 @@ For the viscoelastic medium $\Omega_v$, the total displacement $\bm{u}^v$ is
 \bm{u}^v=  \sum_r \bm{u}_{r}^v.
 \end{equation}
 \end{linenomath*}
-Here  $r=\{D_{qP},\,U_{qP},\, D_{qS},\,U_{qS}\}$, where subscripts $qP$ and $qS$ refer to $qP$- and $qS$-waves.
+Here, $r=\{D_{qP},\,U_{qP},\, D_{qS},\,U_{qS}\}$, where subscripts $qP$ and $qS$ refer to $qP$- and $qS$-waves.
 For the elastic half-spaces, the corresponding total displacements have been already detailed in equation \eqref{Eq.a8}.
 
 We propose plane wave solutions for the displacements. For the elastic media they take the following form
@@ -969,14 +991,14 @@ For the viscoelastic medium $\Omega_v$, the plane wave solution takes the form
 \end{equation}
 \end{linenomath*}
 where $V_r$ is the amplitude of the plane wave, $\bm{k}_r$ is the complex wavenumber vector and $\bm{\hat {u}}_r$ is the wave polarization unit vector. In viscoelastic media, plane waves are in general inhomogeneous,
-meaning that, the real wavenumber vector $\bm{\varkappa}_r $  is not parallel to the attenuation vector $\bm{\alpha}_r$.  In a smilar way to equation \eqref{Eq.a16}, the complex wavenumber vector can be expressed as
+meaning that the real wavenumber vector $\bm{\varkappa}_r $  is not parallel to the attenuation vector $\bm{\alpha}_r$.  In a smilar way to equation \eqref{Eq.a16}, the complex wavenumber vector can be expressed as
 \begin{linenomath*}
 \begin{equation}\label{Eq.b6}
 \bm{k}_r= \bm{\varkappa}_r - i\, \bm{\alpha}_r.
 \end{equation}
 \end{linenomath*}
 We can also express the real wavenumber vector as $\bm{\varkappa}_r = {\varkappa}_r \, \bm{\hat{\varkappa}}_r $, where $\bm{\hat{\varkappa}}_r$ and ${\varkappa}_r$ are the real unit vector and  wavenumber, respectively. This latter can be related to the $r$-wave velocity $v_r$ as follows: ${\varkappa}_m = \omega/v_r$.
-Furthermore, for the present model, the presence of elastic half-spaces together with Snell's law implies that the horizontal component of the wavenumber vector is real. As a consequence, the attenuation vector $\bm{\alpha}_r$ has only a vertical component. Then, for a given incidence angle at the upper elastic half-space - viscoelastic interface, Snell's law stipulates that the horizontal component of the wavevectors of the subsequent media is equal to that of the incident wave $p_i$, that is, $p_i = \bm{\varkappa}_{r} \cdot \bm{\hat{x}_1} = \bm{k}_{nj} \cdot \bm{\hat{x}_1}$.
+Furthermore, for the present model, the presence of elastic half-spaces together with Snell's law implies that the horizontal component of the wavenumber vector is real. As a consequence, the attenuation vector $\bm{\alpha}_r$ has only a vertical component. Then, for a given incidence angle at the interface between the upper elastic half-space and the viscoelastic medium, Snell's law stipulates that the horizontal component of the wavevectors of the subsequent of the propagating waves are equal to that of the incident wave $p_i$, that is, $p_i = \bm{\varkappa}_{r} \cdot \bm{\hat{x}_1} = \bm{k}_{nj} \cdot \bm{\hat{x}_1}$.
 
 On the other hand,  the missing vertical component  $k_3=\bm{k}_r\cdot \bm{\hat{x}_3}$ of the wavevector $\bm{k}_r$ and the corresponding polarization vector $\bm{\hat{u}}$ of waves propagating in the viscoelastic medium can be found by solving the equation that arises after substituting equations \eqref{Eq.b2} and \eqref{Eq.b5} into \eqref{Eq.b1}. Here, without loss of generality, we assume that the amplitude $V_r$ is equal to 1. We also drop the subscript $r$. Then, the equation to solve is
 \begin{linenomath*}
@@ -1003,7 +1025,7 @@ Here, indices take values of 1 and 3, and $\left(\cdot\right)^*$ denotes complex
 Furthermore, $C_{ijkl}$ are the components of the stiffness tensor. The conversion of the indices of the sitffness tensor from tensorial to  Voigt notation is as follows:  pair of indices  $ij$ or $kl$ with values $11$, $13$, $31$ and $33$ convert to a single indices $1$, $5$, $5$ and $3$, respectively. For instance, $C_{3113}$ in tensorial notation is equivalent to $C_{55}$ in Voigt notation.
 
 \subsection{PP Reflection coefficients}
-As in the procedure applied in Appendix A, we assume that the amplitude of the incident P-wave is one and, hence, the reflection coefficient $R_{PP}$ at the upper half-space is then equal to $E_{\Lambda_1\, UP}$ (equation \eqref{Eq.b4}). To solve for the unknown amplitudes, we assemble a set of equations by imposing continuity of displacements and tractions at the elastic-viscoelastic interfaces $\Pi_q$ with $q=1,2$
+As in in Appendix A, we assume that the amplitude of the incident P-wave is one and, hence, the reflection coefficient $R_{PP}$ at the upper half-space is then equal to $E_{\Lambda_1\, UP}$ (equation \eqref{Eq.b4}). To solve for the unknown amplitudes, we assemble a set of equations by imposing continuity of displacements and tractions at the elastic-viscoelastic interfaces $\Pi_q$ with $q=1,2$
 \begin{linenomath*}
 \begin{equation}\label{Eq.b10}
 \begin{split}
@@ -1194,7 +1216,7 @@ The data used to create the figures containing the results of this study are ava
 % AGU does not normally allow dedications.
 
 \acknowledgments
-This work is supported by grant number 200020-178946 from the Swiss National Science Foundation and has been completed within the Swiss Competence Center on Energy Research – Supply of Electricity, with the support of Innosuisse. J. G. R. gratefully acknowledges the financial support received from the Agencia Nacional de Promoción Científica y Tecnológica of Argentina (PICT 2017-2976).
+This work is supported by grant number 200020-178946 from the Swiss National Science Foundation. J. G. R. gratefully acknowledges the financial support received from the Agencia Nacional de Promoción Científica y Tecnológica of Argentina (PICT 2017-2976).
 %% ------------------------------------------------------------------------ %%
 %% References and Citations
 
