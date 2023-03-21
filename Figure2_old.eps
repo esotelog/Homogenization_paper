@@ -1,0 +1,5317 @@
+%!PS-Adobe-3.0 EPSF-3.0
+%Produced by poppler pdftops version: 20.10.0 (http://poppler.freedesktop.org)
+%%Creator: \050MATLAB, The Mathworks, Inc. Version 9.6.0.1072779 \\(R2019a\\). Operating System: Windows 10)
+%%LanguageLevel: 2
+%%DocumentSuppliedResources: (atend)
+%%BoundingBox: 0 0 508 413
+%%HiResBoundingBox: 0 0 508 413
+%%DocumentSuppliedResources: (atend)
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset xpdf 3.00 0
+%%Copyright: Copyright 1996-2011 Glyph & Cog, LLC
+/xpdf 75 dict def xpdf begin
+% PDF special state
+/pdfDictSize 15 def
+/pdfSetup {
+  /setpagedevice where {
+    pop 2 dict begin
+      /Policies 1 dict dup begin /PageSize 6 def end def
+      { /Duplex true def } if
+    currentdict end setpagedevice
+  } {
+    pop
+  } ifelse
+} def
+/pdfSetupPaper {
+  % Change paper size, but only if different from previous paper size otherwise
+  % duplex fails. PLRM specifies a tolerance of 5 pts when matching paper size
+  % so we use the same when checking if the size changes.
+  /setpagedevice where {
+    pop currentpagedevice
+    /PageSize known {
+      2 copy
+      currentpagedevice /PageSize get aload pop
+      exch 4 1 roll
+      sub abs 5 gt
+      3 1 roll
+      sub abs 5 gt
+      or
+    } {
+      true
+    } ifelse
+    {
+      2 array astore
+      2 dict begin
+        /PageSize exch def
+        /ImagingBBox null def
+      currentdict end
+      setpagedevice
+    } {
+      pop pop
+    } ifelse
+  } {
+    pop
+  } ifelse
+} def
+/pdfStartPage {
+  pdfDictSize dict begin
+  /pdfFillCS [] def
+  /pdfFillXform {} def
+  /pdfStrokeCS [] def
+  /pdfStrokeXform {} def
+  /pdfFill [0] def
+  /pdfStroke [0] def
+  /pdfFillOP false def
+  /pdfStrokeOP false def
+  /pdfLastFill false def
+  /pdfLastStroke false def
+  /pdfTextMat [1 0 0 1 0 0] def
+  /pdfFontSize 0 def
+  /pdfCharSpacing 0 def
+  /pdfTextRender 0 def
+  /pdfPatternCS false def
+  /pdfTextRise 0 def
+  /pdfWordSpacing 0 def
+  /pdfHorizScaling 1 def
+  /pdfTextClipPath [] def
+} def
+/pdfEndPage { end } def
+% PDF color state
+/cs { /pdfFillXform exch def dup /pdfFillCS exch def
+      setcolorspace } def
+/CS { /pdfStrokeXform exch def dup /pdfStrokeCS exch def
+      setcolorspace } def
+/sc { pdfLastFill not { pdfFillCS setcolorspace } if
+      dup /pdfFill exch def aload pop pdfFillXform setcolor
+     /pdfLastFill true def /pdfLastStroke false def } def
+/SC { pdfLastStroke not { pdfStrokeCS setcolorspace } if
+      dup /pdfStroke exch def aload pop pdfStrokeXform setcolor
+     /pdfLastStroke true def /pdfLastFill false def } def
+/op { /pdfFillOP exch def
+      pdfLastFill { pdfFillOP setoverprint } if } def
+/OP { /pdfStrokeOP exch def
+      pdfLastStroke { pdfStrokeOP setoverprint } if } def
+/fCol {
+  pdfLastFill not {
+    pdfFillCS setcolorspace
+    pdfFill aload pop pdfFillXform setcolor
+    pdfFillOP setoverprint
+    /pdfLastFill true def /pdfLastStroke false def
+  } if
+} def
+/sCol {
+  pdfLastStroke not {
+    pdfStrokeCS setcolorspace
+    pdfStroke aload pop pdfStrokeXform setcolor
+    pdfStrokeOP setoverprint
+    /pdfLastStroke true def /pdfLastFill false def
+  } if
+} def
+% build a font
+/pdfMakeFont {
+  4 3 roll findfont
+  4 2 roll matrix scale makefont
+  dup length dict begin
+    { 1 index /FID ne { def } { pop pop } ifelse } forall
+    /Encoding exch def
+    currentdict
+  end
+  definefont pop
+} def
+/pdfMakeFont16 {
+  exch findfont
+  dup length dict begin
+    { 1 index /FID ne { def } { pop pop } ifelse } forall
+    /WMode exch def
+    currentdict
+  end
+  definefont pop
+} def
+% graphics state operators
+/q { gsave pdfDictSize dict begin } def
+/Q {
+  end grestore
+  /pdfLastFill where {
+    pop
+    pdfLastFill {
+      pdfFillOP setoverprint
+    } {
+      pdfStrokeOP setoverprint
+    } ifelse
+  } if
+} def
+/cm { concat } def
+/d { setdash } def
+/i { setflat } def
+/j { setlinejoin } def
+/J { setlinecap } def
+/M { setmiterlimit } def
+/w { setlinewidth } def
+% path segment operators
+/m { moveto } def
+/l { lineto } def
+/c { curveto } def
+/re { 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+      neg 0 rlineto closepath } def
+/h { closepath } def
+% path painting operators
+/S { sCol stroke } def
+/Sf { fCol stroke } def
+/f { fCol fill } def
+/f* { fCol eofill } def
+% clipping operators
+/W { clip newpath } def
+/W* { eoclip newpath } def
+/Ws { strokepath clip newpath } def
+% text state operators
+/Tc { /pdfCharSpacing exch def } def
+/Tf { dup /pdfFontSize exch def
+      dup pdfHorizScaling mul exch matrix scale
+      pdfTextMat matrix concatmatrix dup 4 0 put dup 5 0 put
+      exch findfont exch makefont setfont } def
+/Tr { /pdfTextRender exch def } def
+/Tp { /pdfPatternCS exch def } def
+/Ts { /pdfTextRise exch def } def
+/Tw { /pdfWordSpacing exch def } def
+/Tz { /pdfHorizScaling exch def } def
+% text positioning operators
+/Td { pdfTextMat transform moveto } def
+/Tm { /pdfTextMat exch def } def
+% text string operators
+/xyshow where {
+  pop
+  /xyshow2 {
+    dup length array
+    0 2 2 index length 1 sub {
+      2 index 1 index 2 copy get 3 1 roll 1 add get
+      pdfTextMat dtransform
+      4 2 roll 2 copy 6 5 roll put 1 add 3 1 roll dup 4 2 roll put
+    } for
+    exch pop
+    xyshow
+  } def
+}{
+  /xyshow2 {
+    currentfont /FontType get 0 eq {
+      0 2 3 index length 1 sub {
+        currentpoint 4 index 3 index 2 getinterval show moveto
+        2 copy get 2 index 3 2 roll 1 add get
+        pdfTextMat dtransform rmoveto
+      } for
+    } {
+      0 1 3 index length 1 sub {
+        currentpoint 4 index 3 index 1 getinterval show moveto
+        2 copy 2 mul get 2 index 3 2 roll 2 mul 1 add get
+        pdfTextMat dtransform rmoveto
+      } for
+    } ifelse
+    pop pop
+  } def
+} ifelse
+/cshow where {
+  pop
+  /xycp {
+    0 3 2 roll
+    {
+      pop pop currentpoint 3 2 roll
+      1 string dup 0 4 3 roll put false charpath moveto
+      2 copy get 2 index 2 index 1 add get
+      pdfTextMat dtransform rmoveto
+      2 add
+    } exch cshow
+    pop pop
+  } def
+}{
+  /xycp {
+    currentfont /FontType get 0 eq {
+      0 2 3 index length 1 sub {
+        currentpoint 4 index 3 index 2 getinterval false charpath moveto
+        2 copy get 2 index 3 2 roll 1 add get
+        pdfTextMat dtransform rmoveto
+      } for
+    } {
+      0 1 3 index length 1 sub {
+        currentpoint 4 index 3 index 1 getinterval false charpath moveto
+        2 copy 2 mul get 2 index 3 2 roll 2 mul 1 add get
+        pdfTextMat dtransform rmoveto
+      } for
+    } ifelse
+    pop pop
+  } def
+} ifelse
+/Tj {
+  fCol
+  0 pdfTextRise pdfTextMat dtransform rmoveto
+  currentpoint 4 2 roll
+  pdfTextRender 1 and 0 eq {
+    2 copy xyshow2
+  } if
+  pdfTextRender 3 and dup 1 eq exch 2 eq or {
+    3 index 3 index moveto
+    2 copy
+    currentfont /FontType get 3 eq { fCol } { sCol } ifelse
+    xycp currentpoint stroke moveto
+  } if
+  pdfTextRender 4 and 0 ne {
+    4 2 roll moveto xycp
+    /pdfTextClipPath [ pdfTextClipPath aload pop
+      {/moveto cvx}
+      {/lineto cvx}
+      {/curveto cvx}
+      {/closepath cvx}
+    pathforall ] def
+    currentpoint newpath moveto
+  } {
+    pop pop pop pop
+  } ifelse
+  0 pdfTextRise neg pdfTextMat dtransform rmoveto
+} def
+/TJm { 0.001 mul pdfFontSize mul pdfHorizScaling mul neg 0
+       pdfTextMat dtransform rmoveto } def
+/TJmV { 0.001 mul pdfFontSize mul neg 0 exch
+        pdfTextMat dtransform rmoveto } def
+/Tclip { pdfTextClipPath cvx exec clip newpath
+         /pdfTextClipPath [] def } def
+/Tclip* { pdfTextClipPath cvx exec eoclip newpath
+         /pdfTextClipPath [] def } def
+% Level 2/3 image operators
+/pdfImBuf 100 string def
+/pdfImStr {
+  2 copy exch length lt {
+    2 copy get exch 1 add exch
+  } {
+    ()
+  } ifelse
+} def
+/skipEOD {
+  { currentfile pdfImBuf readline
+    not { pop exit } if
+    (%-EOD-) eq { exit } if } loop
+} def
+/pdfIm { image skipEOD } def
+/pdfImM { fCol imagemask skipEOD } def
+/pr { 2 index 2 index 3 2 roll putinterval 4 add } def
+/pdfImClip {
+  gsave
+  0 2 4 index length 1 sub {
+    dup 4 index exch 2 copy
+    get 5 index div put
+    1 add 3 index exch 2 copy
+    get 3 index div put
+  } for
+  pop pop rectclip
+} def
+/pdfImClipEnd { grestore } def
+% shading operators
+/colordelta {
+  false 0 1 3 index length 1 sub {
+    dup 4 index exch get 3 index 3 2 roll get sub abs 0.004 gt {
+      pop true
+    } if
+  } for
+  exch pop exch pop
+} def
+/funcCol { func n array astore } def
+/funcSH {
+  dup 0 eq {
+    true
+  } {
+    dup 6 eq {
+      false
+    } {
+      4 index 4 index funcCol dup
+      6 index 4 index funcCol dup
+      3 1 roll colordelta 3 1 roll
+      5 index 5 index funcCol dup
+      3 1 roll colordelta 3 1 roll
+      6 index 8 index funcCol dup
+      3 1 roll colordelta 3 1 roll
+      colordelta or or or
+    } ifelse
+  } ifelse
+  {
+    1 add
+    4 index 3 index add 0.5 mul exch 4 index 3 index add 0.5 mul exch
+    6 index 6 index 4 index 4 index 4 index funcSH
+    2 index 6 index 6 index 4 index 4 index funcSH
+    6 index 2 index 4 index 6 index 4 index funcSH
+    5 3 roll 3 2 roll funcSH pop pop
+  } {
+    pop 3 index 2 index add 0.5 mul 3 index  2 index add 0.5 mul
+    funcCol sc
+    dup 4 index exch mat transform m
+    3 index 3 index mat transform l
+    1 index 3 index mat transform l
+    mat transform l pop pop h f*
+  } ifelse
+} def
+/axialCol {
+  dup 0 lt {
+    pop t0
+  } {
+    dup 1 gt {
+      pop t1
+    } {
+      dt mul t0 add
+    } ifelse
+  } ifelse
+  func n array astore
+} def
+/axialSH {
+  dup 0 eq {
+    true
+  } {
+    dup 8 eq {
+      false
+    } {
+      2 index axialCol 2 index axialCol colordelta
+    } ifelse
+  } ifelse
+  {
+    1 add 3 1 roll 2 copy add 0.5 mul
+    dup 4 3 roll exch 4 index axialSH
+    exch 3 2 roll axialSH
+  } {
+    pop 2 copy add 0.5 mul
+    axialCol sc
+    exch dup dx mul x0 add exch dy mul y0 add
+    3 2 roll dup dx mul x0 add exch dy mul y0 add
+    dx abs dy abs ge {
+      2 copy yMin sub dy mul dx div add yMin m
+      yMax sub dy mul dx div add yMax l
+      2 copy yMax sub dy mul dx div add yMax l
+      yMin sub dy mul dx div add yMin l
+      h f*
+    } {
+      exch 2 copy xMin sub dx mul dy div add xMin exch m
+      xMax sub dx mul dy div add xMax exch l
+      exch 2 copy xMax sub dx mul dy div add xMax exch l
+      xMin sub dx mul dy div add xMin exch l
+      h f*
+    } ifelse
+  } ifelse
+} def
+/radialCol {
+  dup t0 lt {
+    pop t0
+  } {
+    dup t1 gt {
+      pop t1
+    } if
+  } ifelse
+  func n array astore
+} def
+/radialSH {
+  dup 0 eq {
+    true
+  } {
+    dup 8 eq {
+      false
+    } {
+      2 index dt mul t0 add radialCol
+      2 index dt mul t0 add radialCol colordelta
+    } ifelse
+  } ifelse
+  {
+    1 add 3 1 roll 2 copy add 0.5 mul
+    dup 4 3 roll exch 4 index radialSH
+    exch 3 2 roll radialSH
+  } {
+    pop 2 copy add 0.5 mul dt mul t0 add
+    radialCol sc
+    encl {
+      exch dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      0 360 arc h
+      dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      360 0 arcn h f
+    } {
+      2 copy
+      dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      a1 a2 arcn
+      dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      a2 a1 arcn h
+      dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      a1 a2 arc
+      dup dx mul x0 add exch dup dy mul y0 add exch dr mul r0 add
+      a2 a1 arc h f
+    } ifelse
+  } ifelse
+} def
+end
+%%EndResource
+%%EndProlog
+%%BeginSetup
+xpdf begin
+%%BeginResource: font FHGWZI+Helvetica
+%!FontType1-1.0: FHGWZI+Helvetica
+12 dict begin
+/FontInfo 10 dict dup begin
+/Notice (\(URW\)++,Copyright 2014 by \(URW\)++ Design & Development) readonly def
+/Copyright (Copyright \(URW\)++,Copyright 2014 by \(URW\)++ Design & Develo\
+pment) readonly def
+/FullName (Nimbus Sans) readonly def
+/FamilyName (Nimbus Sans) readonly def
+/isFixedPitch false def
+/ItalicAngle 0 def
+/UnderlinePosition 0 def
+/UnderlineThickness 0 def
+end readonly def
+/FontName /FHGWZI+Helvetica def
+/PaintType 0 def
+/FontType 1 def
+/FontMatrix [0.001 0 0 0.001 0 0] readonly def
+/FontBBox [0 -218 762 741] readonly def
+/StrokeWidth 0 def
+/Encoding 256 array
+0 1 255 {1 index exch /.notdef put} for
+dup 32 /space put
+dup 40 /parenleft put
+dup 41 /parenright put
+dup 46 /period put
+dup 48 /zero put
+dup 49 /one put
+dup 50 /two put
+dup 51 /three put
+dup 52 /four put
+dup 53 /five put
+dup 54 /six put
+dup 56 /eight put
+dup 57 /nine put
+dup 61 /equal put
+dup 67 /C put
+dup 71 /G put
+dup 72 /H put
+dup 80 /P put
+dup 82 /R put
+dup 97 /a put
+dup 98 /b put
+dup 99 /c put
+dup 100 /d put
+dup 101 /e put
+dup 102 /f put
+dup 103 /g put
+dup 109 /m put
+dup 110 /n put
+dup 113 /q put
+dup 114 /r put
+dup 117 /u put
+dup 121 /y put
+dup 122 /z put
+readonly def
+currentdict end
+currentfile eexec
+5AA4F71255501637F1A431BAB555283D093E1B588B45B0281559110D21315C62
+BD638C6B34BA54AA75227715D9947EBCD51A104CAEA657499E94138F5645BF68
+368BB1B1EC8E4776F067FFF2CE9B89FB7E63A7DB304498C1036D399C47A4CB79
+BD517EDB02BEB90195FD7DDAF3E839BCE2DB156D9337DBB2305A465B3E0FFB97
+1985C79DC71C47E26F9F0F042B2CDEE97B679358059256FB93D662D43C7ECB5B
+1A564DFCECB963478373C69F52172F071E0AA6082A3E10D9E1CE2851CFA210EE
+7BD5FCB1AAE15E89D1FB339D587D218B89C18A32F47C7451A80CB1FC07CF5EF6
+FB39B30D1F8747CF302EAFC179F06E5D11CA91B74F4900A8E3BB60AE146088CD
+80855E68DF6050B060DA60DDB63DE453ABB4DC3977B973C6F2F30983D64B5A78
+903AEDDF9961E7E49B297C93BE291DCD3CFAFD71AE4403CD6B8146DDC3F3E6C5
+305E5E77618A5209F83961088A67FE0F6C76C9BB8E9FE5F3A15F6A14201362BA
+DA28D8AB97136D80DA3EFD7F1C384BA8B1F8698374138969DAA40B79ED171FCF
+DAA100BE3B448D21A7D1F5841828ABD484707E9944ADD1BCC907CFA83E3C8FBC
+ED6F05A3359844B3EA58DFC9B0B98E352BFCAF78BD9710EBCCA21278B337CA65
+B199CDFE3F9DB8A7C594F59AAC4CDCDBFD836A84115BEFAD7B4AAB60D0809FE9
+27CE28B1AE03B30259C0FD55F2032E90D84654D6C180DA69B7BADCC1DAB5424C
+E5AC56B7188612B34BD1E41E0C04024095ADB9348909D808AD4F7A4452A18B32
+7389A995D0C2EAB20C91418ECD7D1A85D706CA64AC5B070F34F8333586078BC1
+51A40168BABB3C2E7A045B4E739B5B65A8A3F042B0874CEB4DE2E90ADAC22C1A
+64E186932C7C34BADA8FC745CBFD947452F88044317D4F96B01C7D5C44F6657D
+2329A032C609205DB7197DADBB37B288C1384A1352174ED8DC0FD0519F21FCFC
+FE8594470FD5D2063F8ABB1540E90FB59A342F6B6B8822D2742D3A33AB16D9C0
+1936F075253B5B30B752701E4A538026BE6A36CBC528DDD5C0268E344FF16B48
+797438AA3DB501C5817B37F568653C357A40053F395624ED0A9CB220A5463B16
+492E8F9BFA92BD37E8B5B6CB2CB73BD122DE32736CB30E47B28D2DFA2C422457
+661B8F4A94839DEB61A89323C35FEFE676CD29EF3C22A3C431A0D64DE096B09B
+71AC5FCDAA714FAA93D00EA352C50838D8AF489B3492A4DFBCD4A94F8C470F9F
+B4E819010DC0D93435D286CCF06D97BAF7360E0397068F18E57E9CFB6457BA31
+FDEDF5913AA6391F12D9D4399D36F24DADD08E015F72874C4B6BAA7573D267D4
+1A3E42AC9FF52EE04D4A432866FD74BC31295F88C3FF38E266647A731F202408
+E540EFBC599D15353A8214B99A1C6BEF43908B2B238084CA5FD5315F3EA401B6
+FAEB22DF18842EE93BF1556588B0BDD1D3210B10F01298BE4C09EF3E59C695FE
+6F584FE3BD13AF28A5915D8C553A1701EE625382AA10C6FAB4BAB81AA962C0D5
+5E7590012F05A3A227B5F093EED9508267CB61F59F9A51BAB55D49ABE66B8C61
+84DA8A2CA729941F044345BBC0478BEF51EC7156E29AFC20B17F0F1996671AC8
+862AEC3FDEACFCF966B4B825EC7886F719C6F91B2D58669CF38D9BA4220BB0CE
+FC223B4B51899DD26580175108EBC2BC73E3C4AA2AB267E91F35FA74086D0DD5
+BFDF7DB1BA0EE12BBBB8C54B56E3932AB56B7EC1E96A0BF6AFCCAF1F9A5E4FF8
+900C0233B7978C239B44399EDDD7BC37EFB6F57899C4DBE426542EFAEA6982A0
+9A3E959997646662DED6C950AE5E3F788E33BF65E9095562FD4945FD5E2B9C97
+B3B5C685ADE2A4FF0FA4F0D5B78982E64F1C0BCFC3623BD1818FE02F5A72031F
+50895FC95F09BFE7821A680102FCB32F14F50A16CA7D45C9E4F72721BD3CAE89
+F7B6084E8E0DF5FA094D737EBBE6AD95D671E5F270F4F5C1DC4E2571B7F8C9E8
+CED1399D67F7B658C6A321D1A2E2EC861657556F926F09DBFE32457C20C42EEF
+01251E5A8F0A6DF05B6716BC77E3A4BCC8B4B6D23B186124472E4FDDE4B08960
+662D987FCE9E5D8A1792CB61B9ED8983F387B7C829FF78FB571AD874FE99C63D
+C8A5FAB5617CFE9B6652DAF6E41BFB734569078FA9221DE351434947F330D576
+603B85DD24664FBFB91AEC04CB15F520A8BF206E113EBA3E86604D73BC600A5C
+46983A2D187BE081E3DEB1DE1E236D5B3849F0135662E0D3FA7C757F619DA555
+1E3DE763C46887CB298B3B39DC0FDD81AC502D622B23B9FA6AA93C41CAE76A09
+B5958ECB619B3B0BE93435BA74E61A6C30E3CB3256A414381CB9BD614DBC21DD
+DC219BF7D4D6C42C5EF6A048AD2E2E06D0F1255963CCD5E54B6B4A044B515169
+BD5E35B25AEAB0522D4CA4CA91B0A2C31A1C19A2D4B36D15777CA6D483DA356F
+E0E8413E3971A75F6AA87A1C990254F7533A814452181877896CB4D78F71AF4D
+5C334717D82942C8BB95315C22D4A65F55201024E447E5581B3D7CDB00DDFF05
+DADDD078520BC972DFE89FF1D69B2E94FA99C6B69BCBB756B2D417AE4B1A99D4
+1269FF951B2F8AEC634E969D28A530C8DB58B39A4541E3DD226338D9B03BAA1C
+A8516FDB3A1DF7FAACBA29DF71F37805BFB7FF7520B612CDFFF8DFBFA28C3238
+2A9ECEEB2C69CFEDA080801AB4E5F7BA7F1EE173FCC2BD157528B354B347E355
+19C131720FEEC9FE5A4E65472AE37C47246E6D226DA6EEE3889A6E2A91B27C86
+C961FAA75CA19A8645094E6E39BC0761B7FD9315E81DFE33C76A6F50CA4710DE
+46299952EB1199C531C06DAF4E199202C4DFDD7515D9E6876834B8DAEFF75E29
+82A22D910280F33CF4CFE19E7967E2941B3A39B2393F1B49D0F8B942AA8269B9
+7704AFD7F76072C1E13A919E672B9F05C69C48B703449718D56FFB8C0272B22F
+1008267D038ABE3BAED48B2F4004B76A0827A122DB61C18DEB8940ED31DCCDBB
+1CDFCD09D2C4CC94B5CF57C637147DB52B7DBBBC5649B2604932EC0FA74119D6
+47AEA982EEBB3D0E8DD45483AEC77CB7E2487E6B5CACC2986F216EB95624E3E4
+BE829018EA47E62EF31E5A1F52D7318D78CA084BF046C04F41DEA7FAFF1E032F
+AEA928B4191A72ABCB21CFC355B9657566D7BBCC0FDCCFD1B490C1705E824B08
+007FD5F93FE35A6357A431677C47E12FA3DF6CDB7E0C64D9B7F6547B2886876A
+32D97E1075779E6D8FE14E092841AE96E778E55DDCD13D734F0C5EC006E0946E
+D7A355811C934B46A2E03C3117A88CA9F940516CB690A30F34CA77432195EFD4
+EF5A04E7C22E6BF41BCC935E54B26AA5DF5734AD89546BEB1B54D3ADC25E1A71
+709EC5309E6E415127DE265DB72FFB2A7FD7DD550FAC5F5E8F0FB4E2F8417201
+B9B5EF143F3D1863E0DAB420CFA6CFBDB98090E79D888DB79F61ABDAB5637A85
+15680167A5D0D4D61C62EE97C1CA15F4AC008B61A3297461E450C617CDA53226
+68E454CD55218E3C405807AD3883B3B1E0888DEF260B798311C60F5DCE39CCC4
+90ADD883C78B46DB8F91199C094390099F1A22F9ACF58C568E4DA40206776CA8
+CFD4716FC1003EB6292834B5BF0CDCCA02B075F7E0C74A7390CC8CF684D81FC0
+156DFE6DF94CF4AD46AC708254C2BDEA6EED8A32333E771995A85C53A61A87D5
+6E42907D05F227F382C4BEB4B9A831D06079D8E5BA6CF8C1AEC917111B4DF0BE
+8C86D7A4945A1AEFD9D8B887AFD8C81A2B13452256F0452AA8566C8702D248E4
+5F1BEBDD1855ECE57B7C8ECCB6C99DA8040226AFE764AE60577CDF999809D394
+8F32372669D9D5D5E425C0FD00CDB986A17DDD1E1971C78AD6AFFA0CDD0EAA9E
+7F4B670031EA53A00A9ABEC6F1B6EB3F66F188C9624D76F6A04634E5F7B0F858
+D9FF31BDEFE20D0B97A74C764BAB8DD4FFB614A9BA12853A9B826F37973762BF
+430B2B39CD1F7C075E5A1606021340638B0E809957224C431962E4DD8DD35AAA
+F92A18F02F4261E2EE549C6949EB337FA71E6F436867CA27D5B22A74AF7C18A0
+2A81B4E7802FF016979E825DE426E3BE6D815115985455F6596FE36CB7491390
+EFF1DCAB1456AB5D60EA05108122D5278DBCA520679C029B67C31A79747E7F58
+636CF400E433F8B15B84B0A3EC5F5944ACD66F0DE59DC41AFF77493A79ECA8C7
+FD2E9D30A9125A51159EE861A26CF871FDBFC627EE05DDC045E0F99098DB7F50
+BEAF0A289CEE013B3CA964A54909719D84AC69CD07F154F81463AF23E8429BF5
+7CF763161C86D8EC834764345D0CEBEA33EA2C6D160F77731E91F2444E7A7897
+ACD87BAECA42061DC587F1149FEA8D7F3303B6A0D2DF05487F952DFB175B0A40
+8D7B0000D2B234AB682D9F49238DD0FAD694B0D894E702F94E6410047886E0FB
+100A881D756F7177B514C77F26212FB580E0D69241B8593622AA663CA4601DC2
+1809E5FD7327C1643073C0C5755CB702B8F9D5AD0140F8766853EBF9297FB0ED
+EB553658DAFB10915EC7BAF02556DD9E413297B7C4A97D856A5B6142C4A8C4E2
+12125CC2E81B20412EF94495058CA29046DFBD029D97D085F872DBB37B91B001
+F52756B34234054D2EAED2577E1FB1F284F29EBF38219D3EDD79AB4C3B6ABC5F
+286EE8A45396B66E52279C0CFDC76D75C9751ADA83D922C5DCAD6EAE413794FB
+4DF8A3B595B703A50F4A53B55E8951F26DE52B63DB51FDFEBBFBF2FD4DA5BC89
+3E0A5FDAEF5D687CA964BD4CAE7A7164583DA0F23BD6A23B184F7109DB13F53E
+F93CF67370BCBADAA0B079C3DDF40216BB0C6CBF2B9A914C2B5B7D135DB7FEBE
+4641D949B6D2E1E31E853107496F5140562E4A3994B7E973F681E18C0B103B6E
+0EDDBAE62D3B575C772C4661D3496891825D9A2328E212590CEC219D6DF84861
+D4641C01C6A300B432D8CF5DD00814F94951BBFDADF7D0755E3FD5B80A3F626B
+52532ABACBEE630607FC2DC0C6B8D3DF1C7570448F023E03C6DE8C793370858D
+84704047B38112A223756ED75E9F4E4BF5510B505C6667C2C3B5CBDA3B3C57F7
+3D7E65DDE7576FFA1B1D54F1D11BFF9D4218970E197CA90AD972640E5DD2097C
+62F2EE1170B8D1C3BE5604DB4CE818577908B5F964F8B05BDF726C92AB979363
+461E5BD574FE9BAA2BC5255312325D335B1A01F94591EE3630D71E17C4D77D9B
+CB6185094784485EFC1EEC32043E001E37C828607924B6F329A89D0C47C2BDF9
+36A57C6306E7D2F4260A733D38B66F3F1E036345A35CAEE9FC1FB6F559451986
+8F154F217492F30DC4726AC87BA3D50EF9AE671BAF05468721685A2223222B2F
+F083BED1B8849AF7C16953870763567CC909A19438E082AEB5F26A9F368C1B36
+B536B9568B3B2947FD2516C9DEC7F9B1D4887294BDAAF2CB21DBA8550E2AF6B0
+4909C75F2C256AD3E5B57B4024A1CD39085FE734A4112A8B4EBDA7884DFA233A
+13C601F4695159221CAC7BF504A28AEC6C71C8F503950B7E5A04692F6D187A65
+681E67A32034A89591F2
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000
+cleartomark
+%%EndResource
+/F7_0 /FHGWZI+Helvetica 1 1
+[ /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+  /space/exclam/quotedbl/numbersign/dollar/percent/ampersand/quotesingle
+  /parenleft/parenright/asterisk/plus/comma/hyphen/period/slash
+  /zero/one/two/three/four/five/six/seven
+  /eight/nine/colon/semicolon/less/equal/greater/question
+  /at/A/B/C/D/E/F/G
+  /H/I/J/K/L/M/N/O
+  /P/Q/R/S/T/U/V/W
+  /X/Y/Z/bracketleft/backslash/bracketright/asciicircum/underscore
+  /grave/a/b/c/d/e/f/g
+  /h/i/j/k/l/m/n/o
+  /p/q/r/s/t/u/v/w
+  /x/y/z/braceleft/bar/braceright/asciitilde/bullet
+  /Euro/bullet/quotesinglbase/florin/quotedblbase/ellipsis/dagger/daggerdbl
+  /circumflex/perthousand/Scaron/guilsinglleft/OE/bullet/Zcaron/bullet
+  /bullet/quoteleft/quoteright/quotedblleft/quotedblright/bullet/endash/emdash
+  /tilde/trademark/scaron/guilsinglright/oe/bullet/zcaron/Ydieresis
+  /space/exclamdown/cent/sterling/currency/yen/brokenbar/section
+  /dieresis/copyright/ordfeminine/guillemotleft/logicalnot/hyphen/registered/macron
+  /degree/plusminus/twosuperior/threesuperior/acute/mu/paragraph/periodcentered
+  /cedilla/onesuperior/ordmasculine/guillemotright/onequarter/onehalf/threequarters/questiondown
+  /Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla
+  /Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis
+  /Eth/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/multiply
+  /Oslash/Ugrave/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls
+  /agrave/aacute/acircumflex/atilde/adieresis/aring/ae/ccedilla
+  /egrave/eacute/ecircumflex/edieresis/igrave/iacute/icircumflex/idieresis
+  /eth/ntilde/ograve/oacute/ocircumflex/otilde/odieresis/divide
+  /oslash/ugrave/uacute/ucircumflex/udieresis/yacute/thorn/ydieresis]
+pdfMakeFont
+%%EndSetup
+pdfStartPage
+%%EndPageSetup
+[] 0 d
+1 i
+0 j
+0 J
+10 M
+1 w
+/DeviceGray {} cs
+[0] sc
+/DeviceGray {} CS
+[0] SC
+false op
+false OP
+{} settransfer
+0 0 508 413 re
+W
+q
+q
+[0.1 0 0 0.1 0 0] cm
+/DeviceGray {} cs
+[1] sc
+390 2646 2010 1428 re
+f
+4.998 w
+2 J
+1 j
+/DeviceGray {} CS
+[0.1489] SC
+390 2646 m
+2400 2646 l
+S
+390 4074 m
+2400 4074 l
+S
+390 2646 m
+390 2666.1 l
+S
+998.898 2646 m
+998.898 2666.1 l
+S
+1607.8 2646 m
+1607.8 2666.1 l
+S
+2216.7 2646 m
+2216.7 2666.1 l
+S
+390 4074 m
+390 4053.9 l
+S
+998.898 4074 m
+998.898 4053.9 l
+S
+1607.8 4074 m
+1607.8 4053.9 l
+S
+2216.7 4074 m
+2216.7 4053.9 l
+S
+390 2646 m
+390 2656.05 l
+S
+573.301 2646 m
+573.301 2656.05 l
+S
+680.52 2646 m
+680.52 2656.05 l
+S
+756.594 2646 m
+756.594 2656.05 l
+S
+815.605 2646 m
+815.605 2656.05 l
+S
+863.813 2646 m
+863.813 2656.05 l
+S
+904.578 2646 m
+904.578 2656.05 l
+S
+939.895 2646 m
+939.895 2656.05 l
+S
+971.039 2646 m
+971.039 2656.05 l
+S
+998.898 2646 m
+998.898 2656.05 l
+S
+1182.2 2646 m
+1182.2 2656.05 l
+S
+1289.42 2646 m
+1289.42 2656.05 l
+S
+1365.5 2646 m
+1365.5 2656.05 l
+S
+1424.5 2646 m
+1424.5 2656.05 l
+S
+1472.72 2646 m
+1472.72 2656.05 l
+S
+1513.48 2646 m
+1513.48 2656.05 l
+S
+1548.79 2646 m
+1548.79 2656.05 l
+S
+1579.94 2646 m
+1579.94 2656.05 l
+S
+1607.8 2646 m
+1607.8 2656.05 l
+S
+1791.1 2646 m
+1791.1 2656.05 l
+S
+1898.32 2646 m
+1898.32 2656.05 l
+S
+1974.39 2646 m
+1974.39 2656.05 l
+S
+2033.41 2646 m
+2033.41 2656.05 l
+S
+2081.62 2646 m
+2081.62 2656.05 l
+S
+2122.38 2646 m
+2122.38 2656.05 l
+S
+2157.7 2646 m
+2157.7 2656.05 l
+S
+2188.84 2646 m
+2188.84 2656.05 l
+S
+2216.7 2646 m
+2216.7 2656.05 l
+S
+2400 2646 m
+2400 2656.05 l
+S
+390 4074 m
+390 4063.95 l
+S
+573.301 4074 m
+573.301 4063.95 l
+S
+680.52 4074 m
+680.52 4063.95 l
+S
+756.594 4074 m
+756.594 4063.95 l
+S
+815.605 4074 m
+815.605 4063.95 l
+S
+863.813 4074 m
+863.813 4063.95 l
+S
+904.578 4074 m
+904.578 4063.95 l
+S
+939.895 4074 m
+939.895 4063.95 l
+S
+971.039 4074 m
+971.039 4063.95 l
+S
+998.898 4074 m
+998.898 4063.95 l
+S
+1182.2 4074 m
+1182.2 4063.95 l
+S
+1289.42 4074 m
+1289.42 4063.95 l
+S
+1365.5 4074 m
+1365.5 4063.95 l
+S
+1424.5 4074 m
+1424.5 4063.95 l
+S
+1472.72 4074 m
+1472.72 4063.95 l
+S
+1513.48 4074 m
+1513.48 4063.95 l
+S
+1548.79 4074 m
+1548.79 4063.95 l
+S
+1579.94 4074 m
+1579.94 4063.95 l
+S
+1607.8 4074 m
+1607.8 4063.95 l
+S
+1791.1 4074 m
+1791.1 4063.95 l
+S
+1898.32 4074 m
+1898.32 4063.95 l
+S
+1974.39 4074 m
+1974.39 4063.95 l
+S
+2033.41 4074 m
+2033.41 4063.95 l
+S
+2081.62 4074 m
+2081.62 4063.95 l
+S
+2122.38 4074 m
+2122.38 4063.95 l
+S
+2157.7 4074 m
+2157.7 4063.95 l
+S
+2188.84 4074 m
+2188.84 4063.95 l
+S
+2216.7 4074 m
+2216.7 4063.95 l
+S
+2400 4074 m
+2400 4063.95 l
+S
+/DeviceGray {} cs
+[0.1489] sc
+q
+[10 0 0 10 0 0] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+[1 0 0 1 30.6 247.2] Tm
+0 0 Td
+/F7_0 10.0002 Tf
+(10)
+[5.560111
+0
+5.560111
+0] Tj
+11.4 4.8 Td
+/F7_0 7.9998 Tf
+(0)
+[4.447889
+0] Tj
+60.6 0 Td
+/F7_0 10.0002 Tf
+(10)
+[5.560111
+0
+5.560111
+0] Tj
+72 4.8 Td
+/F7_0 7.9998 Tf
+(1)
+[4.447889
+0] Tj
+121.8 0 Td
+/F7_0 10.0002 Tf
+(10)
+[5.560111
+0
+5.560111
+0] Tj
+133.2 4.8 Td
+/F7_0 7.9998 Tf
+(2)
+[4.447889
+0] Tj
+182.4 0 Td
+/F7_0 10.0002 Tf
+(10)
+[5.560111
+0
+5.560111
+0] Tj
+193.8 4.8 Td
+/F7_0 7.9998 Tf
+(3)
+[4.447889
+0] Tj
+72.6 -14.6 Td
+/F7_0 10.9998 Tf
+(frequency \(Hz\))
+[3.057944
+0
+3.662933
+0
+6.115889
+0
+6.115889
+0
+6.115889
+0
+6.115889
+0
+6.115889
+0
+5.4999
+0
+5.4999
+0
+3.057944
+0
+3.662933
+0
+7.941856
+0
+5.4999
+0
+3.662933
+0] Tj
+102 -29 Td
+(\(a\))
+[3.662933
+0
+6.115889
+0
+3.662933
+0] Tj
+Q
+390 2646 m
+390 4074 l
+S
+2400 2646 m
+2400 4074 l
+S
+390 2646 m
+410.102 2646 l
+S
+390 2884 m
+410.102 2884 l
+S
+390 3122 m
+410.102 3122 l
+S
+390 3360 m
+410.102 3360 l
+S
+390 3598 m
+410.102 3598 l
+S
+390 3836 m
+410.102 3836 l
+S
+390 4074 m
+410.102 4074 l
+S
+2400 2646 m
+2379.9 2646 l
+S
+2400 2884 m
+2379.9 2884 l
+S
+2400 3122 m
+2379.9 3122 l
+S
+2400 3360 m
+2379.9 3360 l
+S
+2400 3598 m
+2379.9 3598 l
+S
+2400 3836 m
+2379.9 3836 l
+S
+2400 4074 m
+2379.9 4074 l
+S
+q
+[10 0 0 10 0 0] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+[1 0 0 1 20.6 260.7] Tm
+0 0 Td
+/F7_0 10.0002 Tf
+(4.0)
+[5.560111
+0
+2.780056
+0
+5.560111
+0] Tj
+0 23.8 Td
+(4.2)
+[5.560111
+0
+2.780056
+0
+5.560111
+0] Tj
+0 47.6 Td
+(4.4)
+[5.560111
+0
+2.780056
+0
+5.560111
+0] Tj
+0 71.4 Td
+(4.6)
+[5.560111
+0
+2.780056
+0
+5.560111
+0] Tj
+0 95.2 Td
+(4.8)
+[5.560111
+0
+2.780056
+0
+5.560111
+0] Tj
+0 119 Td
+(5.0)
+[5.560111
+0
+2.780056
+0
+5.560111
+0] Tj
+0 142.8 Td
+(5.2)
+[5.560111
+0
+2.780056
+0
+5.560111
+0] Tj
+[0 1 -1 0 9.6 299.4] Tm
+0 0 Td
+/F7_0 10.9998 Tf
+(Re\(C)
+[7.941856
+0
+6.115889
+0
+3.662933
+0
+7.941856
+0] Tj
+25.8 -5.4 Td
+/F7_0 8.8002 Tf
+(11)
+[4.892911
+0
+4.892911
+0] Tj
+36 0 Td
+/F7_0 10.9998 Tf
+(\) \(GPa\))
+[3.662933
+0
+3.057944
+0
+3.662933
+0
+8.557844
+0
+7.336867
+0
+6.115889
+0
+3.662933
+0] Tj
+Q
+6 w
+0 J
+/DeviceGray {} CS
+[0] SC
+419.578 2849.51 m
+419.578 2865.84 406.34 2879.09 390 2879.09 c
+373.66 2879.09 360.422 2865.84 360.422 2849.51 c
+360.422 2833.17 373.66 2819.93 390 2819.93 c
+406.34 2819.93 419.578 2833.17 419.578 2849.51 c
+h
+S
+541.359 2871.78 m
+541.359 2888.11 528.117 2901.36 511.781 2901.36 c
+495.441 2901.36 482.199 2888.11 482.199 2871.78 c
+482.199 2855.44 495.441 2842.2 511.781 2842.2 c
+528.117 2842.2 541.359 2855.44 541.359 2871.78 c
+h
+S
+663.141 2911.07 m
+663.141 2927.41 649.898 2940.66 633.559 2940.66 c
+617.223 2940.66 603.98 2927.41 603.98 2911.07 c
+603.98 2894.74 617.223 2881.5 633.559 2881.5 c
+649.898 2881.5 663.141 2894.74 663.141 2911.07 c
+h
+S
+784.922 2984.07 m
+784.922 3000.4 771.68 3013.64 755.34 3013.64 c
+739.004 3013.64 725.762 3000.4 725.762 2984.07 c
+725.762 2967.73 739.004 2954.48 755.34 2954.48 c
+771.68 2954.48 784.922 2967.73 784.922 2984.07 c
+h
+S
+906.699 3111.51 m
+906.699 3127.85 893.457 3141.09 877.121 3141.09 c
+860.781 3141.09 847.539 3127.85 847.539 3111.51 c
+847.539 3095.17 860.781 3081.93 877.121 3081.93 c
+893.457 3081.93 906.699 3095.17 906.699 3111.51 c
+h
+S
+1028.48 3298.65 m
+1028.48 3314.99 1015.24 3328.23 998.902 3328.23 c
+982.563 3328.23 969.32 3314.99 969.32 3298.65 c
+969.32 3282.31 982.563 3269.07 998.902 3269.07 c
+1015.24 3269.07 1028.48 3282.31 1028.48 3298.65 c
+h
+S
+1150.26 3505.06 m
+1150.26 3521.39 1137.02 3534.64 1120.68 3534.64 c
+1104.34 3534.64 1091.1 3521.39 1091.1 3505.06 c
+1091.1 3488.72 1104.34 3475.48 1120.68 3475.48 c
+1137.02 3475.48 1150.26 3488.72 1150.26 3505.06 c
+h
+S
+1272.04 3669.43 m
+1272.04 3685.77 1258.8 3699.01 1242.46 3699.01 c
+1226.13 3699.01 1212.88 3685.77 1212.88 3669.43 c
+1212.88 3653.09 1226.13 3639.85 1242.46 3639.85 c
+1258.8 3639.85 1272.04 3653.09 1272.04 3669.43 c
+h
+S
+1393.82 3773.5 m
+1393.82 3789.84 1380.58 3803.08 1364.24 3803.08 c
+1347.9 3803.08 1334.66 3789.84 1334.66 3773.5 c
+1334.66 3757.16 1347.9 3743.92 1364.24 3743.92 c
+1380.58 3743.92 1393.82 3757.16 1393.82 3773.5 c
+h
+S
+1515.6 3839.61 m
+1515.6 3855.95 1502.36 3869.19 1486.02 3869.19 c
+1469.68 3869.19 1456.44 3855.95 1456.44 3839.61 c
+1456.44 3823.27 1469.68 3810.03 1486.02 3810.03 c
+1502.36 3810.03 1515.6 3823.27 1515.6 3839.61 c
+h
+S
+1637.38 3890.41 m
+1637.38 3906.75 1624.14 3919.99 1607.8 3919.99 c
+1591.46 3919.99 1578.22 3906.75 1578.22 3890.41 c
+1578.22 3874.07 1591.46 3860.83 1607.8 3860.83 c
+1624.14 3860.83 1637.38 3874.07 1637.38 3890.41 c
+h
+S
+1759.16 3932.65 m
+1759.16 3948.99 1745.92 3962.23 1729.58 3962.23 c
+1713.24 3962.23 1700 3948.99 1700 3932.65 c
+1700 3916.31 1713.24 3903.07 1729.58 3903.07 c
+1745.92 3903.07 1759.16 3916.31 1759.16 3932.65 c
+h
+S
+1880.94 3966.47 m
+1880.94 3982.81 1867.7 3996.05 1851.36 3996.05 c
+1835.02 3996.05 1821.78 3982.81 1821.78 3966.47 c
+1821.78 3950.13 1835.02 3936.89 1851.36 3936.89 c
+1867.7 3936.89 1880.94 3950.13 1880.94 3966.47 c
+h
+S
+2002.72 3993.29 m
+2002.72 4009.63 1989.48 4022.88 1973.14 4022.88 c
+1956.8 4022.88 1943.56 4009.63 1943.56 3993.29 c
+1943.56 3976.96 1956.8 3963.71 1973.14 3963.71 c
+1989.48 3963.71 2002.72 3976.96 2002.72 3993.29 c
+h
+S
+2124.5 4014.61 m
+2124.5 4030.95 2111.26 4044.19 2094.92 4044.19 c
+2078.59 4044.19 2065.34 4030.95 2065.34 4014.61 c
+2065.34 3998.27 2078.59 3985.03 2094.92 3985.03 c
+2111.26 3985.03 2124.5 3998.27 2124.5 4014.61 c
+h
+S
+2246.28 4031.55 m
+2246.28 4047.89 2233.04 4061.13 2216.7 4061.13 c
+2200.36 4061.13 2187.12 4047.89 2187.12 4031.55 c
+2187.12 4015.21 2200.36 4001.97 2216.7 4001.97 c
+2233.04 4001.97 2246.28 4015.21 2246.28 4031.55 c
+h
+S
+2368.06 4045 m
+2368.06 4061.34 2354.82 4074.58 2338.48 4074.58 c
+2322.14 4074.58 2308.9 4061.34 2308.9 4045 c
+2308.9 4028.66 2322.14 4015.42 2338.48 4015.42 c
+2354.82 4015.42 2368.06 4028.66 2368.06 4045 c
+h
+S
+/DeviceRGB {} cs
+[0 1 0] sc
+415.004 2849.51 m
+415.004 2863.31 403.805 2874.51 390 2874.51 c
+376.195 2874.51 364.996 2863.31 364.996 2849.51 c
+364.996 2835.7 376.195 2824.5 390 2824.5 c
+403.805 2824.5 415.004 2835.7 415.004 2849.51 c
+f
+/DeviceRGB {} CS
+[0 1 0] SC
+415.004 2849.51 m
+415.004 2863.31 403.805 2874.51 390 2874.51 c
+376.195 2874.51 364.996 2863.31 364.996 2849.51 c
+364.996 2835.7 376.195 2824.5 390 2824.5 c
+403.805 2824.5 415.004 2835.7 415.004 2849.51 c
+h
+S
+536.781 2871.78 m
+536.781 2885.58 525.586 2896.78 511.781 2896.78 c
+497.973 2896.78 486.777 2885.58 486.777 2871.78 c
+486.777 2857.97 497.973 2846.77 511.781 2846.77 c
+525.586 2846.77 536.781 2857.97 536.781 2871.78 c
+f
+536.781 2871.78 m
+536.781 2885.58 525.586 2896.78 511.781 2896.78 c
+497.973 2896.78 486.777 2885.58 486.777 2871.78 c
+486.777 2857.97 497.973 2846.77 511.781 2846.77 c
+525.586 2846.77 536.781 2857.97 536.781 2871.78 c
+h
+S
+658.563 2911.07 m
+658.563 2924.88 647.367 2936.08 633.559 2936.08 c
+619.754 2936.08 608.559 2924.88 608.559 2911.07 c
+608.559 2897.27 619.754 2886.07 633.559 2886.07 c
+647.367 2886.07 658.563 2897.27 658.563 2911.07 c
+f
+658.563 2911.07 m
+658.563 2924.88 647.367 2936.08 633.559 2936.08 c
+619.754 2936.08 608.559 2924.88 608.559 2911.07 c
+608.559 2897.27 619.754 2886.07 633.559 2886.07 c
+647.367 2886.07 658.563 2897.27 658.563 2911.07 c
+h
+S
+780.344 2984.07 m
+780.344 2997.87 769.148 3009.07 755.34 3009.07 c
+741.535 3009.07 730.34 2997.87 730.34 2984.07 c
+730.34 2970.26 741.535 2959.06 755.34 2959.06 c
+769.148 2959.06 780.344 2970.26 780.344 2984.07 c
+f
+780.344 2984.07 m
+780.344 2997.87 769.148 3009.07 755.34 3009.07 c
+741.535 3009.07 730.34 2997.87 730.34 2984.07 c
+730.34 2970.26 741.535 2959.06 755.34 2959.06 c
+769.148 2959.06 780.344 2970.26 780.344 2984.07 c
+h
+S
+902.121 3111.51 m
+902.121 3125.32 890.926 3136.51 877.121 3136.51 c
+863.316 3136.51 852.117 3125.32 852.117 3111.51 c
+852.117 3097.7 863.316 3086.51 877.121 3086.51 c
+890.926 3086.51 902.121 3097.7 902.121 3111.51 c
+f
+902.121 3111.51 m
+902.121 3125.32 890.926 3136.51 877.121 3136.51 c
+863.316 3136.51 852.117 3125.32 852.117 3111.51 c
+852.117 3097.7 863.316 3086.51 877.121 3086.51 c
+890.926 3086.51 902.121 3097.7 902.121 3111.51 c
+h
+S
+1023.9 3298.65 m
+1023.9 3312.46 1012.71 3323.65 998.902 3323.65 c
+985.094 3323.65 973.898 3312.46 973.898 3298.65 c
+973.898 3284.84 985.094 3273.65 998.902 3273.65 c
+1012.71 3273.65 1023.9 3284.84 1023.9 3298.65 c
+f
+1023.9 3298.65 m
+1023.9 3312.46 1012.71 3323.65 998.902 3323.65 c
+985.094 3323.65 973.898 3312.46 973.898 3298.65 c
+973.898 3284.84 985.094 3273.65 998.902 3273.65 c
+1012.71 3273.65 1023.9 3284.84 1023.9 3298.65 c
+h
+S
+1145.68 3505.06 m
+1145.68 3518.86 1134.49 3530.06 1120.68 3530.06 c
+1106.88 3530.06 1095.68 3518.86 1095.68 3505.06 c
+1095.68 3491.25 1106.88 3480.05 1120.68 3480.05 c
+1134.49 3480.05 1145.68 3491.25 1145.68 3505.06 c
+f
+1145.68 3505.06 m
+1145.68 3518.86 1134.49 3530.06 1120.68 3530.06 c
+1106.88 3530.06 1095.68 3518.86 1095.68 3505.06 c
+1095.68 3491.25 1106.88 3480.05 1120.68 3480.05 c
+1134.49 3480.05 1145.68 3491.25 1145.68 3505.06 c
+h
+S
+1267.46 3669.43 m
+1267.46 3683.23 1256.27 3694.43 1242.46 3694.43 c
+1228.66 3694.43 1217.46 3683.23 1217.46 3669.43 c
+1217.46 3655.63 1228.66 3644.43 1242.46 3644.43 c
+1256.27 3644.43 1267.46 3655.63 1267.46 3669.43 c
+f
+1267.46 3669.43 m
+1267.46 3683.23 1256.27 3694.43 1242.46 3694.43 c
+1228.66 3694.43 1217.46 3683.23 1217.46 3669.43 c
+1217.46 3655.63 1228.66 3644.43 1242.46 3644.43 c
+1256.27 3644.43 1267.46 3655.63 1267.46 3669.43 c
+h
+S
+1389.24 3773.5 m
+1389.24 3787.31 1378.05 3798.5 1364.24 3798.5 c
+1350.43 3798.5 1339.24 3787.31 1339.24 3773.5 c
+1339.24 3759.7 1350.43 3748.5 1364.24 3748.5 c
+1378.05 3748.5 1389.24 3759.7 1389.24 3773.5 c
+f
+1389.24 3773.5 m
+1389.24 3787.31 1378.05 3798.5 1364.24 3798.5 c
+1350.43 3798.5 1339.24 3787.31 1339.24 3773.5 c
+1339.24 3759.7 1350.43 3748.5 1364.24 3748.5 c
+1378.05 3748.5 1389.24 3759.7 1389.24 3773.5 c
+h
+S
+1511.02 3839.61 m
+1511.02 3853.41 1499.83 3864.61 1486.02 3864.61 c
+1472.21 3864.61 1461.02 3853.41 1461.02 3839.61 c
+1461.02 3825.8 1472.21 3814.61 1486.02 3814.61 c
+1499.83 3814.61 1511.02 3825.8 1511.02 3839.61 c
+f
+1511.02 3839.61 m
+1511.02 3853.41 1499.83 3864.61 1486.02 3864.61 c
+1472.21 3864.61 1461.02 3853.41 1461.02 3839.61 c
+1461.02 3825.8 1472.21 3814.61 1486.02 3814.61 c
+1499.83 3814.61 1511.02 3825.8 1511.02 3839.61 c
+h
+S
+1632.8 3890.41 m
+1632.8 3904.22 1621.61 3915.41 1607.8 3915.41 c
+1594 3915.41 1582.8 3904.22 1582.8 3890.41 c
+1582.8 3876.61 1594 3865.41 1607.8 3865.41 c
+1621.61 3865.41 1632.8 3876.61 1632.8 3890.41 c
+f
+1632.8 3890.41 m
+1632.8 3904.22 1621.61 3915.41 1607.8 3915.41 c
+1594 3915.41 1582.8 3904.22 1582.8 3890.41 c
+1582.8 3876.61 1594 3865.41 1607.8 3865.41 c
+1621.61 3865.41 1632.8 3876.61 1632.8 3890.41 c
+h
+S
+1754.58 3932.65 m
+1754.58 3946.46 1743.39 3957.65 1729.58 3957.65 c
+1715.78 3957.65 1704.58 3946.46 1704.58 3932.65 c
+1704.58 3918.85 1715.78 3907.65 1729.58 3907.65 c
+1743.39 3907.65 1754.58 3918.85 1754.58 3932.65 c
+f
+1754.58 3932.65 m
+1754.58 3946.46 1743.39 3957.65 1729.58 3957.65 c
+1715.78 3957.65 1704.58 3946.46 1704.58 3932.65 c
+1704.58 3918.85 1715.78 3907.65 1729.58 3907.65 c
+1743.39 3907.65 1754.58 3918.85 1754.58 3932.65 c
+h
+S
+1876.36 3966.47 m
+1876.36 3980.28 1865.17 3991.47 1851.36 3991.47 c
+1837.55 3991.47 1826.36 3980.28 1826.36 3966.47 c
+1826.36 3952.66 1837.55 3941.47 1851.36 3941.47 c
+1865.17 3941.47 1876.36 3952.66 1876.36 3966.47 c
+f
+1876.36 3966.47 m
+1876.36 3980.28 1865.17 3991.47 1851.36 3991.47 c
+1837.55 3991.47 1826.36 3980.28 1826.36 3966.47 c
+1826.36 3952.66 1837.55 3941.47 1851.36 3941.47 c
+1865.17 3941.47 1876.36 3952.66 1876.36 3966.47 c
+h
+S
+1998.14 3993.29 m
+1998.14 4007.1 1986.95 4018.3 1973.14 4018.3 c
+1959.34 4018.3 1948.14 4007.1 1948.14 3993.29 c
+1948.14 3979.49 1959.34 3968.29 1973.14 3968.29 c
+1986.95 3968.29 1998.14 3979.49 1998.14 3993.29 c
+f
+1998.14 3993.29 m
+1998.14 4007.1 1986.95 4018.3 1973.14 4018.3 c
+1959.34 4018.3 1948.14 4007.1 1948.14 3993.29 c
+1948.14 3979.49 1959.34 3968.29 1973.14 3968.29 c
+1986.95 3968.29 1998.14 3979.49 1998.14 3993.29 c
+h
+S
+2119.93 4014.61 m
+2119.93 4028.42 2108.73 4039.61 2094.92 4039.61 c
+2081.12 4039.61 2069.92 4028.42 2069.92 4014.61 c
+2069.92 4000.8 2081.12 3989.61 2094.92 3989.61 c
+2108.73 3989.61 2119.93 4000.8 2119.93 4014.61 c
+f
+2119.93 4014.61 m
+2119.93 4028.42 2108.73 4039.61 2094.92 4039.61 c
+2081.12 4039.61 2069.92 4028.42 2069.92 4014.61 c
+2069.92 4000.8 2081.12 3989.61 2094.92 3989.61 c
+2108.73 3989.61 2119.93 4000.8 2119.93 4014.61 c
+h
+S
+2241.7 4031.55 m
+2241.7 4045.36 2230.51 4056.55 2216.7 4056.55 c
+2202.9 4056.55 2191.7 4045.36 2191.7 4031.55 c
+2191.7 4017.74 2202.9 4006.55 2216.7 4006.55 c
+2230.51 4006.55 2241.7 4017.74 2241.7 4031.55 c
+f
+2241.7 4031.55 m
+2241.7 4045.36 2230.51 4056.55 2216.7 4056.55 c
+2202.9 4056.55 2191.7 4045.36 2191.7 4031.55 c
+2191.7 4017.74 2202.9 4006.55 2216.7 4006.55 c
+2230.51 4006.55 2241.7 4017.74 2241.7 4031.55 c
+h
+S
+2363.48 4045 m
+2363.48 4058.81 2352.29 4070 2338.48 4070 c
+2324.68 4070 2313.48 4058.81 2313.48 4045 c
+2313.48 4031.2 2324.68 4020 2338.48 4020 c
+2352.29 4020 2363.48 4031.2 2363.48 4045 c
+f
+2363.48 4045 m
+2363.48 4058.81 2352.29 4070 2338.48 4070 c
+2324.68 4070 2313.48 4058.81 2313.48 4045 c
+2313.48 4031.2 2324.68 4020 2338.48 4020 c
+2352.29 4020 2363.48 4031.2 2363.48 4045 c
+h
+S
+/DeviceRGB {} cs
+[1 0 0] sc
+403.23 2849.51 m
+403.23 2856.81 397.309 2862.73 390 2862.73 c
+382.691 2862.73 376.77 2856.81 376.77 2849.51 c
+376.77 2842.2 382.691 2836.28 390 2836.28 c
+397.309 2836.28 403.23 2842.2 403.23 2849.51 c
+f
+/DeviceRGB {} CS
+[1 0 0] SC
+403.23 2849.51 m
+403.23 2856.81 397.309 2862.73 390 2862.73 c
+382.691 2862.73 376.77 2856.81 376.77 2849.51 c
+376.77 2842.2 382.691 2836.28 390 2836.28 c
+397.309 2836.28 403.23 2842.2 403.23 2849.51 c
+h
+S
+525.012 2871.78 m
+525.012 2879.09 519.09 2885.01 511.781 2885.01 c
+504.473 2885.01 498.551 2879.09 498.551 2871.78 c
+498.551 2864.47 504.473 2858.55 511.781 2858.55 c
+519.09 2858.55 525.012 2864.47 525.012 2871.78 c
+f
+525.012 2871.78 m
+525.012 2879.09 519.09 2885.01 511.781 2885.01 c
+504.473 2885.01 498.551 2879.09 498.551 2871.78 c
+498.551 2864.47 504.473 2858.55 511.781 2858.55 c
+519.09 2858.55 525.012 2864.47 525.012 2871.78 c
+h
+S
+646.789 2911.07 m
+646.789 2918.38 640.867 2924.3 633.559 2924.3 c
+626.254 2924.3 620.332 2918.38 620.332 2911.07 c
+620.332 2903.77 626.254 2897.84 633.559 2897.84 c
+640.867 2897.84 646.789 2903.77 646.789 2911.07 c
+f
+646.789 2911.07 m
+646.789 2918.38 640.867 2924.3 633.559 2924.3 c
+626.254 2924.3 620.332 2918.38 620.332 2911.07 c
+620.332 2903.77 626.254 2897.84 633.559 2897.84 c
+640.867 2897.84 646.789 2903.77 646.789 2911.07 c
+h
+S
+768.57 2984.07 m
+768.57 2991.38 762.648 2997.3 755.34 2997.3 c
+748.031 2997.3 742.109 2991.38 742.109 2984.07 c
+742.109 2976.76 748.031 2970.84 755.34 2970.84 c
+762.648 2970.84 768.57 2976.76 768.57 2984.07 c
+f
+768.57 2984.07 m
+768.57 2991.38 762.648 2997.3 755.34 2997.3 c
+748.031 2997.3 742.109 2991.38 742.109 2984.07 c
+742.109 2976.76 748.031 2970.84 755.34 2970.84 c
+762.648 2970.84 768.57 2976.76 768.57 2984.07 c
+h
+S
+890.352 3111.51 m
+890.352 3118.82 884.43 3124.74 877.121 3124.74 c
+869.813 3124.74 863.891 3118.82 863.891 3111.51 c
+863.891 3104.2 869.813 3098.28 877.121 3098.28 c
+884.43 3098.28 890.352 3104.2 890.352 3111.51 c
+f
+890.352 3111.51 m
+890.352 3118.82 884.43 3124.74 877.121 3124.74 c
+869.813 3124.74 863.891 3118.82 863.891 3111.51 c
+863.891 3104.2 869.813 3098.28 877.121 3098.28 c
+884.43 3098.28 890.352 3104.2 890.352 3111.51 c
+h
+S
+1012.13 3298.65 m
+1012.13 3305.96 1006.21 3311.88 998.902 3311.88 c
+991.594 3311.88 985.672 3305.96 985.672 3298.65 c
+985.672 3291.34 991.594 3285.42 998.902 3285.42 c
+1006.21 3285.42 1012.13 3291.34 1012.13 3298.65 c
+f
+1012.13 3298.65 m
+1012.13 3305.96 1006.21 3311.88 998.902 3311.88 c
+991.594 3311.88 985.672 3305.96 985.672 3298.65 c
+985.672 3291.34 991.594 3285.42 998.902 3285.42 c
+1006.21 3285.42 1012.13 3291.34 1012.13 3298.65 c
+h
+S
+1133.91 3505.06 m
+1133.91 3512.37 1127.99 3518.29 1120.68 3518.29 c
+1113.38 3518.29 1107.45 3512.37 1107.45 3505.06 c
+1107.45 3497.75 1113.38 3491.83 1120.68 3491.83 c
+1127.99 3491.83 1133.91 3497.75 1133.91 3505.06 c
+f
+1133.91 3505.06 m
+1133.91 3512.37 1127.99 3518.29 1120.68 3518.29 c
+1113.38 3518.29 1107.45 3512.37 1107.45 3505.06 c
+1107.45 3497.75 1113.38 3491.83 1120.68 3491.83 c
+1127.99 3491.83 1133.91 3497.75 1133.91 3505.06 c
+h
+S
+1255.69 3669.43 m
+1255.69 3676.74 1249.77 3682.66 1242.46 3682.66 c
+1235.15 3682.66 1229.23 3676.74 1229.23 3669.43 c
+1229.23 3662.12 1235.15 3656.2 1242.46 3656.2 c
+1249.77 3656.2 1255.69 3662.12 1255.69 3669.43 c
+f
+1255.69 3669.43 m
+1255.69 3676.74 1249.77 3682.66 1242.46 3682.66 c
+1235.15 3682.66 1229.23 3676.74 1229.23 3669.43 c
+1229.23 3662.12 1235.15 3656.2 1242.46 3656.2 c
+1249.77 3656.2 1255.69 3662.12 1255.69 3669.43 c
+h
+S
+1377.47 3773.5 m
+1377.47 3780.81 1371.55 3786.73 1364.24 3786.73 c
+1356.93 3786.73 1351.01 3780.81 1351.01 3773.5 c
+1351.01 3766.2 1356.93 3760.27 1364.24 3760.27 c
+1371.55 3760.27 1377.47 3766.2 1377.47 3773.5 c
+f
+1377.47 3773.5 m
+1377.47 3780.81 1371.55 3786.73 1364.24 3786.73 c
+1356.93 3786.73 1351.01 3780.81 1351.01 3773.5 c
+1351.01 3766.2 1356.93 3760.27 1364.24 3760.27 c
+1371.55 3760.27 1377.47 3766.2 1377.47 3773.5 c
+h
+S
+1499.25 3839.61 m
+1499.25 3846.92 1493.33 3852.84 1486.02 3852.84 c
+1478.71 3852.84 1472.79 3846.92 1472.79 3839.61 c
+1472.79 3832.3 1478.71 3826.38 1486.02 3826.38 c
+1493.33 3826.38 1499.25 3832.3 1499.25 3839.61 c
+f
+1499.25 3839.61 m
+1499.25 3846.92 1493.33 3852.84 1486.02 3852.84 c
+1478.71 3852.84 1472.79 3846.92 1472.79 3839.61 c
+1472.79 3832.3 1478.71 3826.38 1486.02 3826.38 c
+1493.33 3826.38 1499.25 3832.3 1499.25 3839.61 c
+h
+S
+1621.03 3890.41 m
+1621.03 3897.72 1615.11 3903.64 1607.8 3903.64 c
+1600.49 3903.64 1594.57 3897.72 1594.57 3890.41 c
+1594.57 3883.11 1600.49 3877.18 1607.8 3877.18 c
+1615.11 3877.18 1621.03 3883.11 1621.03 3890.41 c
+f
+1621.03 3890.41 m
+1621.03 3897.72 1615.11 3903.64 1607.8 3903.64 c
+1600.49 3903.64 1594.57 3897.72 1594.57 3890.41 c
+1594.57 3883.11 1600.49 3877.18 1607.8 3877.18 c
+1615.11 3877.18 1621.03 3883.11 1621.03 3890.41 c
+h
+S
+1742.81 3932.65 m
+1742.81 3939.96 1736.89 3945.88 1729.58 3945.88 c
+1722.27 3945.88 1716.35 3939.96 1716.35 3932.65 c
+1716.35 3925.34 1722.27 3919.42 1729.58 3919.42 c
+1736.89 3919.42 1742.81 3925.34 1742.81 3932.65 c
+f
+1742.81 3932.65 m
+1742.81 3939.96 1736.89 3945.88 1729.58 3945.88 c
+1722.27 3945.88 1716.35 3939.96 1716.35 3932.65 c
+1716.35 3925.34 1722.27 3919.42 1729.58 3919.42 c
+1736.89 3919.42 1742.81 3925.34 1742.81 3932.65 c
+h
+S
+1864.59 3966.47 m
+1864.59 3973.78 1858.67 3979.7 1851.36 3979.7 c
+1844.05 3979.7 1838.13 3973.78 1838.13 3966.47 c
+1838.13 3959.16 1844.05 3953.24 1851.36 3953.24 c
+1858.67 3953.24 1864.59 3959.16 1864.59 3966.47 c
+f
+1864.59 3966.47 m
+1864.59 3973.78 1858.67 3979.7 1851.36 3979.7 c
+1844.05 3979.7 1838.13 3973.78 1838.13 3966.47 c
+1838.13 3959.16 1844.05 3953.24 1851.36 3953.24 c
+1858.67 3953.24 1864.59 3959.16 1864.59 3966.47 c
+h
+S
+1986.37 3993.29 m
+1986.37 4000.6 1980.45 4006.52 1973.14 4006.52 c
+1965.84 4006.52 1959.91 4000.6 1959.91 3993.29 c
+1959.91 3985.98 1965.84 3980.06 1973.14 3980.06 c
+1980.45 3980.06 1986.37 3985.98 1986.37 3993.29 c
+f
+1986.37 3993.29 m
+1986.37 4000.6 1980.45 4006.52 1973.14 4006.52 c
+1965.84 4006.52 1959.91 4000.6 1959.91 3993.29 c
+1959.91 3985.98 1965.84 3980.06 1973.14 3980.06 c
+1980.45 3980.06 1986.37 3985.98 1986.37 3993.29 c
+h
+S
+2108.15 4014.61 m
+2108.15 4021.92 2102.23 4027.84 2094.92 4027.84 c
+2087.61 4027.84 2081.69 4021.92 2081.69 4014.61 c
+2081.69 4007.3 2087.61 4001.38 2094.92 4001.38 c
+2102.23 4001.38 2108.15 4007.3 2108.15 4014.61 c
+f
+2108.15 4014.61 m
+2108.15 4021.92 2102.23 4027.84 2094.92 4027.84 c
+2087.61 4027.84 2081.69 4021.92 2081.69 4014.61 c
+2081.69 4007.3 2087.61 4001.38 2094.92 4001.38 c
+2102.23 4001.38 2108.15 4007.3 2108.15 4014.61 c
+h
+S
+2229.93 4031.55 m
+2229.93 4038.86 2224.01 4044.78 2216.7 4044.78 c
+2209.39 4044.78 2203.47 4038.86 2203.47 4031.55 c
+2203.47 4024.24 2209.39 4018.32 2216.7 4018.32 c
+2224.01 4018.32 2229.93 4024.24 2229.93 4031.55 c
+f
+2229.93 4031.55 m
+2229.93 4038.86 2224.01 4044.78 2216.7 4044.78 c
+2209.39 4044.78 2203.47 4038.86 2203.47 4031.55 c
+2203.47 4024.24 2209.39 4018.32 2216.7 4018.32 c
+2224.01 4018.32 2229.93 4024.24 2229.93 4031.55 c
+h
+S
+2351.71 4045 m
+2351.71 4052.31 2345.79 4058.23 2338.48 4058.23 c
+2331.18 4058.23 2325.25 4052.31 2325.25 4045 c
+2325.25 4037.7 2331.18 4031.77 2338.48 4031.77 c
+2345.79 4031.77 2351.71 4037.7 2351.71 4045 c
+f
+2351.71 4045 m
+2351.71 4052.31 2345.79 4058.23 2338.48 4058.23 c
+2331.18 4058.23 2325.25 4052.31 2325.25 4045 c
+2325.25 4037.7 2331.18 4031.77 2338.48 4031.77 c
+2345.79 4031.77 2351.71 4037.7 2351.71 4045 c
+h
+S
+/DeviceGray {} cs
+[1] sc
+1458 2724 864 402 re
+f
+/DeviceGray {} cs
+[0] sc
+q
+[10 0 0 10 0 0] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+[1 0 0 1 181.111 301.415] Tm
+0 0 Td
+/F7_0 9 Tf
+(bg = 0.12 m)
+[5.004
+0
+5.004
+0
+2.502
+0
+5.256
+0
+2.502
+0
+5.004
+0
+2.502
+0
+5.004
+0
+5.004
+0
+2.502
+0
+7.497
+0] Tj
+Q
+/DeviceGray {} CS
+[0] SC
+1668.31 3050.15 m
+1668.31 3066.72 1654.88 3080.15 1638.31 3080.15 c
+1621.75 3080.15 1608.31 3066.72 1608.31 3050.15 c
+1608.31 3033.59 1621.75 3020.15 1638.31 3020.15 c
+1654.88 3020.15 1668.31 3033.59 1668.31 3050.15 c
+h
+S
+q
+[10 0 0 10 0 0] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+[1 0 0 1 181.111 288.9] Tm
+0 0 Td
+/F7_0 9 Tf
+(bg = 0.24 m)
+[5.004
+0
+5.004
+0
+2.502
+0
+5.256
+0
+2.502
+0
+5.004
+0
+2.502
+0
+5.004
+0
+5.004
+0
+2.502
+0
+7.497
+0] Tj
+Q
+/DeviceRGB {} cs
+[0 1 0] sc
+1668.31 2925 m
+1668.31 2941.57 1654.88 2955 1638.31 2955 c
+1621.75 2955 1608.31 2941.57 1608.31 2925 c
+1608.31 2908.43 1621.75 2895 1638.31 2895 c
+1654.88 2895 1668.31 2908.43 1668.31 2925 c
+f
+/DeviceRGB {} CS
+[0 1 0] SC
+1668.31 2925 m
+1668.31 2941.57 1654.88 2955 1638.31 2955 c
+1621.75 2955 1608.31 2941.57 1608.31 2925 c
+1608.31 2908.43 1621.75 2895 1638.31 2895 c
+1654.88 2895 1668.31 2908.43 1668.31 2925 c
+h
+S
+/DeviceGray {} cs
+[0] sc
+q
+[10 0 0 10 0 0] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+[1 0 0 1 181.111 276.385] Tm
+0 0 Td
+/F7_0 9 Tf
+(bg = 0.48 m)
+[5.004
+0
+5.004
+0
+2.502
+0
+5.256
+0
+2.502
+0
+5.004
+0
+2.502
+0
+5.004
+0
+5.004
+0
+2.502
+0
+7.497
+0] Tj
+Q
+/DeviceRGB {} cs
+[1 0 0] sc
+1668.31 2799.85 m
+1668.31 2816.41 1654.88 2829.85 1638.31 2829.85 c
+1621.75 2829.85 1608.31 2816.41 1608.31 2799.85 c
+1608.31 2783.29 1621.75 2769.85 1638.31 2769.85 c
+1654.88 2769.85 1668.31 2783.29 1668.31 2799.85 c
+f
+/DeviceRGB {} CS
+[1 0 0] SC
+1668.31 2799.85 m
+1668.31 2816.41 1654.88 2829.85 1638.31 2829.85 c
+1621.75 2829.85 1608.31 2816.41 1608.31 2799.85 c
+1608.31 2783.29 1621.75 2769.85 1638.31 2769.85 c
+1654.88 2769.85 1668.31 2783.29 1668.31 2799.85 c
+h
+S
+4.998 w
+/DeviceGray {} CS
+[0.1489] SC
+1458 2724 864 402 re
+S
+/DeviceGray {} cs
+[1] sc
+3030 2646 2010 1428 re
+f
+2 J
+3030 2646 m
+5040 2646 l
+S
+3030 4074 m
+5040 4074 l
+S
+3030 2646 m
+3030 2666.1 l
+S
+3638.9 2646 m
+3638.9 2666.1 l
+S
+4247.8 2646 m
+4247.8 2666.1 l
+S
+4856.7 2646 m
+4856.7 2666.1 l
+S
+3030 4074 m
+3030 4053.9 l
+S
+3638.9 4074 m
+3638.9 4053.9 l
+S
+4247.8 4074 m
+4247.8 4053.9 l
+S
+4856.7 4074 m
+4856.7 4053.9 l
+S
+3030 2646 m
+3030 2656.05 l
+S
+3213.3 2646 m
+3213.3 2656.05 l
+S
+3320.52 2646 m
+3320.52 2656.05 l
+S
+3396.59 2646 m
+3396.59 2656.05 l
+S
+3455.61 2646 m
+3455.61 2656.05 l
+S
+3503.81 2646 m
+3503.81 2656.05 l
+S
+3544.58 2646 m
+3544.58 2656.05 l
+S
+3579.89 2646 m
+3579.89 2656.05 l
+S
+3611.04 2646 m
+3611.04 2656.05 l
+S
+3638.9 2646 m
+3638.9 2656.05 l
+S
+3822.2 2646 m
+3822.2 2656.05 l
+S
+3929.42 2646 m
+3929.42 2656.05 l
+S
+4005.5 2646 m
+4005.5 2656.05 l
+S
+4064.5 2646 m
+4064.5 2656.05 l
+S
+4112.72 2646 m
+4112.72 2656.05 l
+S
+4153.48 2646 m
+4153.48 2656.05 l
+S
+4188.79 2646 m
+4188.79 2656.05 l
+S
+4219.94 2646 m
+4219.94 2656.05 l
+S
+4247.8 2646 m
+4247.8 2656.05 l
+S
+4431.1 2646 m
+4431.1 2656.05 l
+S
+4538.32 2646 m
+4538.32 2656.05 l
+S
+4614.39 2646 m
+4614.39 2656.05 l
+S
+4673.41 2646 m
+4673.41 2656.05 l
+S
+4721.62 2646 m
+4721.62 2656.05 l
+S
+4762.38 2646 m
+4762.38 2656.05 l
+S
+4797.7 2646 m
+4797.7 2656.05 l
+S
+4828.84 2646 m
+4828.84 2656.05 l
+S
+4856.7 2646 m
+4856.7 2656.05 l
+S
+5040 2646 m
+5040 2656.05 l
+S
+3030 4074 m
+3030 4063.95 l
+S
+3213.3 4074 m
+3213.3 4063.95 l
+S
+3320.52 4074 m
+3320.52 4063.95 l
+S
+3396.59 4074 m
+3396.59 4063.95 l
+S
+3455.61 4074 m
+3455.61 4063.95 l
+S
+3503.81 4074 m
+3503.81 4063.95 l
+S
+3544.58 4074 m
+3544.58 4063.95 l
+S
+3579.89 4074 m
+3579.89 4063.95 l
+S
+3611.04 4074 m
+3611.04 4063.95 l
+S
+3638.9 4074 m
+3638.9 4063.95 l
+S
+3822.2 4074 m
+3822.2 4063.95 l
+S
+3929.42 4074 m
+3929.42 4063.95 l
+S
+4005.5 4074 m
+4005.5 4063.95 l
+S
+4064.5 4074 m
+4064.5 4063.95 l
+S
+4112.72 4074 m
+4112.72 4063.95 l
+S
+4153.48 4074 m
+4153.48 4063.95 l
+S
+4188.79 4074 m
+4188.79 4063.95 l
+S
+4219.94 4074 m
+4219.94 4063.95 l
+S
+4247.8 4074 m
+4247.8 4063.95 l
+S
+4431.1 4074 m
+4431.1 4063.95 l
+S
+4538.32 4074 m
+4538.32 4063.95 l
+S
+4614.39 4074 m
+4614.39 4063.95 l
+S
+4673.41 4074 m
+4673.41 4063.95 l
+S
+4721.62 4074 m
+4721.62 4063.95 l
+S
+4762.38 4074 m
+4762.38 4063.95 l
+S
+4797.7 4074 m
+4797.7 4063.95 l
+S
+4828.84 4074 m
+4828.84 4063.95 l
+S
+4856.7 4074 m
+4856.7 4063.95 l
+S
+5040 4074 m
+5040 4063.95 l
+S
+/DeviceGray {} cs
+[0.1489] sc
+q
+[10 0 0 10 0 0] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+[1 0 0 1 294.6 247.2] Tm
+0 0 Td
+/F7_0 10.0002 Tf
+(10)
+[5.560111
+0
+5.560111
+0] Tj
+11.4 4.8 Td
+/F7_0 7.9998 Tf
+(0)
+[4.447889
+0] Tj
+60.6 0 Td
+/F7_0 10.0002 Tf
+(10)
+[5.560111
+0
+5.560111
+0] Tj
+72 4.8 Td
+/F7_0 7.9998 Tf
+(1)
+[4.447889
+0] Tj
+121.8 0 Td
+/F7_0 10.0002 Tf
+(10)
+[5.560111
+0
+5.560111
+0] Tj
+133.2 4.8 Td
+/F7_0 7.9998 Tf
+(2)
+[4.447889
+0] Tj
+182.4 0 Td
+/F7_0 10.0002 Tf
+(10)
+[5.560111
+0
+5.560111
+0] Tj
+193.8 4.8 Td
+/F7_0 7.9998 Tf
+(3)
+[4.447889
+0] Tj
+72.6 -14.6 Td
+/F7_0 10.9998 Tf
+(frequency \(Hz\))
+[3.057944
+0
+3.662933
+0
+6.115889
+0
+6.115889
+0
+6.115889
+0
+6.115889
+0
+6.115889
+0
+5.4999
+0
+5.4999
+0
+3.057944
+0
+3.662933
+0
+7.941856
+0
+5.4999
+0
+3.662933
+0] Tj
+102 -29 Td
+(\(b\))
+[3.662933
+0
+6.115889
+0
+3.662933
+0] Tj
+Q
+3030 2646 m
+3030 4074 l
+S
+5040 2646 m
+5040 4074 l
+S
+3030 2646 m
+3050.1 2646 l
+S
+3030 2931.6 m
+3050.1 2931.6 l
+S
+3030 3217.2 m
+3050.1 3217.2 l
+S
+3030 3502.8 m
+3050.1 3502.8 l
+S
+3030 3788.4 m
+3050.1 3788.4 l
+S
+3030 4074 m
+3050.1 4074 l
+S
+5040 2646 m
+5019.9 2646 l
+S
+5040 2931.6 m
+5019.9 2931.6 l
+S
+5040 3217.2 m
+5019.9 3217.2 l
+S
+5040 3502.8 m
+5019.9 3502.8 l
+S
+5040 3788.4 m
+5019.9 3788.4 l
+S
+5040 4074 m
+5019.9 4074 l
+S
+q
+[10 0 0 10 0 0] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+[1 0 0 1 284.6 260.7] Tm
+0 0 Td
+/F7_0 10.0002 Tf
+(2.2)
+[5.560111
+0
+2.780056
+0
+5.560111
+0] Tj
+0 28.5602 Td
+(2.4)
+[5.560111
+0
+2.780056
+0
+5.560111
+0] Tj
+0 57.12 Td
+(2.6)
+[5.560111
+0
+2.780056
+0
+5.560111
+0] Tj
+0 85.6802 Td
+(2.8)
+[5.560111
+0
+2.780056
+0
+5.560111
+0] Tj
+0 114.24 Td
+(3.0)
+[5.560111
+0
+2.780056
+0
+5.560111
+0] Tj
+0 142.8002 Td
+(3.2)
+[5.560111
+0
+2.780056
+0
+5.560111
+0] Tj
+[0 1 -1 0 273.6 299.4] Tm
+0 0 Td
+/F7_0 10.9998 Tf
+(Re\(C)
+[7.941856
+0
+6.115889
+0
+3.662933
+0
+7.941856
+0] Tj
+25.8 -5.4 Td
+/F7_0 8.8002 Tf
+(13)
+[4.892911
+0
+4.892911
+0] Tj
+36 0 Td
+/F7_0 10.9998 Tf
+(\) \(GPa\))
+[3.662933
+0
+3.057944
+0
+3.662933
+0
+8.557844
+0
+7.336867
+0
+6.115889
+0
+3.662933
+0] Tj
+Q
+6 w
+0 J
+/DeviceGray {} CS
+[0] SC
+3059.58 2670.21 m
+3059.58 2686.55 3046.34 2699.79 3030 2699.79 c
+3013.66 2699.79 3000.42 2686.55 3000.42 2670.21 c
+3000.42 2653.87 3013.66 2640.63 3030 2640.63 c
+3046.34 2640.63 3059.58 2653.87 3059.58 2670.21 c
+h
+S
+3181.36 2693.79 m
+3181.36 2710.12 3168.12 2723.36 3151.78 2723.36 c
+3135.44 2723.36 3122.2 2710.12 3122.2 2693.79 c
+3122.2 2677.45 3135.44 2664.2 3151.78 2664.2 c
+3168.12 2664.2 3181.36 2677.45 3181.36 2693.79 c
+h
+S
+3303.14 2735.39 m
+3303.14 2751.72 3289.9 2764.96 3273.56 2764.96 c
+3257.22 2764.96 3243.98 2751.72 3243.98 2735.39 c
+3243.98 2719.05 3257.22 2705.8 3273.56 2705.8 c
+3289.9 2705.8 3303.14 2719.05 3303.14 2735.39 c
+h
+S
+3424.92 2812.65 m
+3424.92 2828.99 3411.68 2842.23 3395.34 2842.23 c
+3379 2842.23 3365.76 2828.99 3365.76 2812.65 c
+3365.76 2796.31 3379 2783.07 3395.34 2783.07 c
+3411.68 2783.07 3424.92 2796.31 3424.92 2812.65 c
+h
+S
+3546.7 2947.55 m
+3546.7 2963.89 3533.46 2977.14 3517.12 2977.14 c
+3500.78 2977.14 3487.54 2963.89 3487.54 2947.55 c
+3487.54 2931.22 3500.78 2917.98 3517.12 2917.98 c
+3533.46 2917.98 3546.7 2931.22 3546.7 2947.55 c
+h
+S
+3668.48 3145.66 m
+3668.48 3161.99 3655.24 3175.23 3638.9 3175.23 c
+3622.56 3175.23 3609.32 3161.99 3609.32 3145.66 c
+3609.32 3129.32 3622.56 3116.07 3638.9 3116.07 c
+3655.24 3116.07 3668.48 3129.32 3668.48 3145.66 c
+h
+S
+3790.26 3364.14 m
+3790.26 3380.48 3777.02 3393.72 3760.68 3393.72 c
+3744.34 3393.72 3731.1 3380.48 3731.1 3364.14 c
+3731.1 3347.8 3744.34 3334.56 3760.68 3334.56 c
+3777.02 3334.56 3790.26 3347.8 3790.26 3364.14 c
+h
+S
+3912.04 3538.14 m
+3912.04 3554.48 3898.8 3567.72 3882.46 3567.72 c
+3866.13 3567.72 3852.88 3554.48 3852.88 3538.14 c
+3852.88 3521.8 3866.13 3508.56 3882.46 3508.56 c
+3898.8 3508.56 3912.04 3521.8 3912.04 3538.14 c
+h
+S
+4033.82 3648.32 m
+4033.82 3664.66 4020.58 3677.9 4004.24 3677.9 c
+3987.9 3677.9 3974.66 3664.66 3974.66 3648.32 c
+3974.66 3631.98 3987.9 3618.74 4004.24 3618.74 c
+4020.58 3618.74 4033.82 3631.98 4033.82 3648.32 c
+h
+S
+4155.6 3718.32 m
+4155.6 3734.66 4142.36 3747.9 4126.02 3747.9 c
+4109.68 3747.9 4096.44 3734.66 4096.44 3718.32 c
+4096.44 3701.98 4109.68 3688.74 4126.02 3688.74 c
+4142.36 3688.74 4155.6 3701.98 4155.6 3718.32 c
+h
+S
+4277.38 3772.13 m
+4277.38 3788.47 4264.14 3801.71 4247.8 3801.71 c
+4231.46 3801.71 4218.22 3788.47 4218.22 3772.13 c
+4218.22 3755.8 4231.46 3742.55 4247.8 3742.55 c
+4264.14 3742.55 4277.38 3755.8 4277.38 3772.13 c
+h
+S
+4399.16 3816.88 m
+4399.16 3833.21 4385.92 3846.45 4369.58 3846.45 c
+4353.25 3846.45 4340 3833.21 4340 3816.88 c
+4340 3800.54 4353.25 3787.29 4369.58 3787.29 c
+4385.92 3787.29 4399.16 3800.54 4399.16 3816.88 c
+h
+S
+4520.94 3852.69 m
+4520.94 3869.03 4507.7 3882.27 4491.36 3882.27 c
+4475.02 3882.27 4461.78 3869.03 4461.78 3852.69 c
+4461.78 3836.35 4475.02 3823.11 4491.36 3823.11 c
+4507.7 3823.11 4520.94 3836.35 4520.94 3852.69 c
+h
+S
+4642.72 3881.09 m
+4642.72 3897.43 4629.48 3910.67 4613.14 3910.67 c
+4596.8 3910.67 4583.56 3897.43 4583.56 3881.09 c
+4583.56 3864.75 4596.8 3851.51 4613.14 3851.51 c
+4629.48 3851.51 4642.72 3864.75 4642.72 3881.09 c
+h
+S
+4764.5 3903.66 m
+4764.5 3920 4751.26 3933.25 4734.92 3933.25 c
+4718.59 3933.25 4705.34 3920 4705.34 3903.66 c
+4705.34 3887.33 4718.59 3874.09 4734.92 3874.09 c
+4751.26 3874.09 4764.5 3887.33 4764.5 3903.66 c
+h
+S
+4886.29 3921.6 m
+4886.29 3937.94 4873.04 3951.18 4856.7 3951.18 c
+4840.37 3951.18 4827.13 3937.94 4827.13 3921.6 c
+4827.13 3905.26 4840.37 3892.02 4856.7 3892.02 c
+4873.04 3892.02 4886.29 3905.26 4886.29 3921.6 c
+h
+S
+5008.06 3935.85 m
+5008.06 3952.18 4994.82 3965.43 4978.48 3965.43 c
+4962.14 3965.43 4948.9 3952.18 4948.9 3935.85 c
+4948.9 3919.51 4962.14 3906.27 4978.48 3906.27 c
+4994.82 3906.27 5008.06 3919.51 5008.06 3935.85 c
+h
+S
+/DeviceRGB {} cs
+[0 1 0] sc
+3055 2670.21 m
+3055 2684.02 3043.8 2695.21 3030 2695.21 c
+3016.2 2695.21 3005 2684.02 3005 2670.21 c
+3005 2656.4 3016.2 2645.21 3030 2645.21 c
+3043.8 2645.21 3055 2656.4 3055 2670.21 c
+f
+/DeviceRGB {} CS
+[0 1 0] SC
+3055 2670.21 m
+3055 2684.02 3043.8 2695.21 3030 2695.21 c
+3016.2 2695.21 3005 2684.02 3005 2670.21 c
+3005 2656.4 3016.2 2645.21 3030 2645.21 c
+3043.8 2645.21 3055 2656.4 3055 2670.21 c
+h
+S
+3176.78 2693.79 m
+3176.78 2707.59 3165.59 2718.79 3151.78 2718.79 c
+3137.97 2718.79 3126.78 2707.59 3126.78 2693.79 c
+3126.78 2679.98 3137.97 2668.78 3151.78 2668.78 c
+3165.59 2668.78 3176.78 2679.98 3176.78 2693.79 c
+f
+3176.78 2693.79 m
+3176.78 2707.59 3165.59 2718.79 3151.78 2718.79 c
+3137.97 2718.79 3126.78 2707.59 3126.78 2693.79 c
+3126.78 2679.98 3137.97 2668.78 3151.78 2668.78 c
+3165.59 2668.78 3176.78 2679.98 3176.78 2693.79 c
+h
+S
+3298.56 2735.39 m
+3298.56 2749.19 3287.37 2760.39 3273.56 2760.39 c
+3259.75 2760.39 3248.56 2749.19 3248.56 2735.39 c
+3248.56 2721.58 3259.75 2710.38 3273.56 2710.38 c
+3287.37 2710.38 3298.56 2721.58 3298.56 2735.39 c
+f
+3298.56 2735.39 m
+3298.56 2749.19 3287.37 2760.39 3273.56 2760.39 c
+3259.75 2760.39 3248.56 2749.19 3248.56 2735.39 c
+3248.56 2721.58 3259.75 2710.38 3273.56 2710.38 c
+3287.37 2710.38 3298.56 2721.58 3298.56 2735.39 c
+h
+S
+3420.34 2812.65 m
+3420.34 2826.46 3409.15 2837.65 3395.34 2837.65 c
+3381.54 2837.65 3370.34 2826.46 3370.34 2812.65 c
+3370.34 2798.84 3381.54 2787.65 3395.34 2787.65 c
+3409.15 2787.65 3420.34 2798.84 3420.34 2812.65 c
+f
+3420.34 2812.65 m
+3420.34 2826.46 3409.15 2837.65 3395.34 2837.65 c
+3381.54 2837.65 3370.34 2826.46 3370.34 2812.65 c
+3370.34 2798.84 3381.54 2787.65 3395.34 2787.65 c
+3409.15 2787.65 3420.34 2798.84 3420.34 2812.65 c
+h
+S
+3542.12 2947.55 m
+3542.12 2961.36 3530.93 2972.56 3517.12 2972.56 c
+3503.32 2972.56 3492.12 2961.36 3492.12 2947.55 c
+3492.12 2933.75 3503.32 2922.55 3517.12 2922.55 c
+3530.93 2922.55 3542.12 2933.75 3542.12 2947.55 c
+f
+3542.12 2947.55 m
+3542.12 2961.36 3530.93 2972.56 3517.12 2972.56 c
+3503.32 2972.56 3492.12 2961.36 3492.12 2947.55 c
+3492.12 2933.75 3503.32 2922.55 3517.12 2922.55 c
+3530.93 2922.55 3542.12 2933.75 3542.12 2947.55 c
+h
+S
+3663.9 3145.66 m
+3663.9 3159.46 3652.71 3170.66 3638.9 3170.66 c
+3625.09 3170.66 3613.9 3159.46 3613.9 3145.66 c
+3613.9 3131.85 3625.09 3120.65 3638.9 3120.65 c
+3652.71 3120.65 3663.9 3131.85 3663.9 3145.66 c
+f
+3663.9 3145.66 m
+3663.9 3159.46 3652.71 3170.66 3638.9 3170.66 c
+3625.09 3170.66 3613.9 3159.46 3613.9 3145.66 c
+3613.9 3131.85 3625.09 3120.65 3638.9 3120.65 c
+3652.71 3120.65 3663.9 3131.85 3663.9 3145.66 c
+h
+S
+3785.68 3364.14 m
+3785.68 3377.95 3774.49 3389.14 3760.68 3389.14 c
+3746.88 3389.14 3735.68 3377.95 3735.68 3364.14 c
+3735.68 3350.34 3746.88 3339.14 3760.68 3339.14 c
+3774.49 3339.14 3785.68 3350.34 3785.68 3364.14 c
+f
+3785.68 3364.14 m
+3785.68 3377.95 3774.49 3389.14 3760.68 3389.14 c
+3746.88 3389.14 3735.68 3377.95 3735.68 3364.14 c
+3735.68 3350.34 3746.88 3339.14 3760.68 3339.14 c
+3774.49 3339.14 3785.68 3350.34 3785.68 3364.14 c
+h
+S
+3907.46 3538.14 m
+3907.46 3551.95 3896.27 3563.14 3882.46 3563.14 c
+3868.66 3563.14 3857.46 3551.95 3857.46 3538.14 c
+3857.46 3524.34 3868.66 3513.14 3882.46 3513.14 c
+3896.27 3513.14 3907.46 3524.34 3907.46 3538.14 c
+f
+3907.46 3538.14 m
+3907.46 3551.95 3896.27 3563.14 3882.46 3563.14 c
+3868.66 3563.14 3857.46 3551.95 3857.46 3538.14 c
+3857.46 3524.34 3868.66 3513.14 3882.46 3513.14 c
+3896.27 3513.14 3907.46 3524.34 3907.46 3538.14 c
+h
+S
+4029.24 3648.32 m
+4029.24 3662.13 4018.05 3673.32 4004.24 3673.32 c
+3990.43 3673.32 3979.24 3662.13 3979.24 3648.32 c
+3979.24 3634.51 3990.43 3623.32 4004.24 3623.32 c
+4018.05 3623.32 4029.24 3634.51 4029.24 3648.32 c
+f
+4029.24 3648.32 m
+4029.24 3662.13 4018.05 3673.32 4004.24 3673.32 c
+3990.43 3673.32 3979.24 3662.13 3979.24 3648.32 c
+3979.24 3634.51 3990.43 3623.32 4004.24 3623.32 c
+4018.05 3623.32 4029.24 3634.51 4029.24 3648.32 c
+h
+S
+4151.02 3718.32 m
+4151.02 3732.13 4139.83 3743.32 4126.02 3743.32 c
+4112.21 3743.32 4101.02 3732.13 4101.02 3718.32 c
+4101.02 3704.52 4112.21 3693.32 4126.02 3693.32 c
+4139.83 3693.32 4151.02 3704.52 4151.02 3718.32 c
+f
+4151.02 3718.32 m
+4151.02 3732.13 4139.83 3743.32 4126.02 3743.32 c
+4112.21 3743.32 4101.02 3732.13 4101.02 3718.32 c
+4101.02 3704.52 4112.21 3693.32 4126.02 3693.32 c
+4139.83 3693.32 4151.02 3704.52 4151.02 3718.32 c
+h
+S
+4272.8 3772.13 m
+4272.8 3785.94 4261.61 3797.14 4247.8 3797.14 c
+4234 3797.14 4222.8 3785.94 4222.8 3772.13 c
+4222.8 3758.33 4234 3747.13 4247.8 3747.13 c
+4261.61 3747.13 4272.8 3758.33 4272.8 3772.13 c
+f
+4272.8 3772.13 m
+4272.8 3785.94 4261.61 3797.14 4247.8 3797.14 c
+4234 3797.14 4222.8 3785.94 4222.8 3772.13 c
+4222.8 3758.33 4234 3747.13 4247.8 3747.13 c
+4261.61 3747.13 4272.8 3758.33 4272.8 3772.13 c
+h
+S
+4394.59 3816.88 m
+4394.59 3830.68 4383.39 3841.88 4369.58 3841.88 c
+4355.78 3841.88 4344.58 3830.68 4344.58 3816.88 c
+4344.58 3803.07 4355.78 3791.87 4369.58 3791.87 c
+4383.39 3791.87 4394.59 3803.07 4394.59 3816.88 c
+f
+4394.59 3816.88 m
+4394.59 3830.68 4383.39 3841.88 4369.58 3841.88 c
+4355.78 3841.88 4344.58 3830.68 4344.58 3816.88 c
+4344.58 3803.07 4355.78 3791.87 4369.58 3791.87 c
+4383.39 3791.87 4394.59 3803.07 4394.59 3816.88 c
+h
+S
+4516.36 3852.69 m
+4516.36 3866.5 4505.17 3877.69 4491.36 3877.69 c
+4477.55 3877.69 4466.36 3866.5 4466.36 3852.69 c
+4466.36 3838.88 4477.55 3827.69 4491.36 3827.69 c
+4505.17 3827.69 4516.36 3838.88 4516.36 3852.69 c
+f
+4516.36 3852.69 m
+4516.36 3866.5 4505.17 3877.69 4491.36 3877.69 c
+4477.55 3877.69 4466.36 3866.5 4466.36 3852.69 c
+4466.36 3838.88 4477.55 3827.69 4491.36 3827.69 c
+4505.17 3827.69 4516.36 3838.88 4516.36 3852.69 c
+h
+S
+4638.14 3881.09 m
+4638.14 3894.9 4626.95 3906.09 4613.14 3906.09 c
+4599.34 3906.09 4588.14 3894.9 4588.14 3881.09 c
+4588.14 3867.29 4599.34 3856.09 4613.14 3856.09 c
+4626.95 3856.09 4638.14 3867.29 4638.14 3881.09 c
+f
+4638.14 3881.09 m
+4638.14 3894.9 4626.95 3906.09 4613.14 3906.09 c
+4599.34 3906.09 4588.14 3894.9 4588.14 3881.09 c
+4588.14 3867.29 4599.34 3856.09 4613.14 3856.09 c
+4626.95 3856.09 4638.14 3867.29 4638.14 3881.09 c
+h
+S
+4759.93 3903.66 m
+4759.93 3917.47 4748.73 3928.67 4734.92 3928.67 c
+4721.12 3928.67 4709.92 3917.47 4709.92 3903.66 c
+4709.92 3889.86 4721.12 3878.66 4734.92 3878.66 c
+4748.73 3878.66 4759.93 3889.86 4759.93 3903.66 c
+f
+4759.93 3903.66 m
+4759.93 3917.47 4748.73 3928.67 4734.92 3928.67 c
+4721.12 3928.67 4709.92 3917.47 4709.92 3903.66 c
+4709.92 3889.86 4721.12 3878.66 4734.92 3878.66 c
+4748.73 3878.66 4759.93 3889.86 4759.93 3903.66 c
+h
+S
+4881.71 3921.6 m
+4881.71 3935.41 4870.51 3946.6 4856.7 3946.6 c
+4842.9 3946.6 4831.7 3935.41 4831.7 3921.6 c
+4831.7 3907.79 4842.9 3896.6 4856.7 3896.6 c
+4870.51 3896.6 4881.71 3907.79 4881.71 3921.6 c
+f
+4881.71 3921.6 m
+4881.71 3935.41 4870.51 3946.6 4856.7 3946.6 c
+4842.9 3946.6 4831.7 3935.41 4831.7 3921.6 c
+4831.7 3907.79 4842.9 3896.6 4856.7 3896.6 c
+4870.51 3896.6 4881.71 3907.79 4881.71 3921.6 c
+h
+S
+5003.48 3935.85 m
+5003.48 3949.65 4992.29 3960.85 4978.48 3960.85 c
+4964.68 3960.85 4953.48 3949.65 4953.48 3935.85 c
+4953.48 3922.04 4964.68 3910.84 4978.48 3910.84 c
+4992.29 3910.84 5003.48 3922.04 5003.48 3935.85 c
+f
+5003.48 3935.85 m
+5003.48 3949.65 4992.29 3960.85 4978.48 3960.85 c
+4964.68 3960.85 4953.48 3949.65 4953.48 3935.85 c
+4953.48 3922.04 4964.68 3910.84 4978.48 3910.84 c
+4992.29 3910.84 5003.48 3922.04 5003.48 3935.85 c
+h
+S
+/DeviceRGB {} cs
+[1 0 0] sc
+3043.23 2670.21 m
+3043.23 2677.52 3037.31 2683.44 3030 2683.44 c
+3022.69 2683.44 3016.77 2677.52 3016.77 2670.21 c
+3016.77 2662.9 3022.69 2656.98 3030 2656.98 c
+3037.31 2656.98 3043.23 2662.9 3043.23 2670.21 c
+f
+/DeviceRGB {} CS
+[1 0 0] SC
+3043.23 2670.21 m
+3043.23 2677.52 3037.31 2683.44 3030 2683.44 c
+3022.69 2683.44 3016.77 2677.52 3016.77 2670.21 c
+3016.77 2662.9 3022.69 2656.98 3030 2656.98 c
+3037.31 2656.98 3043.23 2662.9 3043.23 2670.21 c
+h
+S
+3165.01 2693.79 m
+3165.01 2701.09 3159.09 2707.02 3151.78 2707.02 c
+3144.47 2707.02 3138.55 2701.09 3138.55 2693.79 c
+3138.55 2686.48 3144.47 2680.55 3151.78 2680.55 c
+3159.09 2680.55 3165.01 2686.48 3165.01 2693.79 c
+f
+3165.01 2693.79 m
+3165.01 2701.09 3159.09 2707.02 3151.78 2707.02 c
+3144.47 2707.02 3138.55 2701.09 3138.55 2693.79 c
+3138.55 2686.48 3144.47 2680.55 3151.78 2680.55 c
+3159.09 2680.55 3165.01 2686.48 3165.01 2693.79 c
+h
+S
+3286.79 2735.39 m
+3286.79 2742.7 3280.87 2748.62 3273.56 2748.62 c
+3266.25 2748.62 3260.33 2742.7 3260.33 2735.39 c
+3260.33 2728.08 3266.25 2722.16 3273.56 2722.16 c
+3280.87 2722.16 3286.79 2728.08 3286.79 2735.39 c
+f
+3286.79 2735.39 m
+3286.79 2742.7 3280.87 2748.62 3273.56 2748.62 c
+3266.25 2748.62 3260.33 2742.7 3260.33 2735.39 c
+3260.33 2728.08 3266.25 2722.16 3273.56 2722.16 c
+3280.87 2722.16 3286.79 2728.08 3286.79 2735.39 c
+h
+S
+3408.57 2812.65 m
+3408.57 2819.96 3402.65 2825.88 3395.34 2825.88 c
+3388.03 2825.88 3382.11 2819.96 3382.11 2812.65 c
+3382.11 2805.34 3388.03 2799.42 3395.34 2799.42 c
+3402.65 2799.42 3408.57 2805.34 3408.57 2812.65 c
+f
+3408.57 2812.65 m
+3408.57 2819.96 3402.65 2825.88 3395.34 2825.88 c
+3388.03 2825.88 3382.11 2819.96 3382.11 2812.65 c
+3382.11 2805.34 3388.03 2799.42 3395.34 2799.42 c
+3402.65 2799.42 3408.57 2805.34 3408.57 2812.65 c
+h
+S
+3530.35 2947.55 m
+3530.35 2954.86 3524.43 2960.79 3517.12 2960.79 c
+3509.81 2960.79 3503.89 2954.86 3503.89 2947.55 c
+3503.89 2940.25 3509.81 2934.32 3517.12 2934.32 c
+3524.43 2934.32 3530.35 2940.25 3530.35 2947.55 c
+f
+3530.35 2947.55 m
+3530.35 2954.86 3524.43 2960.79 3517.12 2960.79 c
+3509.81 2960.79 3503.89 2954.86 3503.89 2947.55 c
+3503.89 2940.25 3509.81 2934.32 3517.12 2934.32 c
+3524.43 2934.32 3530.35 2940.25 3530.35 2947.55 c
+h
+S
+3652.13 3145.66 m
+3652.13 3152.96 3646.21 3158.88 3638.9 3158.88 c
+3631.59 3158.88 3625.67 3152.96 3625.67 3145.66 c
+3625.67 3138.35 3631.59 3132.43 3638.9 3132.43 c
+3646.21 3132.43 3652.13 3138.35 3652.13 3145.66 c
+f
+3652.13 3145.66 m
+3652.13 3152.96 3646.21 3158.88 3638.9 3158.88 c
+3631.59 3158.88 3625.67 3152.96 3625.67 3145.66 c
+3625.67 3138.35 3631.59 3132.43 3638.9 3132.43 c
+3646.21 3132.43 3652.13 3138.35 3652.13 3145.66 c
+h
+S
+3773.91 3364.14 m
+3773.91 3371.45 3767.99 3377.38 3760.68 3377.38 c
+3753.37 3377.38 3747.45 3371.45 3747.45 3364.14 c
+3747.45 3356.84 3753.37 3350.91 3760.68 3350.91 c
+3767.99 3350.91 3773.91 3356.84 3773.91 3364.14 c
+f
+3773.91 3364.14 m
+3773.91 3371.45 3767.99 3377.38 3760.68 3377.38 c
+3753.37 3377.38 3747.45 3371.45 3747.45 3364.14 c
+3747.45 3356.84 3753.37 3350.91 3760.68 3350.91 c
+3767.99 3350.91 3773.91 3356.84 3773.91 3364.14 c
+h
+S
+3895.69 3538.14 m
+3895.69 3545.45 3889.77 3551.38 3882.46 3551.38 c
+3875.15 3551.38 3869.23 3545.45 3869.23 3538.14 c
+3869.23 3530.84 3875.15 3524.91 3882.46 3524.91 c
+3889.77 3524.91 3895.69 3530.84 3895.69 3538.14 c
+f
+3895.69 3538.14 m
+3895.69 3545.45 3889.77 3551.38 3882.46 3551.38 c
+3875.15 3551.38 3869.23 3545.45 3869.23 3538.14 c
+3869.23 3530.84 3875.15 3524.91 3882.46 3524.91 c
+3889.77 3524.91 3895.69 3530.84 3895.69 3538.14 c
+h
+S
+4017.47 3648.32 m
+4017.47 3655.63 4011.55 3661.55 4004.24 3661.55 c
+3996.93 3661.55 3991.01 3655.63 3991.01 3648.32 c
+3991.01 3641.01 3996.93 3635.09 4004.24 3635.09 c
+4011.55 3635.09 4017.47 3641.01 4017.47 3648.32 c
+f
+4017.47 3648.32 m
+4017.47 3655.63 4011.55 3661.55 4004.24 3661.55 c
+3996.93 3661.55 3991.01 3655.63 3991.01 3648.32 c
+3991.01 3641.01 3996.93 3635.09 4004.24 3635.09 c
+4011.55 3635.09 4017.47 3641.01 4017.47 3648.32 c
+h
+S
+4139.25 3718.32 m
+4139.25 3725.63 4133.33 3731.55 4126.02 3731.55 c
+4118.71 3731.55 4112.79 3725.63 4112.79 3718.32 c
+4112.79 3711.01 4118.71 3705.09 4126.02 3705.09 c
+4133.33 3705.09 4139.25 3711.01 4139.25 3718.32 c
+f
+4139.25 3718.32 m
+4139.25 3725.63 4133.33 3731.55 4126.02 3731.55 c
+4118.71 3731.55 4112.79 3725.63 4112.79 3718.32 c
+4112.79 3711.01 4118.71 3705.09 4126.02 3705.09 c
+4133.33 3705.09 4139.25 3711.01 4139.25 3718.32 c
+h
+S
+4261.03 3772.13 m
+4261.03 3779.44 4255.11 3785.36 4247.8 3785.36 c
+4240.49 3785.36 4234.57 3779.44 4234.57 3772.13 c
+4234.57 3764.82 4240.49 3758.9 4247.8 3758.9 c
+4255.11 3758.9 4261.03 3764.82 4261.03 3772.13 c
+f
+4261.03 3772.13 m
+4261.03 3779.44 4255.11 3785.36 4247.8 3785.36 c
+4240.49 3785.36 4234.57 3779.44 4234.57 3772.13 c
+4234.57 3764.82 4240.49 3758.9 4247.8 3758.9 c
+4255.11 3758.9 4261.03 3764.82 4261.03 3772.13 c
+h
+S
+4382.81 3816.88 m
+4382.81 3824.18 4376.89 3830.11 4369.58 3830.11 c
+4362.27 3830.11 4356.35 3824.18 4356.35 3816.88 c
+4356.35 3809.57 4362.27 3803.64 4369.58 3803.64 c
+4376.89 3803.64 4382.81 3809.57 4382.81 3816.88 c
+f
+4382.81 3816.88 m
+4382.81 3824.18 4376.89 3830.11 4369.58 3830.11 c
+4362.27 3830.11 4356.35 3824.18 4356.35 3816.88 c
+4356.35 3809.57 4362.27 3803.64 4369.58 3803.64 c
+4376.89 3803.64 4382.81 3809.57 4382.81 3816.88 c
+h
+S
+4504.59 3852.69 m
+4504.59 3860 4498.67 3865.92 4491.36 3865.92 c
+4484.05 3865.92 4478.13 3860 4478.13 3852.69 c
+4478.13 3845.38 4484.05 3839.46 4491.36 3839.46 c
+4498.67 3839.46 4504.59 3845.38 4504.59 3852.69 c
+f
+4504.59 3852.69 m
+4504.59 3860 4498.67 3865.92 4491.36 3865.92 c
+4484.05 3865.92 4478.13 3860 4478.13 3852.69 c
+4478.13 3845.38 4484.05 3839.46 4491.36 3839.46 c
+4498.67 3839.46 4504.59 3845.38 4504.59 3852.69 c
+h
+S
+4626.37 3881.09 m
+4626.37 3888.4 4620.45 3894.32 4613.14 3894.32 c
+4605.84 3894.32 4599.91 3888.4 4599.91 3881.09 c
+4599.91 3873.78 4605.84 3867.86 4613.14 3867.86 c
+4620.45 3867.86 4626.37 3873.78 4626.37 3881.09 c
+f
+4626.37 3881.09 m
+4626.37 3888.4 4620.45 3894.32 4613.14 3894.32 c
+4605.84 3894.32 4599.91 3888.4 4599.91 3881.09 c
+4599.91 3873.78 4605.84 3867.86 4613.14 3867.86 c
+4620.45 3867.86 4626.37 3873.78 4626.37 3881.09 c
+h
+S
+4748.15 3903.66 m
+4748.15 3910.97 4742.23 3916.89 4734.92 3916.89 c
+4727.61 3916.89 4721.69 3910.97 4721.69 3903.66 c
+4721.69 3896.36 4727.61 3890.43 4734.92 3890.43 c
+4742.23 3890.43 4748.15 3896.36 4748.15 3903.66 c
+f
+4748.15 3903.66 m
+4748.15 3910.97 4742.23 3916.89 4734.92 3916.89 c
+4727.61 3916.89 4721.69 3910.97 4721.69 3903.66 c
+4721.69 3896.36 4727.61 3890.43 4734.92 3890.43 c
+4742.23 3890.43 4748.15 3896.36 4748.15 3903.66 c
+h
+S
+4869.93 3921.6 m
+4869.93 3928.91 4864.01 3934.83 4856.7 3934.83 c
+4849.39 3934.83 4843.47 3928.91 4843.47 3921.6 c
+4843.47 3914.29 4849.39 3908.37 4856.7 3908.37 c
+4864.01 3908.37 4869.93 3914.29 4869.93 3921.6 c
+f
+4869.93 3921.6 m
+4869.93 3928.91 4864.01 3934.83 4856.7 3934.83 c
+4849.39 3934.83 4843.47 3928.91 4843.47 3921.6 c
+4843.47 3914.29 4849.39 3908.37 4856.7 3908.37 c
+4864.01 3908.37 4869.93 3914.29 4869.93 3921.6 c
+h
+S
+4991.71 3935.85 m
+4991.71 3943.16 4985.79 3949.08 4978.48 3949.08 c
+4971.18 3949.08 4965.25 3943.16 4965.25 3935.85 c
+4965.25 3928.54 4971.18 3922.62 4978.48 3922.62 c
+4985.79 3922.62 4991.71 3928.54 4991.71 3935.85 c
+f
+4991.71 3935.85 m
+4991.71 3943.16 4985.79 3949.08 4978.48 3949.08 c
+4971.18 3949.08 4965.25 3943.16 4965.25 3935.85 c
+4965.25 3928.54 4971.18 3922.62 4978.48 3922.62 c
+4985.79 3922.62 4991.71 3928.54 4991.71 3935.85 c
+h
+S
+/DeviceGray {} cs
+[1] sc
+4098 2724 864 402 re
+f
+/DeviceGray {} cs
+[0] sc
+q
+[10 0 0 10 0 0] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+[1 0 0 1 445.111 301.415] Tm
+0 0 Td
+/F7_0 9 Tf
+(bg = 0.12 m)
+[5.004
+0
+5.004
+0
+2.502
+0
+5.256
+0
+2.502
+0
+5.004
+0
+2.502
+0
+5.004
+0
+5.004
+0
+2.502
+0
+7.497
+0] Tj
+Q
+/DeviceGray {} CS
+[0] SC
+4308.31 3050.15 m
+4308.31 3066.72 4294.88 3080.15 4278.31 3080.15 c
+4261.75 3080.15 4248.31 3066.72 4248.31 3050.15 c
+4248.31 3033.59 4261.75 3020.15 4278.31 3020.15 c
+4294.88 3020.15 4308.31 3033.59 4308.31 3050.15 c
+h
+S
+q
+[10 0 0 10 0 0] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+[1 0 0 1 445.111 288.9] Tm
+0 0 Td
+/F7_0 9 Tf
+(bg = 0.24 m)
+[5.004
+0
+5.004
+0
+2.502
+0
+5.256
+0
+2.502
+0
+5.004
+0
+2.502
+0
+5.004
+0
+5.004
+0
+2.502
+0
+7.497
+0] Tj
+Q
+/DeviceRGB {} cs
+[0 1 0] sc
+4308.31 2925 m
+4308.31 2941.57 4294.88 2955 4278.31 2955 c
+4261.75 2955 4248.31 2941.57 4248.31 2925 c
+4248.31 2908.43 4261.75 2895 4278.31 2895 c
+4294.88 2895 4308.31 2908.43 4308.31 2925 c
+f
+/DeviceRGB {} CS
+[0 1 0] SC
+4308.31 2925 m
+4308.31 2941.57 4294.88 2955 4278.31 2955 c
+4261.75 2955 4248.31 2941.57 4248.31 2925 c
+4248.31 2908.43 4261.75 2895 4278.31 2895 c
+4294.88 2895 4308.31 2908.43 4308.31 2925 c
+h
+S
+/DeviceGray {} cs
+[0] sc
+q
+[10 0 0 10 0 0] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+[1 0 0 1 445.111 276.385] Tm
+0 0 Td
+/F7_0 9 Tf
+(bg = 0.48 m)
+[5.004
+0
+5.004
+0
+2.502
+0
+5.256
+0
+2.502
+0
+5.004
+0
+2.502
+0
+5.004
+0
+5.004
+0
+2.502
+0
+7.497
+0] Tj
+Q
+/DeviceRGB {} cs
+[1 0 0] sc
+4308.31 2799.85 m
+4308.31 2816.41 4294.88 2829.85 4278.31 2829.85 c
+4261.75 2829.85 4248.31 2816.41 4248.31 2799.85 c
+4248.31 2783.29 4261.75 2769.85 4278.31 2769.85 c
+4294.88 2769.85 4308.31 2783.29 4308.31 2799.85 c
+f
+/DeviceRGB {} CS
+[1 0 0] SC
+4308.31 2799.85 m
+4308.31 2816.41 4294.88 2829.85 4278.31 2829.85 c
+4261.75 2829.85 4248.31 2816.41 4248.31 2799.85 c
+4248.31 2783.29 4261.75 2769.85 4278.31 2769.85 c
+4294.88 2769.85 4308.31 2783.29 4308.31 2799.85 c
+h
+S
+4.998 w
+/DeviceGray {} CS
+[0.1489] SC
+4098 2724 864 402 re
+S
+/DeviceGray {} cs
+[1] sc
+390 516 2010 1422 re
+f
+2 J
+390 516 m
+2400 516 l
+S
+390 1938 m
+2400 1938 l
+S
+390 516 m
+390 536.102 l
+S
+998.898 516 m
+998.898 536.102 l
+S
+1607.8 516 m
+1607.8 536.102 l
+S
+2216.7 516 m
+2216.7 536.102 l
+S
+390 1938 m
+390 1917.9 l
+S
+998.898 1938 m
+998.898 1917.9 l
+S
+1607.8 1938 m
+1607.8 1917.9 l
+S
+2216.7 1938 m
+2216.7 1917.9 l
+S
+390 516 m
+390 526.051 l
+S
+573.301 516 m
+573.301 526.051 l
+S
+680.52 516 m
+680.52 526.051 l
+S
+756.594 516 m
+756.594 526.051 l
+S
+815.605 516 m
+815.605 526.051 l
+S
+863.813 516 m
+863.813 526.051 l
+S
+904.578 516 m
+904.578 526.051 l
+S
+939.895 516 m
+939.895 526.051 l
+S
+971.039 516 m
+971.039 526.051 l
+S
+998.898 516 m
+998.898 526.051 l
+S
+1182.2 516 m
+1182.2 526.051 l
+S
+1289.42 516 m
+1289.42 526.051 l
+S
+1365.5 516 m
+1365.5 526.051 l
+S
+1424.5 516 m
+1424.5 526.051 l
+S
+1472.72 516 m
+1472.72 526.051 l
+S
+1513.48 516 m
+1513.48 526.051 l
+S
+1548.79 516 m
+1548.79 526.051 l
+S
+1579.94 516 m
+1579.94 526.051 l
+S
+1607.8 516 m
+1607.8 526.051 l
+S
+1791.1 516 m
+1791.1 526.051 l
+S
+1898.32 516 m
+1898.32 526.051 l
+S
+1974.39 516 m
+1974.39 526.051 l
+S
+2033.41 516 m
+2033.41 526.051 l
+S
+2081.62 516 m
+2081.62 526.051 l
+S
+2122.38 516 m
+2122.38 526.051 l
+S
+2157.7 516 m
+2157.7 526.051 l
+S
+2188.84 516 m
+2188.84 526.051 l
+S
+2216.7 516 m
+2216.7 526.051 l
+S
+2400 516 m
+2400 526.051 l
+S
+390 1938 m
+390 1927.95 l
+S
+573.301 1938 m
+573.301 1927.95 l
+S
+680.52 1938 m
+680.52 1927.95 l
+S
+756.594 1938 m
+756.594 1927.95 l
+S
+815.605 1938 m
+815.605 1927.95 l
+S
+863.813 1938 m
+863.813 1927.95 l
+S
+904.578 1938 m
+904.578 1927.95 l
+S
+939.895 1938 m
+939.895 1927.95 l
+S
+971.039 1938 m
+971.039 1927.95 l
+S
+998.898 1938 m
+998.898 1927.95 l
+S
+1182.2 1938 m
+1182.2 1927.95 l
+S
+1289.42 1938 m
+1289.42 1927.95 l
+S
+1365.5 1938 m
+1365.5 1927.95 l
+S
+1424.5 1938 m
+1424.5 1927.95 l
+S
+1472.72 1938 m
+1472.72 1927.95 l
+S
+1513.48 1938 m
+1513.48 1927.95 l
+S
+1548.79 1938 m
+1548.79 1927.95 l
+S
+1579.94 1938 m
+1579.94 1927.95 l
+S
+1607.8 1938 m
+1607.8 1927.95 l
+S
+1791.1 1938 m
+1791.1 1927.95 l
+S
+1898.32 1938 m
+1898.32 1927.95 l
+S
+1974.39 1938 m
+1974.39 1927.95 l
+S
+2033.41 1938 m
+2033.41 1927.95 l
+S
+2081.62 1938 m
+2081.62 1927.95 l
+S
+2122.38 1938 m
+2122.38 1927.95 l
+S
+2157.7 1938 m
+2157.7 1927.95 l
+S
+2188.84 1938 m
+2188.84 1927.95 l
+S
+2216.7 1938 m
+2216.7 1927.95 l
+S
+2400 1938 m
+2400 1927.95 l
+S
+/DeviceGray {} cs
+[0.1489] sc
+q
+[10 0 0 10 0 0] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+[1 0 0 1 30.6 34.2] Tm
+0 0 Td
+/F7_0 10.0002 Tf
+(10)
+[5.560111
+0
+5.560111
+0] Tj
+11.4 4.8 Td
+/F7_0 7.9998 Tf
+(0)
+[4.447889
+0] Tj
+60.6 0 Td
+/F7_0 10.0002 Tf
+(10)
+[5.560111
+0
+5.560111
+0] Tj
+72 4.8 Td
+/F7_0 7.9998 Tf
+(1)
+[4.447889
+0] Tj
+121.8 0 Td
+/F7_0 10.0002 Tf
+(10)
+[5.560111
+0
+5.560111
+0] Tj
+133.2 4.8 Td
+/F7_0 7.9998 Tf
+(2)
+[4.447889
+0] Tj
+182.4 0 Td
+/F7_0 10.0002 Tf
+(10)
+[5.560111
+0
+5.560111
+0] Tj
+193.8 4.8 Td
+/F7_0 7.9998 Tf
+(3)
+[4.447889
+0] Tj
+72.6 -14.6 Td
+/F7_0 10.9998 Tf
+(frequency \(Hz\))
+[3.057944
+0
+3.662933
+0
+6.115889
+0
+6.115889
+0
+6.115889
+0
+6.115889
+0
+6.115889
+0
+5.4999
+0
+5.4999
+0
+3.057944
+0
+3.662933
+0
+7.941856
+0
+5.4999
+0
+3.662933
+0] Tj
+102.3 -29 Td
+(\(c\))
+[3.662933
+0
+5.4999
+0
+3.662933
+0] Tj
+Q
+390 516 m
+390 1938 l
+S
+2400 516 m
+2400 1938 l
+S
+390 516 m
+410.102 516 l
+S
+390 800.398 m
+410.102 800.398 l
+S
+390 1084.8 m
+410.102 1084.8 l
+S
+390 1369.2 m
+410.102 1369.2 l
+S
+390 1653.6 m
+410.102 1653.6 l
+S
+390 1938 m
+410.102 1938 l
+S
+2400 516 m
+2379.9 516 l
+S
+2400 800.398 m
+2379.9 800.398 l
+S
+2400 1084.8 m
+2379.9 1084.8 l
+S
+2400 1369.2 m
+2379.9 1369.2 l
+S
+2400 1653.6 m
+2379.9 1653.6 l
+S
+2400 1938 m
+2379.9 1938 l
+S
+q
+[10 0 0 10 0 0] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+[1 0 0 1 20.6 47.7] Tm
+0 0 Td
+/F7_0 10.0002 Tf
+(4.0)
+[5.560111
+0
+2.780056
+0
+5.560111
+0] Tj
+0 28.4398 Td
+(4.2)
+[5.560111
+0
+2.780056
+0
+5.560111
+0] Tj
+0 56.88 Td
+(4.4)
+[5.560111
+0
+2.780056
+0
+5.560111
+0] Tj
+0 85.3198 Td
+(4.6)
+[5.560111
+0
+2.780056
+0
+5.560111
+0] Tj
+0 113.76 Td
+(4.8)
+[5.560111
+0
+2.780056
+0
+5.560111
+0] Tj
+0 142.1998 Td
+(5.0)
+[5.560111
+0
+2.780056
+0
+5.560111
+0] Tj
+[0 1 -1 0 9.6 86.4] Tm
+0 0 Td
+/F7_0 10.9998 Tf
+(Re\(C)
+[7.941856
+0
+6.115889
+0
+3.662933
+0
+7.941856
+0] Tj
+25.8 -5.4 Td
+/F7_0 8.8002 Tf
+(15)
+[4.892911
+0
+4.892911
+0] Tj
+36 0 Td
+/F7_0 10.9998 Tf
+(\) \(GPa\))
+[3.662933
+0
+3.057944
+0
+3.662933
+0
+8.557844
+0
+7.336867
+0
+6.115889
+0
+3.662933
+0] Tj
+Q
+6 w
+0 J
+/DeviceGray {} CS
+[0] SC
+419.578 648.793 m
+419.578 665.129 406.34 678.371 390 678.371 c
+373.66 678.371 360.422 665.129 360.422 648.793 c
+360.422 632.453 373.66 619.211 390 619.211 c
+406.34 619.211 419.578 632.453 419.578 648.793 c
+h
+S
+541.359 669.504 m
+541.359 685.84 528.117 699.082 511.781 699.082 c
+495.441 699.082 482.199 685.84 482.199 669.504 c
+482.199 653.164 495.441 639.922 511.781 639.922 c
+528.117 639.922 541.359 653.164 541.359 669.504 c
+h
+S
+663.141 706.047 m
+663.141 722.383 649.898 735.625 633.559 735.625 c
+617.223 735.625 603.98 722.383 603.98 706.047 c
+603.98 689.707 617.223 676.465 633.559 676.465 c
+649.898 676.465 663.141 689.707 663.141 706.047 c
+h
+S
+784.922 773.918 m
+784.922 790.254 771.68 803.496 755.34 803.496 c
+739.004 803.496 725.762 790.254 725.762 773.918 c
+725.762 757.578 739.004 744.336 755.34 744.336 c
+771.68 744.336 784.922 757.578 784.922 773.918 c
+h
+S
+906.699 892.418 m
+906.699 908.754 893.457 921.996 877.121 921.996 c
+860.781 921.996 847.539 908.754 847.539 892.418 c
+847.539 876.078 860.781 862.836 877.121 862.836 c
+893.457 862.836 906.699 876.078 906.699 892.418 c
+h
+S
+1028.48 1066.43 m
+1028.48 1082.77 1015.24 1096.01 998.902 1096.01 c
+982.563 1096.01 969.32 1082.77 969.32 1066.43 c
+969.32 1050.09 982.563 1036.85 998.902 1036.85 c
+1015.24 1036.85 1028.48 1050.09 1028.48 1066.43 c
+h
+S
+1150.26 1258.35 m
+1150.26 1274.68 1137.02 1287.93 1120.68 1287.93 c
+1104.34 1287.93 1091.1 1274.68 1091.1 1258.35 c
+1091.1 1242.01 1104.34 1228.77 1120.68 1228.77 c
+1137.02 1228.77 1150.26 1242.01 1150.26 1258.35 c
+h
+S
+1272.04 1411.19 m
+1272.04 1427.53 1258.8 1440.77 1242.46 1440.77 c
+1226.13 1440.77 1212.88 1427.53 1212.88 1411.19 c
+1212.88 1394.85 1226.13 1381.61 1242.46 1381.61 c
+1258.8 1381.61 1272.04 1394.85 1272.04 1411.19 c
+h
+S
+1393.82 1507.98 m
+1393.82 1524.32 1380.58 1537.56 1364.24 1537.56 c
+1347.9 1537.56 1334.66 1524.32 1334.66 1507.98 c
+1334.66 1491.64 1347.9 1478.4 1364.24 1478.4 c
+1380.58 1478.4 1393.82 1491.64 1393.82 1507.98 c
+h
+S
+1515.6 1569.49 m
+1515.6 1585.83 1502.36 1599.07 1486.02 1599.07 c
+1469.68 1599.07 1456.44 1585.83 1456.44 1569.49 c
+1456.44 1553.15 1469.68 1539.91 1486.02 1539.91 c
+1502.36 1539.91 1515.6 1553.15 1515.6 1569.49 c
+h
+S
+1637.38 1616.79 m
+1637.38 1633.13 1624.14 1646.37 1607.8 1646.37 c
+1591.46 1646.37 1578.22 1633.13 1578.22 1616.79 c
+1578.22 1600.45 1591.46 1587.21 1607.8 1587.21 c
+1624.14 1587.21 1637.38 1600.45 1637.38 1616.79 c
+h
+S
+1759.16 1656.12 m
+1759.16 1672.46 1745.92 1685.7 1729.58 1685.7 c
+1713.24 1685.7 1700 1672.46 1700 1656.12 c
+1700 1639.78 1713.24 1626.54 1729.58 1626.54 c
+1745.92 1626.54 1759.16 1639.78 1759.16 1656.12 c
+h
+S
+1880.94 1687.59 m
+1880.94 1703.93 1867.7 1717.17 1851.36 1717.17 c
+1835.02 1717.17 1821.78 1703.93 1821.78 1687.59 c
+1821.78 1671.25 1835.02 1658.01 1851.36 1658.01 c
+1867.7 1658.01 1880.94 1671.25 1880.94 1687.59 c
+h
+S
+2002.72 1712.55 m
+2002.72 1728.89 1989.48 1742.13 1973.14 1742.13 c
+1956.8 1742.13 1943.56 1728.89 1943.56 1712.55 c
+1943.56 1696.21 1956.8 1682.97 1973.14 1682.97 c
+1989.48 1682.97 2002.72 1696.21 2002.72 1712.55 c
+h
+S
+2124.5 1732.38 m
+2124.5 1748.72 2111.26 1761.96 2094.92 1761.96 c
+2078.59 1761.96 2065.34 1748.72 2065.34 1732.38 c
+2065.34 1716.04 2078.59 1702.8 2094.92 1702.8 c
+2111.26 1702.8 2124.5 1716.04 2124.5 1732.38 c
+h
+S
+2246.28 1748.14 m
+2246.28 1764.48 2233.04 1777.72 2216.7 1777.72 c
+2200.36 1777.72 2187.12 1764.48 2187.12 1748.14 c
+2187.12 1731.8 2200.36 1718.56 2216.7 1718.56 c
+2233.04 1718.56 2246.28 1731.8 2246.28 1748.14 c
+h
+S
+2368.06 1760.66 m
+2368.06 1777 2354.82 1790.24 2338.48 1790.24 c
+2322.14 1790.24 2308.9 1777 2308.9 1760.66 c
+2308.9 1744.32 2322.14 1731.08 2338.48 1731.08 c
+2354.82 1731.08 2368.06 1744.32 2368.06 1760.66 c
+h
+S
+/DeviceRGB {} cs
+[0 1 0] sc
+415.004 648.793 m
+415.004 662.598 403.805 673.793 390 673.793 c
+376.195 673.793 364.996 662.598 364.996 648.793 c
+364.996 634.984 376.195 623.789 390 623.789 c
+403.805 623.789 415.004 634.984 415.004 648.793 c
+f
+/DeviceRGB {} CS
+[0 1 0] SC
+415.004 648.793 m
+415.004 662.598 403.805 673.793 390 673.793 c
+376.195 673.793 364.996 662.598 364.996 648.793 c
+364.996 634.984 376.195 623.789 390 623.789 c
+403.805 623.789 415.004 634.984 415.004 648.793 c
+h
+S
+536.781 669.504 m
+536.781 683.309 525.586 694.504 511.781 694.504 c
+497.973 694.504 486.777 683.309 486.777 669.504 c
+486.777 655.695 497.973 644.5 511.781 644.5 c
+525.586 644.5 536.781 655.695 536.781 669.504 c
+f
+536.781 669.504 m
+536.781 683.309 525.586 694.504 511.781 694.504 c
+497.973 694.504 486.777 683.309 486.777 669.504 c
+486.777 655.695 497.973 644.5 511.781 644.5 c
+525.586 644.5 536.781 655.695 536.781 669.504 c
+h
+S
+658.563 706.047 m
+658.563 719.852 647.367 731.047 633.559 731.047 c
+619.754 731.047 608.559 719.852 608.559 706.047 c
+608.559 692.238 619.754 681.043 633.559 681.043 c
+647.367 681.043 658.563 692.238 658.563 706.047 c
+f
+658.563 706.047 m
+658.563 719.852 647.367 731.047 633.559 731.047 c
+619.754 731.047 608.559 719.852 608.559 706.047 c
+608.559 692.238 619.754 681.043 633.559 681.043 c
+647.367 681.043 658.563 692.238 658.563 706.047 c
+h
+S
+780.344 773.918 m
+780.344 787.723 769.148 798.918 755.34 798.918 c
+741.535 798.918 730.34 787.723 730.34 773.918 c
+730.34 760.109 741.535 748.914 755.34 748.914 c
+769.148 748.914 780.344 760.109 780.344 773.918 c
+f
+780.344 773.918 m
+780.344 787.723 769.148 798.918 755.34 798.918 c
+741.535 798.918 730.34 787.723 730.34 773.918 c
+730.34 760.109 741.535 748.914 755.34 748.914 c
+769.148 748.914 780.344 760.109 780.344 773.918 c
+h
+S
+902.121 892.418 m
+902.121 906.223 890.926 917.418 877.121 917.418 c
+863.316 917.418 852.117 906.223 852.117 892.418 c
+852.117 878.609 863.316 867.414 877.121 867.414 c
+890.926 867.414 902.121 878.609 902.121 892.418 c
+f
+902.121 892.418 m
+902.121 906.223 890.926 917.418 877.121 917.418 c
+863.316 917.418 852.117 906.223 852.117 892.418 c
+852.117 878.609 863.316 867.414 877.121 867.414 c
+890.926 867.414 902.121 878.609 902.121 892.418 c
+h
+S
+1023.9 1066.43 m
+1023.9 1080.23 1012.71 1091.43 998.902 1091.43 c
+985.094 1091.43 973.898 1080.23 973.898 1066.43 c
+973.898 1052.62 985.094 1041.43 998.902 1041.43 c
+1012.71 1041.43 1023.9 1052.62 1023.9 1066.43 c
+f
+1023.9 1066.43 m
+1023.9 1080.23 1012.71 1091.43 998.902 1091.43 c
+985.094 1091.43 973.898 1080.23 973.898 1066.43 c
+973.898 1052.62 985.094 1041.43 998.902 1041.43 c
+1012.71 1041.43 1023.9 1052.62 1023.9 1066.43 c
+h
+S
+1145.68 1258.35 m
+1145.68 1272.15 1134.49 1283.35 1120.68 1283.35 c
+1106.88 1283.35 1095.68 1272.15 1095.68 1258.35 c
+1095.68 1244.54 1106.88 1233.34 1120.68 1233.34 c
+1134.49 1233.34 1145.68 1244.54 1145.68 1258.35 c
+f
+1145.68 1258.35 m
+1145.68 1272.15 1134.49 1283.35 1120.68 1283.35 c
+1106.88 1283.35 1095.68 1272.15 1095.68 1258.35 c
+1095.68 1244.54 1106.88 1233.34 1120.68 1233.34 c
+1134.49 1233.34 1145.68 1244.54 1145.68 1258.35 c
+h
+S
+1267.46 1411.19 m
+1267.46 1425 1256.27 1436.19 1242.46 1436.19 c
+1228.66 1436.19 1217.46 1425 1217.46 1411.19 c
+1217.46 1397.38 1228.66 1386.19 1242.46 1386.19 c
+1256.27 1386.19 1267.46 1397.38 1267.46 1411.19 c
+f
+1267.46 1411.19 m
+1267.46 1425 1256.27 1436.19 1242.46 1436.19 c
+1228.66 1436.19 1217.46 1425 1217.46 1411.19 c
+1217.46 1397.38 1228.66 1386.19 1242.46 1386.19 c
+1256.27 1386.19 1267.46 1397.38 1267.46 1411.19 c
+h
+S
+1389.24 1507.98 m
+1389.24 1521.79 1378.05 1532.98 1364.24 1532.98 c
+1350.43 1532.98 1339.24 1521.79 1339.24 1507.98 c
+1339.24 1494.17 1350.43 1482.98 1364.24 1482.98 c
+1378.05 1482.98 1389.24 1494.17 1389.24 1507.98 c
+f
+1389.24 1507.98 m
+1389.24 1521.79 1378.05 1532.98 1364.24 1532.98 c
+1350.43 1532.98 1339.24 1521.79 1339.24 1507.98 c
+1339.24 1494.17 1350.43 1482.98 1364.24 1482.98 c
+1378.05 1482.98 1389.24 1494.17 1389.24 1507.98 c
+h
+S
+1511.02 1569.49 m
+1511.02 1583.3 1499.83 1594.49 1486.02 1594.49 c
+1472.21 1594.49 1461.02 1583.3 1461.02 1569.49 c
+1461.02 1555.68 1472.21 1544.49 1486.02 1544.49 c
+1499.83 1544.49 1511.02 1555.68 1511.02 1569.49 c
+f
+1511.02 1569.49 m
+1511.02 1583.3 1499.83 1594.49 1486.02 1594.49 c
+1472.21 1594.49 1461.02 1583.3 1461.02 1569.49 c
+1461.02 1555.68 1472.21 1544.49 1486.02 1544.49 c
+1499.83 1544.49 1511.02 1555.68 1511.02 1569.49 c
+h
+S
+1632.8 1616.79 m
+1632.8 1630.6 1621.61 1641.79 1607.8 1641.79 c
+1594 1641.79 1582.8 1630.6 1582.8 1616.79 c
+1582.8 1602.98 1594 1591.79 1607.8 1591.79 c
+1621.61 1591.79 1632.8 1602.98 1632.8 1616.79 c
+f
+1632.8 1616.79 m
+1632.8 1630.6 1621.61 1641.79 1607.8 1641.79 c
+1594 1641.79 1582.8 1630.6 1582.8 1616.79 c
+1582.8 1602.98 1594 1591.79 1607.8 1591.79 c
+1621.61 1591.79 1632.8 1602.98 1632.8 1616.79 c
+h
+S
+1754.58 1656.12 m
+1754.58 1669.93 1743.39 1681.12 1729.58 1681.12 c
+1715.78 1681.12 1704.58 1669.93 1704.58 1656.12 c
+1704.58 1642.31 1715.78 1631.12 1729.58 1631.12 c
+1743.39 1631.12 1754.58 1642.31 1754.58 1656.12 c
+f
+1754.58 1656.12 m
+1754.58 1669.93 1743.39 1681.12 1729.58 1681.12 c
+1715.78 1681.12 1704.58 1669.93 1704.58 1656.12 c
+1704.58 1642.31 1715.78 1631.12 1729.58 1631.12 c
+1743.39 1631.12 1754.58 1642.31 1754.58 1656.12 c
+h
+S
+1876.36 1687.59 m
+1876.36 1701.4 1865.17 1712.59 1851.36 1712.59 c
+1837.55 1712.59 1826.36 1701.4 1826.36 1687.59 c
+1826.36 1673.79 1837.55 1662.59 1851.36 1662.59 c
+1865.17 1662.59 1876.36 1673.79 1876.36 1687.59 c
+f
+1876.36 1687.59 m
+1876.36 1701.4 1865.17 1712.59 1851.36 1712.59 c
+1837.55 1712.59 1826.36 1701.4 1826.36 1687.59 c
+1826.36 1673.79 1837.55 1662.59 1851.36 1662.59 c
+1865.17 1662.59 1876.36 1673.79 1876.36 1687.59 c
+h
+S
+1998.14 1712.55 m
+1998.14 1726.36 1986.95 1737.55 1973.14 1737.55 c
+1959.34 1737.55 1948.14 1726.36 1948.14 1712.55 c
+1948.14 1698.74 1959.34 1687.55 1973.14 1687.55 c
+1986.95 1687.55 1998.14 1698.74 1998.14 1712.55 c
+f
+1998.14 1712.55 m
+1998.14 1726.36 1986.95 1737.55 1973.14 1737.55 c
+1959.34 1737.55 1948.14 1726.36 1948.14 1712.55 c
+1948.14 1698.74 1959.34 1687.55 1973.14 1687.55 c
+1986.95 1687.55 1998.14 1698.74 1998.14 1712.55 c
+h
+S
+2119.93 1732.38 m
+2119.93 1746.19 2108.73 1757.38 2094.92 1757.38 c
+2081.12 1757.38 2069.92 1746.19 2069.92 1732.38 c
+2069.92 1718.58 2081.12 1707.38 2094.92 1707.38 c
+2108.73 1707.38 2119.93 1718.58 2119.93 1732.38 c
+f
+2119.93 1732.38 m
+2119.93 1746.19 2108.73 1757.38 2094.92 1757.38 c
+2081.12 1757.38 2069.92 1746.19 2069.92 1732.38 c
+2069.92 1718.58 2081.12 1707.38 2094.92 1707.38 c
+2108.73 1707.38 2119.93 1718.58 2119.93 1732.38 c
+h
+S
+2241.7 1748.14 m
+2241.7 1761.95 2230.51 1773.14 2216.7 1773.14 c
+2202.9 1773.14 2191.7 1761.95 2191.7 1748.14 c
+2191.7 1734.34 2202.9 1723.14 2216.7 1723.14 c
+2230.51 1723.14 2241.7 1734.34 2241.7 1748.14 c
+f
+2241.7 1748.14 m
+2241.7 1761.95 2230.51 1773.14 2216.7 1773.14 c
+2202.9 1773.14 2191.7 1761.95 2191.7 1748.14 c
+2191.7 1734.34 2202.9 1723.14 2216.7 1723.14 c
+2230.51 1723.14 2241.7 1734.34 2241.7 1748.14 c
+h
+S
+2363.48 1760.66 m
+2363.48 1774.47 2352.29 1785.66 2338.48 1785.66 c
+2324.68 1785.66 2313.48 1774.47 2313.48 1760.66 c
+2313.48 1746.86 2324.68 1735.66 2338.48 1735.66 c
+2352.29 1735.66 2363.48 1746.86 2363.48 1760.66 c
+f
+2363.48 1760.66 m
+2363.48 1774.47 2352.29 1785.66 2338.48 1785.66 c
+2324.68 1785.66 2313.48 1774.47 2313.48 1760.66 c
+2313.48 1746.86 2324.68 1735.66 2338.48 1735.66 c
+2352.29 1735.66 2363.48 1746.86 2363.48 1760.66 c
+h
+S
+/DeviceRGB {} cs
+[1 0 0] sc
+403.23 648.793 m
+403.23 656.102 397.309 662.023 390 662.023 c
+382.691 662.023 376.77 656.102 376.77 648.793 c
+376.77 641.484 382.691 635.563 390 635.563 c
+397.309 635.563 403.23 641.484 403.23 648.793 c
+f
+/DeviceRGB {} CS
+[1 0 0] SC
+403.23 648.793 m
+403.23 656.102 397.309 662.023 390 662.023 c
+382.691 662.023 376.77 656.102 376.77 648.793 c
+376.77 641.484 382.691 635.563 390 635.563 c
+397.309 635.563 403.23 641.484 403.23 648.793 c
+h
+S
+525.012 669.504 m
+525.012 676.809 519.09 682.73 511.781 682.73 c
+504.473 682.73 498.551 676.809 498.551 669.504 c
+498.551 662.195 504.473 656.273 511.781 656.273 c
+519.09 656.273 525.012 662.195 525.012 669.504 c
+f
+525.012 669.504 m
+525.012 676.809 519.09 682.73 511.781 682.73 c
+504.473 682.73 498.551 676.809 498.551 669.504 c
+498.551 662.195 504.473 656.273 511.781 656.273 c
+519.09 656.273 525.012 662.195 525.012 669.504 c
+h
+S
+646.789 706.047 m
+646.789 713.355 640.867 719.277 633.559 719.277 c
+626.254 719.277 620.332 713.355 620.332 706.047 c
+620.332 698.738 626.254 692.816 633.559 692.816 c
+640.867 692.816 646.789 698.738 646.789 706.047 c
+f
+646.789 706.047 m
+646.789 713.355 640.867 719.277 633.559 719.277 c
+626.254 719.277 620.332 713.355 620.332 706.047 c
+620.332 698.738 626.254 692.816 633.559 692.816 c
+640.867 692.816 646.789 698.738 646.789 706.047 c
+h
+S
+768.57 773.918 m
+768.57 781.223 762.648 787.145 755.34 787.145 c
+748.031 787.145 742.109 781.223 742.109 773.918 c
+742.109 766.609 748.031 760.688 755.34 760.688 c
+762.648 760.688 768.57 766.609 768.57 773.918 c
+f
+768.57 773.918 m
+768.57 781.223 762.648 787.145 755.34 787.145 c
+748.031 787.145 742.109 781.223 742.109 773.918 c
+742.109 766.609 748.031 760.688 755.34 760.688 c
+762.648 760.688 768.57 766.609 768.57 773.918 c
+h
+S
+890.352 892.418 m
+890.352 899.727 884.43 905.648 877.121 905.648 c
+869.813 905.648 863.891 899.727 863.891 892.418 c
+863.891 885.109 869.813 879.188 877.121 879.188 c
+884.43 879.188 890.352 885.109 890.352 892.418 c
+f
+890.352 892.418 m
+890.352 899.727 884.43 905.648 877.121 905.648 c
+869.813 905.648 863.891 899.727 863.891 892.418 c
+863.891 885.109 869.813 879.188 877.121 879.188 c
+884.43 879.188 890.352 885.109 890.352 892.418 c
+h
+S
+1012.13 1066.43 m
+1012.13 1073.73 1006.21 1079.66 998.902 1079.66 c
+991.594 1079.66 985.672 1073.73 985.672 1066.43 c
+985.672 1059.12 991.594 1053.2 998.902 1053.2 c
+1006.21 1053.2 1012.13 1059.12 1012.13 1066.43 c
+f
+1012.13 1066.43 m
+1012.13 1073.73 1006.21 1079.66 998.902 1079.66 c
+991.594 1079.66 985.672 1073.73 985.672 1066.43 c
+985.672 1059.12 991.594 1053.2 998.902 1053.2 c
+1006.21 1053.2 1012.13 1059.12 1012.13 1066.43 c
+h
+S
+1133.91 1258.35 m
+1133.91 1265.66 1127.99 1271.58 1120.68 1271.58 c
+1113.38 1271.58 1107.45 1265.66 1107.45 1258.35 c
+1107.45 1251.04 1113.38 1245.12 1120.68 1245.12 c
+1127.99 1245.12 1133.91 1251.04 1133.91 1258.35 c
+f
+1133.91 1258.35 m
+1133.91 1265.66 1127.99 1271.58 1120.68 1271.58 c
+1113.38 1271.58 1107.45 1265.66 1107.45 1258.35 c
+1107.45 1251.04 1113.38 1245.12 1120.68 1245.12 c
+1127.99 1245.12 1133.91 1251.04 1133.91 1258.35 c
+h
+S
+1255.69 1411.19 m
+1255.69 1418.5 1249.77 1424.42 1242.46 1424.42 c
+1235.15 1424.42 1229.23 1418.5 1229.23 1411.19 c
+1229.23 1403.88 1235.15 1397.96 1242.46 1397.96 c
+1249.77 1397.96 1255.69 1403.88 1255.69 1411.19 c
+f
+1255.69 1411.19 m
+1255.69 1418.5 1249.77 1424.42 1242.46 1424.42 c
+1235.15 1424.42 1229.23 1418.5 1229.23 1411.19 c
+1229.23 1403.88 1235.15 1397.96 1242.46 1397.96 c
+1249.77 1397.96 1255.69 1403.88 1255.69 1411.19 c
+h
+S
+1377.47 1507.98 m
+1377.47 1515.29 1371.55 1521.21 1364.24 1521.21 c
+1356.93 1521.21 1351.01 1515.29 1351.01 1507.98 c
+1351.01 1500.67 1356.93 1494.75 1364.24 1494.75 c
+1371.55 1494.75 1377.47 1500.67 1377.47 1507.98 c
+f
+1377.47 1507.98 m
+1377.47 1515.29 1371.55 1521.21 1364.24 1521.21 c
+1356.93 1521.21 1351.01 1515.29 1351.01 1507.98 c
+1351.01 1500.67 1356.93 1494.75 1364.24 1494.75 c
+1371.55 1494.75 1377.47 1500.67 1377.47 1507.98 c
+h
+S
+1499.25 1569.49 m
+1499.25 1576.8 1493.33 1582.72 1486.02 1582.72 c
+1478.71 1582.72 1472.79 1576.8 1472.79 1569.49 c
+1472.79 1562.18 1478.71 1556.26 1486.02 1556.26 c
+1493.33 1556.26 1499.25 1562.18 1499.25 1569.49 c
+f
+1499.25 1569.49 m
+1499.25 1576.8 1493.33 1582.72 1486.02 1582.72 c
+1478.71 1582.72 1472.79 1576.8 1472.79 1569.49 c
+1472.79 1562.18 1478.71 1556.26 1486.02 1556.26 c
+1493.33 1556.26 1499.25 1562.18 1499.25 1569.49 c
+h
+S
+1621.03 1616.79 m
+1621.03 1624.1 1615.11 1630.02 1607.8 1630.02 c
+1600.49 1630.02 1594.57 1624.1 1594.57 1616.79 c
+1594.57 1609.48 1600.49 1603.56 1607.8 1603.56 c
+1615.11 1603.56 1621.03 1609.48 1621.03 1616.79 c
+f
+1621.03 1616.79 m
+1621.03 1624.1 1615.11 1630.02 1607.8 1630.02 c
+1600.49 1630.02 1594.57 1624.1 1594.57 1616.79 c
+1594.57 1609.48 1600.49 1603.56 1607.8 1603.56 c
+1615.11 1603.56 1621.03 1609.48 1621.03 1616.79 c
+h
+S
+1742.81 1656.12 m
+1742.81 1663.43 1736.89 1669.35 1729.58 1669.35 c
+1722.27 1669.35 1716.35 1663.43 1716.35 1656.12 c
+1716.35 1648.81 1722.27 1642.89 1729.58 1642.89 c
+1736.89 1642.89 1742.81 1648.81 1742.81 1656.12 c
+f
+1742.81 1656.12 m
+1742.81 1663.43 1736.89 1669.35 1729.58 1669.35 c
+1722.27 1669.35 1716.35 1663.43 1716.35 1656.12 c
+1716.35 1648.81 1722.27 1642.89 1729.58 1642.89 c
+1736.89 1642.89 1742.81 1648.81 1742.81 1656.12 c
+h
+S
+1864.59 1687.59 m
+1864.59 1694.9 1858.67 1700.82 1851.36 1700.82 c
+1844.05 1700.82 1838.13 1694.9 1838.13 1687.59 c
+1838.13 1680.29 1844.05 1674.36 1851.36 1674.36 c
+1858.67 1674.36 1864.59 1680.29 1864.59 1687.59 c
+f
+1864.59 1687.59 m
+1864.59 1694.9 1858.67 1700.82 1851.36 1700.82 c
+1844.05 1700.82 1838.13 1694.9 1838.13 1687.59 c
+1838.13 1680.29 1844.05 1674.36 1851.36 1674.36 c
+1858.67 1674.36 1864.59 1680.29 1864.59 1687.59 c
+h
+S
+1986.37 1712.55 m
+1986.37 1719.86 1980.45 1725.78 1973.14 1725.78 c
+1965.84 1725.78 1959.91 1719.86 1959.91 1712.55 c
+1959.91 1705.24 1965.84 1699.32 1973.14 1699.32 c
+1980.45 1699.32 1986.37 1705.24 1986.37 1712.55 c
+f
+1986.37 1712.55 m
+1986.37 1719.86 1980.45 1725.78 1973.14 1725.78 c
+1965.84 1725.78 1959.91 1719.86 1959.91 1712.55 c
+1959.91 1705.24 1965.84 1699.32 1973.14 1699.32 c
+1980.45 1699.32 1986.37 1705.24 1986.37 1712.55 c
+h
+S
+2108.15 1732.38 m
+2108.15 1739.69 2102.23 1745.61 2094.92 1745.61 c
+2087.61 1745.61 2081.69 1739.69 2081.69 1732.38 c
+2081.69 1725.07 2087.61 1719.15 2094.92 1719.15 c
+2102.23 1719.15 2108.15 1725.07 2108.15 1732.38 c
+f
+2108.15 1732.38 m
+2108.15 1739.69 2102.23 1745.61 2094.92 1745.61 c
+2087.61 1745.61 2081.69 1739.69 2081.69 1732.38 c
+2081.69 1725.07 2087.61 1719.15 2094.92 1719.15 c
+2102.23 1719.15 2108.15 1725.07 2108.15 1732.38 c
+h
+S
+2229.93 1748.14 m
+2229.93 1755.45 2224.01 1761.37 2216.7 1761.37 c
+2209.39 1761.37 2203.47 1755.45 2203.47 1748.14 c
+2203.47 1740.84 2209.39 1734.91 2216.7 1734.91 c
+2224.01 1734.91 2229.93 1740.84 2229.93 1748.14 c
+f
+2229.93 1748.14 m
+2229.93 1755.45 2224.01 1761.37 2216.7 1761.37 c
+2209.39 1761.37 2203.47 1755.45 2203.47 1748.14 c
+2203.47 1740.84 2209.39 1734.91 2216.7 1734.91 c
+2224.01 1734.91 2229.93 1740.84 2229.93 1748.14 c
+h
+S
+2351.71 1760.66 m
+2351.71 1767.97 2345.79 1773.89 2338.48 1773.89 c
+2331.18 1773.89 2325.25 1767.97 2325.25 1760.66 c
+2325.25 1753.36 2331.18 1747.43 2338.48 1747.43 c
+2345.79 1747.43 2351.71 1753.36 2351.71 1760.66 c
+f
+2351.71 1760.66 m
+2351.71 1767.97 2345.79 1773.89 2338.48 1773.89 c
+2331.18 1773.89 2325.25 1767.97 2325.25 1760.66 c
+2325.25 1753.36 2331.18 1747.43 2338.48 1747.43 c
+2345.79 1747.43 2351.71 1753.36 2351.71 1760.66 c
+h
+S
+/DeviceGray {} cs
+[1] sc
+1458 594 864 402 re
+f
+/DeviceGray {} cs
+[0] sc
+q
+[10 0 0 10 0 0] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+[1 0 0 1 181.111 88.4152] Tm
+0 0 Td
+/F7_0 9 Tf
+(bg = 0.12 m)
+[5.004
+0
+5.004
+0
+2.502
+0
+5.256
+0
+2.502
+0
+5.004
+0
+2.502
+0
+5.004
+0
+5.004
+0
+2.502
+0
+7.497
+0] Tj
+Q
+/DeviceGray {} CS
+[0] SC
+1668.31 920.152 m
+1668.31 936.719 1654.88 950.152 1638.31 950.152 c
+1621.75 950.152 1608.31 936.719 1608.31 920.152 c
+1608.31 903.586 1621.75 890.152 1638.31 890.152 c
+1654.88 890.152 1668.31 903.586 1668.31 920.152 c
+h
+S
+q
+[10 0 0 10 0 0] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+[1 0 0 1 181.111 75.9] Tm
+0 0 Td
+/F7_0 9 Tf
+(bg = 0.24 m)
+[5.004
+0
+5.004
+0
+2.502
+0
+5.256
+0
+2.502
+0
+5.004
+0
+2.502
+0
+5.004
+0
+5.004
+0
+2.502
+0
+7.497
+0] Tj
+Q
+/DeviceRGB {} cs
+[0 1 0] sc
+1668.31 795 m
+1668.31 811.566 1654.88 825 1638.31 825 c
+1621.75 825 1608.31 811.566 1608.31 795 c
+1608.31 778.434 1621.75 765 1638.31 765 c
+1654.88 765 1668.31 778.434 1668.31 795 c
+f
+/DeviceRGB {} CS
+[0 1 0] SC
+1668.31 795 m
+1668.31 811.566 1654.88 825 1638.31 825 c
+1621.75 825 1608.31 811.566 1608.31 795 c
+1608.31 778.434 1621.75 765 1638.31 765 c
+1654.88 765 1668.31 778.434 1668.31 795 c
+h
+S
+/DeviceGray {} cs
+[0] sc
+q
+[10 0 0 10 0 0] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+[1 0 0 1 181.111 63.3848] Tm
+0 0 Td
+/F7_0 9 Tf
+(bg = 0.48 m)
+[5.004
+0
+5.004
+0
+2.502
+0
+5.256
+0
+2.502
+0
+5.004
+0
+2.502
+0
+5.004
+0
+5.004
+0
+2.502
+0
+7.497
+0] Tj
+Q
+/DeviceRGB {} cs
+[1 0 0] sc
+1668.31 669.848 m
+1668.31 686.414 1654.88 699.848 1638.31 699.848 c
+1621.75 699.848 1608.31 686.414 1608.31 669.848 c
+1608.31 653.281 1621.75 639.848 1638.31 639.848 c
+1654.88 639.848 1668.31 653.281 1668.31 669.848 c
+f
+/DeviceRGB {} CS
+[1 0 0] SC
+1668.31 669.848 m
+1668.31 686.414 1654.88 699.848 1638.31 699.848 c
+1621.75 699.848 1608.31 686.414 1608.31 669.848 c
+1608.31 653.281 1621.75 639.848 1638.31 639.848 c
+1654.88 639.848 1668.31 653.281 1668.31 669.848 c
+h
+S
+4.998 w
+/DeviceGray {} CS
+[0.1489] SC
+1458 594 864 402 re
+S
+/DeviceGray {} cs
+[1] sc
+3030 516 2010 1422 re
+f
+2 J
+3030 516 m
+5040 516 l
+S
+3030 1938 m
+5040 1938 l
+S
+3030 516 m
+3030 536.102 l
+S
+3638.9 516 m
+3638.9 536.102 l
+S
+4247.8 516 m
+4247.8 536.102 l
+S
+4856.7 516 m
+4856.7 536.102 l
+S
+3030 1938 m
+3030 1917.9 l
+S
+3638.9 1938 m
+3638.9 1917.9 l
+S
+4247.8 1938 m
+4247.8 1917.9 l
+S
+4856.7 1938 m
+4856.7 1917.9 l
+S
+3030 516 m
+3030 526.051 l
+S
+3213.3 516 m
+3213.3 526.051 l
+S
+3320.52 516 m
+3320.52 526.051 l
+S
+3396.59 516 m
+3396.59 526.051 l
+S
+3455.61 516 m
+3455.61 526.051 l
+S
+3503.81 516 m
+3503.81 526.051 l
+S
+3544.58 516 m
+3544.58 526.051 l
+S
+3579.89 516 m
+3579.89 526.051 l
+S
+3611.04 516 m
+3611.04 526.051 l
+S
+3638.9 516 m
+3638.9 526.051 l
+S
+3822.2 516 m
+3822.2 526.051 l
+S
+3929.42 516 m
+3929.42 526.051 l
+S
+4005.5 516 m
+4005.5 526.051 l
+S
+4064.5 516 m
+4064.5 526.051 l
+S
+4112.72 516 m
+4112.72 526.051 l
+S
+4153.48 516 m
+4153.48 526.051 l
+S
+4188.79 516 m
+4188.79 526.051 l
+S
+4219.94 516 m
+4219.94 526.051 l
+S
+4247.8 516 m
+4247.8 526.051 l
+S
+4431.1 516 m
+4431.1 526.051 l
+S
+4538.32 516 m
+4538.32 526.051 l
+S
+4614.39 516 m
+4614.39 526.051 l
+S
+4673.41 516 m
+4673.41 526.051 l
+S
+4721.62 516 m
+4721.62 526.051 l
+S
+4762.38 516 m
+4762.38 526.051 l
+S
+4797.7 516 m
+4797.7 526.051 l
+S
+4828.84 516 m
+4828.84 526.051 l
+S
+4856.7 516 m
+4856.7 526.051 l
+S
+5040 516 m
+5040 526.051 l
+S
+3030 1938 m
+3030 1927.95 l
+S
+3213.3 1938 m
+3213.3 1927.95 l
+S
+3320.52 1938 m
+3320.52 1927.95 l
+S
+3396.59 1938 m
+3396.59 1927.95 l
+S
+3455.61 1938 m
+3455.61 1927.95 l
+S
+3503.81 1938 m
+3503.81 1927.95 l
+S
+3544.58 1938 m
+3544.58 1927.95 l
+S
+3579.89 1938 m
+3579.89 1927.95 l
+S
+3611.04 1938 m
+3611.04 1927.95 l
+S
+3638.9 1938 m
+3638.9 1927.95 l
+S
+3822.2 1938 m
+3822.2 1927.95 l
+S
+3929.42 1938 m
+3929.42 1927.95 l
+S
+4005.5 1938 m
+4005.5 1927.95 l
+S
+4064.5 1938 m
+4064.5 1927.95 l
+S
+4112.72 1938 m
+4112.72 1927.95 l
+S
+4153.48 1938 m
+4153.48 1927.95 l
+S
+4188.79 1938 m
+4188.79 1927.95 l
+S
+4219.94 1938 m
+4219.94 1927.95 l
+S
+4247.8 1938 m
+4247.8 1927.95 l
+S
+4431.1 1938 m
+4431.1 1927.95 l
+S
+4538.32 1938 m
+4538.32 1927.95 l
+S
+4614.39 1938 m
+4614.39 1927.95 l
+S
+4673.41 1938 m
+4673.41 1927.95 l
+S
+4721.62 1938 m
+4721.62 1927.95 l
+S
+4762.38 1938 m
+4762.38 1927.95 l
+S
+4797.7 1938 m
+4797.7 1927.95 l
+S
+4828.84 1938 m
+4828.84 1927.95 l
+S
+4856.7 1938 m
+4856.7 1927.95 l
+S
+5040 1938 m
+5040 1927.95 l
+S
+/DeviceGray {} cs
+[0.1489] sc
+q
+[10 0 0 10 0 0] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+[1 0 0 1 294.6 34.2] Tm
+0 0 Td
+/F7_0 10.0002 Tf
+(10)
+[5.560111
+0
+5.560111
+0] Tj
+11.4 4.8 Td
+/F7_0 7.9998 Tf
+(0)
+[4.447889
+0] Tj
+60.6 0 Td
+/F7_0 10.0002 Tf
+(10)
+[5.560111
+0
+5.560111
+0] Tj
+72 4.8 Td
+/F7_0 7.9998 Tf
+(1)
+[4.447889
+0] Tj
+121.8 0 Td
+/F7_0 10.0002 Tf
+(10)
+[5.560111
+0
+5.560111
+0] Tj
+133.2 4.8 Td
+/F7_0 7.9998 Tf
+(2)
+[4.447889
+0] Tj
+182.4 0 Td
+/F7_0 10.0002 Tf
+(10)
+[5.560111
+0
+5.560111
+0] Tj
+193.8 4.8 Td
+/F7_0 7.9998 Tf
+(3)
+[4.447889
+0] Tj
+72.6 -14.6 Td
+/F7_0 10.9998 Tf
+(frequency \(Hz\))
+[3.057944
+0
+3.662933
+0
+6.115889
+0
+6.115889
+0
+6.115889
+0
+6.115889
+0
+6.115889
+0
+5.4999
+0
+5.4999
+0
+3.057944
+0
+3.662933
+0
+7.941856
+0
+5.4999
+0
+3.662933
+0] Tj
+102 -29 Td
+(\(d\))
+[3.662933
+0
+6.115889
+0
+3.662933
+0] Tj
+Q
+3030 516 m
+3030 1938 l
+S
+5040 516 m
+5040 1938 l
+S
+3030 516 m
+3050.1 516 l
+S
+3030 1227 m
+3050.1 1227 l
+S
+3030 1938 m
+3050.1 1938 l
+S
+5040 516 m
+5019.9 516 l
+S
+5040 1227 m
+5019.9 1227 l
+S
+5040 1938 m
+5019.9 1938 l
+S
+q
+[10 0 0 10 0 0] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+[1 0 0 1 279.2 47.7] Tm
+0 0 Td
+/F7_0 10.0002 Tf
+(0.85)
+[5.560111
+0
+2.780056
+0
+5.560111
+0
+5.560111
+0] Tj
+0 71.1 Td
+(0.90)
+[5.560111
+0
+2.780056
+0
+5.560111
+0
+5.560111
+0] Tj
+0 142.2 Td
+(0.95)
+[5.560111
+0
+2.780056
+0
+5.560111
+0
+5.560111
+0] Tj
+[0 1 -1 0 268.2 86.4] Tm
+0 0 Td
+/F7_0 10.9998 Tf
+(Re\(C)
+[7.941856
+0
+6.115889
+0
+3.662933
+0
+7.941856
+0] Tj
+25.8 -5.4 Td
+/F7_0 8.8002 Tf
+(33)
+[4.892911
+0
+4.892911
+0] Tj
+36 0 Td
+/F7_0 10.9998 Tf
+(\) \(GPa\))
+[3.662933
+0
+3.057944
+0
+3.662933
+0
+8.557844
+0
+7.336867
+0
+6.115889
+0
+3.662933
+0] Tj
+Q
+6 w
+0 J
+/DeviceGray {} CS
+[0] SC
+3059.58 1668.31 m
+3059.58 1684.65 3046.34 1697.89 3030 1697.89 c
+3013.66 1697.89 3000.42 1684.65 3000.42 1668.31 c
+3000.42 1651.97 3013.66 1638.73 3030 1638.73 c
+3046.34 1638.73 3059.58 1651.97 3059.58 1668.31 c
+h
+S
+3181.36 1668.31 m
+3181.36 1684.65 3168.12 1697.89 3151.78 1697.89 c
+3135.44 1697.89 3122.2 1684.65 3122.2 1668.31 c
+3122.2 1651.97 3135.44 1638.73 3151.78 1638.73 c
+3168.12 1638.73 3181.36 1651.97 3181.36 1668.31 c
+h
+S
+3303.14 1668.31 m
+3303.14 1684.65 3289.9 1697.89 3273.56 1697.89 c
+3257.22 1697.89 3243.98 1684.65 3243.98 1668.31 c
+3243.98 1651.97 3257.22 1638.73 3273.56 1638.73 c
+3289.9 1638.73 3303.14 1651.97 3303.14 1668.31 c
+h
+S
+3424.92 1668.31 m
+3424.92 1684.65 3411.68 1697.89 3395.34 1697.89 c
+3379 1697.89 3365.76 1684.65 3365.76 1668.31 c
+3365.76 1651.97 3379 1638.73 3395.34 1638.73 c
+3411.68 1638.73 3424.92 1651.97 3424.92 1668.31 c
+h
+S
+3546.7 1668.31 m
+3546.7 1684.65 3533.46 1697.89 3517.12 1697.89 c
+3500.78 1697.89 3487.54 1684.65 3487.54 1668.31 c
+3487.54 1651.97 3500.78 1638.73 3517.12 1638.73 c
+3533.46 1638.73 3546.7 1651.97 3546.7 1668.31 c
+h
+S
+3668.48 1668.31 m
+3668.48 1684.65 3655.24 1697.89 3638.9 1697.89 c
+3622.56 1697.89 3609.32 1684.65 3609.32 1668.31 c
+3609.32 1651.97 3622.56 1638.73 3638.9 1638.73 c
+3655.24 1638.73 3668.48 1651.97 3668.48 1668.31 c
+h
+S
+3790.26 1668.31 m
+3790.26 1684.65 3777.02 1697.89 3760.68 1697.89 c
+3744.34 1697.89 3731.1 1684.65 3731.1 1668.31 c
+3731.1 1651.97 3744.34 1638.73 3760.68 1638.73 c
+3777.02 1638.73 3790.26 1651.97 3790.26 1668.31 c
+h
+S
+3912.04 1668.31 m
+3912.04 1684.65 3898.8 1697.89 3882.46 1697.89 c
+3866.13 1697.89 3852.88 1684.65 3852.88 1668.31 c
+3852.88 1651.97 3866.13 1638.73 3882.46 1638.73 c
+3898.8 1638.73 3912.04 1651.97 3912.04 1668.31 c
+h
+S
+4033.82 1668.31 m
+4033.82 1684.65 4020.58 1697.89 4004.24 1697.89 c
+3987.9 1697.89 3974.66 1684.65 3974.66 1668.31 c
+3974.66 1651.97 3987.9 1638.73 4004.24 1638.73 c
+4020.58 1638.73 4033.82 1651.97 4033.82 1668.31 c
+h
+S
+4155.6 1668.31 m
+4155.6 1684.65 4142.36 1697.89 4126.02 1697.89 c
+4109.68 1697.89 4096.44 1684.65 4096.44 1668.31 c
+4096.44 1651.97 4109.68 1638.73 4126.02 1638.73 c
+4142.36 1638.73 4155.6 1651.97 4155.6 1668.31 c
+h
+S
+4277.38 1668.31 m
+4277.38 1684.65 4264.14 1697.89 4247.8 1697.89 c
+4231.46 1697.89 4218.22 1684.65 4218.22 1668.31 c
+4218.22 1651.97 4231.46 1638.73 4247.8 1638.73 c
+4264.14 1638.73 4277.38 1651.97 4277.38 1668.31 c
+h
+S
+4399.16 1668.31 m
+4399.16 1684.65 4385.92 1697.89 4369.58 1697.89 c
+4353.25 1697.89 4340 1684.65 4340 1668.31 c
+4340 1651.97 4353.25 1638.73 4369.58 1638.73 c
+4385.92 1638.73 4399.16 1651.97 4399.16 1668.31 c
+h
+S
+4520.94 1668.31 m
+4520.94 1684.65 4507.7 1697.89 4491.36 1697.89 c
+4475.02 1697.89 4461.78 1684.65 4461.78 1668.31 c
+4461.78 1651.97 4475.02 1638.73 4491.36 1638.73 c
+4507.7 1638.73 4520.94 1651.97 4520.94 1668.31 c
+h
+S
+4642.72 1668.31 m
+4642.72 1684.65 4629.48 1697.89 4613.14 1697.89 c
+4596.8 1697.89 4583.56 1684.65 4583.56 1668.31 c
+4583.56 1651.97 4596.8 1638.73 4613.14 1638.73 c
+4629.48 1638.73 4642.72 1651.97 4642.72 1668.31 c
+h
+S
+4764.5 1668.31 m
+4764.5 1684.65 4751.26 1697.89 4734.92 1697.89 c
+4718.59 1697.89 4705.34 1684.65 4705.34 1668.31 c
+4705.34 1651.97 4718.59 1638.73 4734.92 1638.73 c
+4751.26 1638.73 4764.5 1651.97 4764.5 1668.31 c
+h
+S
+4886.29 1668.31 m
+4886.29 1684.65 4873.04 1697.89 4856.7 1697.89 c
+4840.37 1697.89 4827.13 1684.65 4827.13 1668.31 c
+4827.13 1651.97 4840.37 1638.73 4856.7 1638.73 c
+4873.04 1638.73 4886.29 1651.97 4886.29 1668.31 c
+h
+S
+5008.06 1668.31 m
+5008.06 1684.65 4994.82 1697.89 4978.48 1697.89 c
+4962.14 1697.89 4948.9 1684.65 4948.9 1668.31 c
+4948.9 1651.97 4962.14 1638.73 4978.48 1638.73 c
+4994.82 1638.73 5008.06 1651.97 5008.06 1668.31 c
+h
+S
+/DeviceRGB {} cs
+[0 1 0] sc
+3055 1668.31 m
+3055 1682.12 3043.8 1693.31 3030 1693.31 c
+3016.2 1693.31 3005 1682.12 3005 1668.31 c
+3005 1654.5 3016.2 1643.31 3030 1643.31 c
+3043.8 1643.31 3055 1654.5 3055 1668.31 c
+f
+/DeviceRGB {} CS
+[0 1 0] SC
+3055 1668.31 m
+3055 1682.12 3043.8 1693.31 3030 1693.31 c
+3016.2 1693.31 3005 1682.12 3005 1668.31 c
+3005 1654.5 3016.2 1643.31 3030 1643.31 c
+3043.8 1643.31 3055 1654.5 3055 1668.31 c
+h
+S
+3176.78 1668.31 m
+3176.78 1682.12 3165.59 1693.31 3151.78 1693.31 c
+3137.97 1693.31 3126.78 1682.12 3126.78 1668.31 c
+3126.78 1654.5 3137.97 1643.31 3151.78 1643.31 c
+3165.59 1643.31 3176.78 1654.5 3176.78 1668.31 c
+f
+3176.78 1668.31 m
+3176.78 1682.12 3165.59 1693.31 3151.78 1693.31 c
+3137.97 1693.31 3126.78 1682.12 3126.78 1668.31 c
+3126.78 1654.5 3137.97 1643.31 3151.78 1643.31 c
+3165.59 1643.31 3176.78 1654.5 3176.78 1668.31 c
+h
+S
+3298.56 1668.31 m
+3298.56 1682.12 3287.37 1693.31 3273.56 1693.31 c
+3259.75 1693.31 3248.56 1682.12 3248.56 1668.31 c
+3248.56 1654.5 3259.75 1643.31 3273.56 1643.31 c
+3287.37 1643.31 3298.56 1654.5 3298.56 1668.31 c
+f
+3298.56 1668.31 m
+3298.56 1682.12 3287.37 1693.31 3273.56 1693.31 c
+3259.75 1693.31 3248.56 1682.12 3248.56 1668.31 c
+3248.56 1654.5 3259.75 1643.31 3273.56 1643.31 c
+3287.37 1643.31 3298.56 1654.5 3298.56 1668.31 c
+h
+S
+3420.34 1668.31 m
+3420.34 1682.12 3409.15 1693.31 3395.34 1693.31 c
+3381.54 1693.31 3370.34 1682.12 3370.34 1668.31 c
+3370.34 1654.5 3381.54 1643.31 3395.34 1643.31 c
+3409.15 1643.31 3420.34 1654.5 3420.34 1668.31 c
+f
+3420.34 1668.31 m
+3420.34 1682.12 3409.15 1693.31 3395.34 1693.31 c
+3381.54 1693.31 3370.34 1682.12 3370.34 1668.31 c
+3370.34 1654.5 3381.54 1643.31 3395.34 1643.31 c
+3409.15 1643.31 3420.34 1654.5 3420.34 1668.31 c
+h
+S
+3542.12 1668.31 m
+3542.12 1682.12 3530.93 1693.31 3517.12 1693.31 c
+3503.32 1693.31 3492.12 1682.12 3492.12 1668.31 c
+3492.12 1654.5 3503.32 1643.31 3517.12 1643.31 c
+3530.93 1643.31 3542.12 1654.5 3542.12 1668.31 c
+f
+3542.12 1668.31 m
+3542.12 1682.12 3530.93 1693.31 3517.12 1693.31 c
+3503.32 1693.31 3492.12 1682.12 3492.12 1668.31 c
+3492.12 1654.5 3503.32 1643.31 3517.12 1643.31 c
+3530.93 1643.31 3542.12 1654.5 3542.12 1668.31 c
+h
+S
+3663.9 1668.31 m
+3663.9 1682.12 3652.71 1693.31 3638.9 1693.31 c
+3625.09 1693.31 3613.9 1682.12 3613.9 1668.31 c
+3613.9 1654.5 3625.09 1643.31 3638.9 1643.31 c
+3652.71 1643.31 3663.9 1654.5 3663.9 1668.31 c
+f
+3663.9 1668.31 m
+3663.9 1682.12 3652.71 1693.31 3638.9 1693.31 c
+3625.09 1693.31 3613.9 1682.12 3613.9 1668.31 c
+3613.9 1654.5 3625.09 1643.31 3638.9 1643.31 c
+3652.71 1643.31 3663.9 1654.5 3663.9 1668.31 c
+h
+S
+3785.68 1668.31 m
+3785.68 1682.12 3774.49 1693.31 3760.68 1693.31 c
+3746.88 1693.31 3735.68 1682.12 3735.68 1668.31 c
+3735.68 1654.5 3746.88 1643.31 3760.68 1643.31 c
+3774.49 1643.31 3785.68 1654.5 3785.68 1668.31 c
+f
+3785.68 1668.31 m
+3785.68 1682.12 3774.49 1693.31 3760.68 1693.31 c
+3746.88 1693.31 3735.68 1682.12 3735.68 1668.31 c
+3735.68 1654.5 3746.88 1643.31 3760.68 1643.31 c
+3774.49 1643.31 3785.68 1654.5 3785.68 1668.31 c
+h
+S
+3907.46 1668.31 m
+3907.46 1682.12 3896.27 1693.31 3882.46 1693.31 c
+3868.66 1693.31 3857.46 1682.12 3857.46 1668.31 c
+3857.46 1654.5 3868.66 1643.31 3882.46 1643.31 c
+3896.27 1643.31 3907.46 1654.5 3907.46 1668.31 c
+f
+3907.46 1668.31 m
+3907.46 1682.12 3896.27 1693.31 3882.46 1693.31 c
+3868.66 1693.31 3857.46 1682.12 3857.46 1668.31 c
+3857.46 1654.5 3868.66 1643.31 3882.46 1643.31 c
+3896.27 1643.31 3907.46 1654.5 3907.46 1668.31 c
+h
+S
+4029.24 1668.31 m
+4029.24 1682.12 4018.05 1693.31 4004.24 1693.31 c
+3990.43 1693.31 3979.24 1682.12 3979.24 1668.31 c
+3979.24 1654.5 3990.43 1643.31 4004.24 1643.31 c
+4018.05 1643.31 4029.24 1654.5 4029.24 1668.31 c
+f
+4029.24 1668.31 m
+4029.24 1682.12 4018.05 1693.31 4004.24 1693.31 c
+3990.43 1693.31 3979.24 1682.12 3979.24 1668.31 c
+3979.24 1654.5 3990.43 1643.31 4004.24 1643.31 c
+4018.05 1643.31 4029.24 1654.5 4029.24 1668.31 c
+h
+S
+4151.02 1668.31 m
+4151.02 1682.12 4139.83 1693.31 4126.02 1693.31 c
+4112.21 1693.31 4101.02 1682.12 4101.02 1668.31 c
+4101.02 1654.5 4112.21 1643.31 4126.02 1643.31 c
+4139.83 1643.31 4151.02 1654.5 4151.02 1668.31 c
+f
+4151.02 1668.31 m
+4151.02 1682.12 4139.83 1693.31 4126.02 1693.31 c
+4112.21 1693.31 4101.02 1682.12 4101.02 1668.31 c
+4101.02 1654.5 4112.21 1643.31 4126.02 1643.31 c
+4139.83 1643.31 4151.02 1654.5 4151.02 1668.31 c
+h
+S
+4272.8 1668.31 m
+4272.8 1682.12 4261.61 1693.31 4247.8 1693.31 c
+4234 1693.31 4222.8 1682.12 4222.8 1668.31 c
+4222.8 1654.5 4234 1643.31 4247.8 1643.31 c
+4261.61 1643.31 4272.8 1654.5 4272.8 1668.31 c
+f
+4272.8 1668.31 m
+4272.8 1682.12 4261.61 1693.31 4247.8 1693.31 c
+4234 1693.31 4222.8 1682.12 4222.8 1668.31 c
+4222.8 1654.5 4234 1643.31 4247.8 1643.31 c
+4261.61 1643.31 4272.8 1654.5 4272.8 1668.31 c
+h
+S
+4394.59 1668.31 m
+4394.59 1682.12 4383.39 1693.31 4369.58 1693.31 c
+4355.78 1693.31 4344.58 1682.12 4344.58 1668.31 c
+4344.58 1654.5 4355.78 1643.31 4369.58 1643.31 c
+4383.39 1643.31 4394.59 1654.5 4394.59 1668.31 c
+f
+4394.59 1668.31 m
+4394.59 1682.12 4383.39 1693.31 4369.58 1693.31 c
+4355.78 1693.31 4344.58 1682.12 4344.58 1668.31 c
+4344.58 1654.5 4355.78 1643.31 4369.58 1643.31 c
+4383.39 1643.31 4394.59 1654.5 4394.59 1668.31 c
+h
+S
+4516.36 1668.31 m
+4516.36 1682.12 4505.17 1693.31 4491.36 1693.31 c
+4477.55 1693.31 4466.36 1682.12 4466.36 1668.31 c
+4466.36 1654.5 4477.55 1643.31 4491.36 1643.31 c
+4505.17 1643.31 4516.36 1654.5 4516.36 1668.31 c
+f
+4516.36 1668.31 m
+4516.36 1682.12 4505.17 1693.31 4491.36 1693.31 c
+4477.55 1693.31 4466.36 1682.12 4466.36 1668.31 c
+4466.36 1654.5 4477.55 1643.31 4491.36 1643.31 c
+4505.17 1643.31 4516.36 1654.5 4516.36 1668.31 c
+h
+S
+4638.14 1668.31 m
+4638.14 1682.12 4626.95 1693.31 4613.14 1693.31 c
+4599.34 1693.31 4588.14 1682.12 4588.14 1668.31 c
+4588.14 1654.5 4599.34 1643.31 4613.14 1643.31 c
+4626.95 1643.31 4638.14 1654.5 4638.14 1668.31 c
+f
+4638.14 1668.31 m
+4638.14 1682.12 4626.95 1693.31 4613.14 1693.31 c
+4599.34 1693.31 4588.14 1682.12 4588.14 1668.31 c
+4588.14 1654.5 4599.34 1643.31 4613.14 1643.31 c
+4626.95 1643.31 4638.14 1654.5 4638.14 1668.31 c
+h
+S
+4759.93 1668.31 m
+4759.93 1682.12 4748.73 1693.31 4734.92 1693.31 c
+4721.12 1693.31 4709.92 1682.12 4709.92 1668.31 c
+4709.92 1654.5 4721.12 1643.31 4734.92 1643.31 c
+4748.73 1643.31 4759.93 1654.5 4759.93 1668.31 c
+f
+4759.93 1668.31 m
+4759.93 1682.12 4748.73 1693.31 4734.92 1693.31 c
+4721.12 1693.31 4709.92 1682.12 4709.92 1668.31 c
+4709.92 1654.5 4721.12 1643.31 4734.92 1643.31 c
+4748.73 1643.31 4759.93 1654.5 4759.93 1668.31 c
+h
+S
+4881.71 1668.31 m
+4881.71 1682.12 4870.51 1693.31 4856.7 1693.31 c
+4842.9 1693.31 4831.7 1682.12 4831.7 1668.31 c
+4831.7 1654.5 4842.9 1643.31 4856.7 1643.31 c
+4870.51 1643.31 4881.71 1654.5 4881.71 1668.31 c
+f
+4881.71 1668.31 m
+4881.71 1682.12 4870.51 1693.31 4856.7 1693.31 c
+4842.9 1693.31 4831.7 1682.12 4831.7 1668.31 c
+4831.7 1654.5 4842.9 1643.31 4856.7 1643.31 c
+4870.51 1643.31 4881.71 1654.5 4881.71 1668.31 c
+h
+S
+5003.48 1668.31 m
+5003.48 1682.12 4992.29 1693.31 4978.48 1693.31 c
+4964.68 1693.31 4953.48 1682.12 4953.48 1668.31 c
+4953.48 1654.5 4964.68 1643.31 4978.48 1643.31 c
+4992.29 1643.31 5003.48 1654.5 5003.48 1668.31 c
+f
+5003.48 1668.31 m
+5003.48 1682.12 4992.29 1693.31 4978.48 1693.31 c
+4964.68 1693.31 4953.48 1682.12 4953.48 1668.31 c
+4953.48 1654.5 4964.68 1643.31 4978.48 1643.31 c
+4992.29 1643.31 5003.48 1654.5 5003.48 1668.31 c
+h
+S
+/DeviceRGB {} cs
+[1 0 0] sc
+3043.23 1668.31 m
+3043.23 1675.62 3037.31 1681.54 3030 1681.54 c
+3022.69 1681.54 3016.77 1675.62 3016.77 1668.31 c
+3016.77 1661 3022.69 1655.08 3030 1655.08 c
+3037.31 1655.08 3043.23 1661 3043.23 1668.31 c
+f
+/DeviceRGB {} CS
+[1 0 0] SC
+3043.23 1668.31 m
+3043.23 1675.62 3037.31 1681.54 3030 1681.54 c
+3022.69 1681.54 3016.77 1675.62 3016.77 1668.31 c
+3016.77 1661 3022.69 1655.08 3030 1655.08 c
+3037.31 1655.08 3043.23 1661 3043.23 1668.31 c
+h
+S
+3165.01 1668.31 m
+3165.01 1675.62 3159.09 1681.54 3151.78 1681.54 c
+3144.47 1681.54 3138.55 1675.62 3138.55 1668.31 c
+3138.55 1661 3144.47 1655.08 3151.78 1655.08 c
+3159.09 1655.08 3165.01 1661 3165.01 1668.31 c
+f
+3165.01 1668.31 m
+3165.01 1675.62 3159.09 1681.54 3151.78 1681.54 c
+3144.47 1681.54 3138.55 1675.62 3138.55 1668.31 c
+3138.55 1661 3144.47 1655.08 3151.78 1655.08 c
+3159.09 1655.08 3165.01 1661 3165.01 1668.31 c
+h
+S
+3286.79 1668.31 m
+3286.79 1675.62 3280.87 1681.54 3273.56 1681.54 c
+3266.25 1681.54 3260.33 1675.62 3260.33 1668.31 c
+3260.33 1661 3266.25 1655.08 3273.56 1655.08 c
+3280.87 1655.08 3286.79 1661 3286.79 1668.31 c
+f
+3286.79 1668.31 m
+3286.79 1675.62 3280.87 1681.54 3273.56 1681.54 c
+3266.25 1681.54 3260.33 1675.62 3260.33 1668.31 c
+3260.33 1661 3266.25 1655.08 3273.56 1655.08 c
+3280.87 1655.08 3286.79 1661 3286.79 1668.31 c
+h
+S
+3408.57 1668.31 m
+3408.57 1675.62 3402.65 1681.54 3395.34 1681.54 c
+3388.03 1681.54 3382.11 1675.62 3382.11 1668.31 c
+3382.11 1661 3388.03 1655.08 3395.34 1655.08 c
+3402.65 1655.08 3408.57 1661 3408.57 1668.31 c
+f
+3408.57 1668.31 m
+3408.57 1675.62 3402.65 1681.54 3395.34 1681.54 c
+3388.03 1681.54 3382.11 1675.62 3382.11 1668.31 c
+3382.11 1661 3388.03 1655.08 3395.34 1655.08 c
+3402.65 1655.08 3408.57 1661 3408.57 1668.31 c
+h
+S
+3530.35 1668.31 m
+3530.35 1675.62 3524.43 1681.54 3517.12 1681.54 c
+3509.81 1681.54 3503.89 1675.62 3503.89 1668.31 c
+3503.89 1661 3509.81 1655.08 3517.12 1655.08 c
+3524.43 1655.08 3530.35 1661 3530.35 1668.31 c
+f
+3530.35 1668.31 m
+3530.35 1675.62 3524.43 1681.54 3517.12 1681.54 c
+3509.81 1681.54 3503.89 1675.62 3503.89 1668.31 c
+3503.89 1661 3509.81 1655.08 3517.12 1655.08 c
+3524.43 1655.08 3530.35 1661 3530.35 1668.31 c
+h
+S
+3652.13 1668.31 m
+3652.13 1675.62 3646.21 1681.54 3638.9 1681.54 c
+3631.59 1681.54 3625.67 1675.62 3625.67 1668.31 c
+3625.67 1661 3631.59 1655.08 3638.9 1655.08 c
+3646.21 1655.08 3652.13 1661 3652.13 1668.31 c
+f
+3652.13 1668.31 m
+3652.13 1675.62 3646.21 1681.54 3638.9 1681.54 c
+3631.59 1681.54 3625.67 1675.62 3625.67 1668.31 c
+3625.67 1661 3631.59 1655.08 3638.9 1655.08 c
+3646.21 1655.08 3652.13 1661 3652.13 1668.31 c
+h
+S
+3773.91 1668.31 m
+3773.91 1675.62 3767.99 1681.54 3760.68 1681.54 c
+3753.37 1681.54 3747.45 1675.62 3747.45 1668.31 c
+3747.45 1661 3753.37 1655.08 3760.68 1655.08 c
+3767.99 1655.08 3773.91 1661 3773.91 1668.31 c
+f
+3773.91 1668.31 m
+3773.91 1675.62 3767.99 1681.54 3760.68 1681.54 c
+3753.37 1681.54 3747.45 1675.62 3747.45 1668.31 c
+3747.45 1661 3753.37 1655.08 3760.68 1655.08 c
+3767.99 1655.08 3773.91 1661 3773.91 1668.31 c
+h
+S
+3895.69 1668.31 m
+3895.69 1675.62 3889.77 1681.54 3882.46 1681.54 c
+3875.15 1681.54 3869.23 1675.62 3869.23 1668.31 c
+3869.23 1661 3875.15 1655.08 3882.46 1655.08 c
+3889.77 1655.08 3895.69 1661 3895.69 1668.31 c
+f
+3895.69 1668.31 m
+3895.69 1675.62 3889.77 1681.54 3882.46 1681.54 c
+3875.15 1681.54 3869.23 1675.62 3869.23 1668.31 c
+3869.23 1661 3875.15 1655.08 3882.46 1655.08 c
+3889.77 1655.08 3895.69 1661 3895.69 1668.31 c
+h
+S
+4017.47 1668.31 m
+4017.47 1675.62 4011.55 1681.54 4004.24 1681.54 c
+3996.93 1681.54 3991.01 1675.62 3991.01 1668.31 c
+3991.01 1661 3996.93 1655.08 4004.24 1655.08 c
+4011.55 1655.08 4017.47 1661 4017.47 1668.31 c
+f
+4017.47 1668.31 m
+4017.47 1675.62 4011.55 1681.54 4004.24 1681.54 c
+3996.93 1681.54 3991.01 1675.62 3991.01 1668.31 c
+3991.01 1661 3996.93 1655.08 4004.24 1655.08 c
+4011.55 1655.08 4017.47 1661 4017.47 1668.31 c
+h
+S
+4139.25 1668.31 m
+4139.25 1675.62 4133.33 1681.54 4126.02 1681.54 c
+4118.71 1681.54 4112.79 1675.62 4112.79 1668.31 c
+4112.79 1661 4118.71 1655.08 4126.02 1655.08 c
+4133.33 1655.08 4139.25 1661 4139.25 1668.31 c
+f
+4139.25 1668.31 m
+4139.25 1675.62 4133.33 1681.54 4126.02 1681.54 c
+4118.71 1681.54 4112.79 1675.62 4112.79 1668.31 c
+4112.79 1661 4118.71 1655.08 4126.02 1655.08 c
+4133.33 1655.08 4139.25 1661 4139.25 1668.31 c
+h
+S
+4261.03 1668.31 m
+4261.03 1675.62 4255.11 1681.54 4247.8 1681.54 c
+4240.49 1681.54 4234.57 1675.62 4234.57 1668.31 c
+4234.57 1661 4240.49 1655.08 4247.8 1655.08 c
+4255.11 1655.08 4261.03 1661 4261.03 1668.31 c
+f
+4261.03 1668.31 m
+4261.03 1675.62 4255.11 1681.54 4247.8 1681.54 c
+4240.49 1681.54 4234.57 1675.62 4234.57 1668.31 c
+4234.57 1661 4240.49 1655.08 4247.8 1655.08 c
+4255.11 1655.08 4261.03 1661 4261.03 1668.31 c
+h
+S
+4382.81 1668.31 m
+4382.81 1675.62 4376.89 1681.54 4369.58 1681.54 c
+4362.27 1681.54 4356.35 1675.62 4356.35 1668.31 c
+4356.35 1661 4362.27 1655.08 4369.58 1655.08 c
+4376.89 1655.08 4382.81 1661 4382.81 1668.31 c
+f
+4382.81 1668.31 m
+4382.81 1675.62 4376.89 1681.54 4369.58 1681.54 c
+4362.27 1681.54 4356.35 1675.62 4356.35 1668.31 c
+4356.35 1661 4362.27 1655.08 4369.58 1655.08 c
+4376.89 1655.08 4382.81 1661 4382.81 1668.31 c
+h
+S
+4504.59 1668.31 m
+4504.59 1675.62 4498.67 1681.54 4491.36 1681.54 c
+4484.05 1681.54 4478.13 1675.62 4478.13 1668.31 c
+4478.13 1661 4484.05 1655.08 4491.36 1655.08 c
+4498.67 1655.08 4504.59 1661 4504.59 1668.31 c
+f
+4504.59 1668.31 m
+4504.59 1675.62 4498.67 1681.54 4491.36 1681.54 c
+4484.05 1681.54 4478.13 1675.62 4478.13 1668.31 c
+4478.13 1661 4484.05 1655.08 4491.36 1655.08 c
+4498.67 1655.08 4504.59 1661 4504.59 1668.31 c
+h
+S
+4626.37 1668.31 m
+4626.37 1675.62 4620.45 1681.54 4613.14 1681.54 c
+4605.84 1681.54 4599.91 1675.62 4599.91 1668.31 c
+4599.91 1661 4605.84 1655.08 4613.14 1655.08 c
+4620.45 1655.08 4626.37 1661 4626.37 1668.31 c
+f
+4626.37 1668.31 m
+4626.37 1675.62 4620.45 1681.54 4613.14 1681.54 c
+4605.84 1681.54 4599.91 1675.62 4599.91 1668.31 c
+4599.91 1661 4605.84 1655.08 4613.14 1655.08 c
+4620.45 1655.08 4626.37 1661 4626.37 1668.31 c
+h
+S
+4748.15 1668.31 m
+4748.15 1675.62 4742.23 1681.54 4734.92 1681.54 c
+4727.61 1681.54 4721.69 1675.62 4721.69 1668.31 c
+4721.69 1661 4727.61 1655.08 4734.92 1655.08 c
+4742.23 1655.08 4748.15 1661 4748.15 1668.31 c
+f
+4748.15 1668.31 m
+4748.15 1675.62 4742.23 1681.54 4734.92 1681.54 c
+4727.61 1681.54 4721.69 1675.62 4721.69 1668.31 c
+4721.69 1661 4727.61 1655.08 4734.92 1655.08 c
+4742.23 1655.08 4748.15 1661 4748.15 1668.31 c
+h
+S
+4869.93 1668.31 m
+4869.93 1675.62 4864.01 1681.54 4856.7 1681.54 c
+4849.39 1681.54 4843.47 1675.62 4843.47 1668.31 c
+4843.47 1661 4849.39 1655.08 4856.7 1655.08 c
+4864.01 1655.08 4869.93 1661 4869.93 1668.31 c
+f
+4869.93 1668.31 m
+4869.93 1675.62 4864.01 1681.54 4856.7 1681.54 c
+4849.39 1681.54 4843.47 1675.62 4843.47 1668.31 c
+4843.47 1661 4849.39 1655.08 4856.7 1655.08 c
+4864.01 1655.08 4869.93 1661 4869.93 1668.31 c
+h
+S
+4991.71 1668.31 m
+4991.71 1675.62 4985.79 1681.54 4978.48 1681.54 c
+4971.18 1681.54 4965.25 1675.62 4965.25 1668.31 c
+4965.25 1661 4971.18 1655.08 4978.48 1655.08 c
+4985.79 1655.08 4991.71 1661 4991.71 1668.31 c
+f
+4991.71 1668.31 m
+4991.71 1675.62 4985.79 1681.54 4978.48 1681.54 c
+4971.18 1681.54 4965.25 1675.62 4965.25 1668.31 c
+4965.25 1661 4971.18 1655.08 4978.48 1655.08 c
+4985.79 1655.08 4991.71 1661 4991.71 1668.31 c
+h
+S
+/DeviceGray {} cs
+[1] sc
+4098 594 864 402 re
+f
+/DeviceGray {} cs
+[0] sc
+q
+[10 0 0 10 0 0] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+[1 0 0 1 445.111 88.4152] Tm
+0 0 Td
+/F7_0 9 Tf
+(bg = 0.12 m)
+[5.004
+0
+5.004
+0
+2.502
+0
+5.256
+0
+2.502
+0
+5.004
+0
+2.502
+0
+5.004
+0
+5.004
+0
+2.502
+0
+7.497
+0] Tj
+Q
+/DeviceGray {} CS
+[0] SC
+4308.31 920.152 m
+4308.31 936.719 4294.88 950.152 4278.31 950.152 c
+4261.75 950.152 4248.31 936.719 4248.31 920.152 c
+4248.31 903.586 4261.75 890.152 4278.31 890.152 c
+4294.88 890.152 4308.31 903.586 4308.31 920.152 c
+h
+S
+q
+[10 0 0 10 0 0] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+[1 0 0 1 445.111 75.9] Tm
+0 0 Td
+/F7_0 9 Tf
+(bg = 0.24 m)
+[5.004
+0
+5.004
+0
+2.502
+0
+5.256
+0
+2.502
+0
+5.004
+0
+2.502
+0
+5.004
+0
+5.004
+0
+2.502
+0
+7.497
+0] Tj
+Q
+/DeviceRGB {} cs
+[0 1 0] sc
+4308.31 795 m
+4308.31 811.566 4294.88 825 4278.31 825 c
+4261.75 825 4248.31 811.566 4248.31 795 c
+4248.31 778.434 4261.75 765 4278.31 765 c
+4294.88 765 4308.31 778.434 4308.31 795 c
+f
+/DeviceRGB {} CS
+[0 1 0] SC
+4308.31 795 m
+4308.31 811.566 4294.88 825 4278.31 825 c
+4261.75 825 4248.31 811.566 4248.31 795 c
+4248.31 778.434 4261.75 765 4278.31 765 c
+4294.88 765 4308.31 778.434 4308.31 795 c
+h
+S
+/DeviceGray {} cs
+[0] sc
+q
+[10 0 0 10 0 0] cm
+[1 0 0 1 0 0] Tm
+0 0 Td
+[1 0 0 1 445.111 63.3848] Tm
+0 0 Td
+/F7_0 9 Tf
+(bg = 0.48 m)
+[5.004
+0
+5.004
+0
+2.502
+0
+5.256
+0
+2.502
+0
+5.004
+0
+2.502
+0
+5.004
+0
+5.004
+0
+2.502
+0
+7.497
+0] Tj
+Q
+/DeviceRGB {} cs
+[1 0 0] sc
+4308.31 669.848 m
+4308.31 686.414 4294.88 699.848 4278.31 699.848 c
+4261.75 699.848 4248.31 686.414 4248.31 669.848 c
+4248.31 653.281 4261.75 639.848 4278.31 639.848 c
+4294.88 639.848 4308.31 653.281 4308.31 669.848 c
+f
+/DeviceRGB {} CS
+[1 0 0] SC
+4308.31 669.848 m
+4308.31 686.414 4294.88 699.848 4278.31 699.848 c
+4261.75 699.848 4248.31 686.414 4248.31 669.848 c
+4248.31 653.281 4261.75 639.848 4278.31 639.848 c
+4294.88 639.848 4308.31 653.281 4308.31 669.848 c
+h
+S
+4.998 w
+/DeviceGray {} CS
+[0.1489] SC
+4098 594 864 402 re
+S
+Q
+Q
+showpage
+%%PageTrailer
+pdfEndPage
+%%Trailer
+end
+%%DocumentSuppliedResources:
+%%+ font FHGWZI+Helvetica
+%%EOF
